@@ -3,20 +3,40 @@ using System.Collections;
 
 public class simplaePatrol : MonoBehaviour {
 
-    private GameObject body;
+    
     public float moveSpeed;
-    private Transform stillground;
-	// Use this for initialization
-	void Start ()
+    public Transform stillground;
+    public Rigidbody body;
+
+    public LayerMask whatIsGround;
+    public bool groundHere;
+    public float distanceRay;
+
+    private Quaternion temp1;
+    private Vector3 temp2;
+
+
+
+    // Use this for initialization
+    void Start ()
     {
-        body = GameObject.Find(this);
-        stillground = body.GetComponentInChildren < 1 > ();
+       body = GetComponent<Rigidbody>();
+       
+       //stillground = body.GetComponentInChildren < 1 > ();
         
 	
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    void FixedUpdate()
+    {
+
+        RaycastHit rayOut;
+        groundHere = Physics.Raycast(stillground.transform.position, -transform.up, out rayOut, distanceRay, whatIsGround);
+        Debug.DrawRay(stillground.transform.position, -transform.up,Color.cyan, distanceRay, false);
+    }
+
+    // Update is called once per frame
+    void Update ()
     {
 	
 	}
