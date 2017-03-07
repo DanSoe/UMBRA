@@ -21,18 +21,20 @@ public class simplaePatrol : MonoBehaviour {
     void Start ()
     {
        body = GetComponent<Rigidbody>();
-       
-       //stillground = body.GetComponentInChildren < 1 > ();
-        
-	
-	}
+        Vector3 noAngle = stillground.forward;
+        Quaternion spreadAngle = Quaternion.AngleAxis(45, new Vector3(0, distanceRay, 0));
+        temp2 = spreadAngle * noAngle;
+        //stillground = body.GetComponentInChildren < 1 > ();
+
+
+    }
 
     void FixedUpdate()
     {
 
         RaycastHit rayOut;
-        groundHere = Physics.Raycast(stillground.transform.position, -transform.up, out rayOut, distanceRay, whatIsGround);
-        Debug.DrawRay(stillground.transform.position, -transform.up,Color.cyan, distanceRay, false);
+        groundHere = Physics.Raycast(stillground.transform.position, -temp2, out rayOut, distanceRay, whatIsGround);
+        Debug.DrawRay(stillground.transform.position, -temp2,Color.cyan, 10, false);
     }
 
     // Update is called once per frame
