@@ -47,13 +47,14 @@ public class PlayerController: MonoBehaviour
 	void Update()
 	    {
 		//player.AddForce (Vector3.down * 100f); //(Implimenter etter vi har en grounded check)
-		if (Input.GetKey (KeyCode.A)) 
+		if (Input.GetKey (KeyCode.A))
 		{
 			//transform.Translate((-transform.forward) * MoveSpeed * Time.deltaTime, Space.World);
 			player.AddForce(-transform.forward * MoveSpeed);
 			//SpeedLimiter ();
 
 		}
+
 		if (Input.GetKey (KeyCode.D)) 
 		{
 			//transform.Translate ((transform.forward) * MoveSpeed * Time.deltaTime, Space.World);
