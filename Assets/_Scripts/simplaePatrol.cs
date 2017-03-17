@@ -25,21 +25,29 @@ public class simplaePatrol : MonoBehaviour {
         Quaternion spreadAngle = Quaternion.AngleAxis(45, new Vector3(0, distanceRay, 0));
         temp2 = spreadAngle * noAngle;
         //stillground = body.GetComponentInChildren < 1 > ();
-
+        
 
     }
 
     void FixedUpdate()
     {
-
-        RaycastHit rayOut;
-        groundHere = Physics.Raycast(stillground.transform.position, -temp2, out rayOut, distanceRay, whatIsGround);
-        Debug.DrawRay(stillground.transform.position, -temp2,Color.cyan, 10, false);
+        body.velocity = transform.forward * moveSpeed;
+        //RaycastHit rayOut;
+        //groundHere = Physics.Raycast(stillground.transform.position, -temp2, out rayOut, distanceRay, whatIsGround);
+        //Debug.DrawRay(stillground.transform.position, -temp2,Color.cyan, 10, false);
     }
 
     // Update is called once per frame
     void Update ()
     {
-	
+	  
 	}
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "edge")
+            {
+                body.transform.rotation = Quaternion.AngleAxis(180, transform.up) * transform.rotation;
+            }
+    }
 }
