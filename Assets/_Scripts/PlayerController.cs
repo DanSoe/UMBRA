@@ -7,7 +7,7 @@ public class PlayerController: MonoBehaviour
 	//basic movement
 	public float JumpHeight;
 	public float MoveSpeed;
-	public float maxVelocity;
+	public float maxVelocity = 120f;
 	public Rigidbody player;
 
 	//is the player dashing?
@@ -42,6 +42,12 @@ public class PlayerController: MonoBehaviour
 			RaycastHit rayOut;
 			//grounded = Physics.SphereCast(player.transform.position, -transform.up, out rayOut, distanceRay, whatIsGround );
             grounded = Physics.SphereCast(player.transform.position, 0.5f , -transform.up, out rayOut, distanceRay, whatIsGround);
+
+        //Kontrollerer max farten spilleren kan ha for å hindre tullete sterke dash boosts
+            if (player.velocity.magnitude > maxVelocity)
+            {
+                player.velocity = Vector3.ClampMagnitude(player.velocity, maxVelocity);
+            }
 	    }
 
 	// Update is called once per frame
@@ -70,7 +76,7 @@ public class PlayerController: MonoBehaviour
                 transform.rotation = Quaternion.Euler(0, 90, 0);
             }
             player.AddForce(transform.forward * MoveSpeed);
-			//SpeedLimiter ();
+ 
 
 		}
 
@@ -160,7 +166,7 @@ public class PlayerController: MonoBehaviour
 		//	Debug.Log ("velocity " + player.velocity.sqrMagnitude);
 	}
 
-
+    /*
 	void SpeedLimiter()
 	{
 		if (player.velocity.sqrMagnitude > maxVelocity)
@@ -171,4 +177,5 @@ public class PlayerController: MonoBehaviour
 			player.AddForce(new Vector3(-opposite.x, 0, 0));
 		}
 	}
+     */
 }
