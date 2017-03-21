@@ -40,8 +40,9 @@ public class PlayerController: MonoBehaviour
 		{
 
 			RaycastHit rayOut;
-			grounded = Physics.Raycast(player.transform.position, -transform.up, out rayOut, distanceRay, whatIsGround );
-	}
+			//grounded = Physics.SphereCast(player.transform.position, -transform.up, out rayOut, distanceRay, whatIsGround );
+            grounded = Physics.SphereCast(player.transform.position, 0.5f , -transform.up, out rayOut, distanceRay, whatIsGround);
+	    }
 
 	// Update is called once per frame
 	void Update()
@@ -50,7 +51,12 @@ public class PlayerController: MonoBehaviour
 		if (Input.GetKey (KeyCode.A))
 		{
 			//transform.Translate((-transform.forward) * MoveSpeed * Time.deltaTime, Space.World);
-			player.AddForce(-transform.forward * MoveSpeed);
+			
+            if (transform.rotation != Quaternion.Euler(0, -90, 0))
+            {
+                transform.rotation = Quaternion.Euler(0, -90, 0);
+            }
+            player.AddForce(transform.forward * MoveSpeed);
 			//SpeedLimiter ();
 
 		}
@@ -58,7 +64,12 @@ public class PlayerController: MonoBehaviour
 		if (Input.GetKey (KeyCode.D)) 
 		{
 			//transform.Translate ((transform.forward) * MoveSpeed * Time.deltaTime, Space.World);
-			player.AddForce(transform.forward * MoveSpeed);
+			
+            if (transform.rotation != Quaternion.Euler(0, 90, 0))
+            {
+                transform.rotation = Quaternion.Euler(0, 90, 0);
+            }
+            player.AddForce(transform.forward * MoveSpeed);
 			//SpeedLimiter ();
 
 		}
@@ -67,7 +78,14 @@ public class PlayerController: MonoBehaviour
 		{
 			timer = 50;
 			MoveSpeed = MoveSpeed + DashSpeed;
-			player.AddForce(-transform.forward * MoveSpeed, ForceMode.VelocityChange);
+            if (transform.rotation == Quaternion.Euler(0, 90, 0))
+            {
+                player.AddForce(-transform.forward * MoveSpeed, ForceMode.VelocityChange);
+            }
+            else
+            {
+                player.AddForce(transform.forward * MoveSpeed, ForceMode.VelocityChange);
+            }
 
 			//insert animation code
 
@@ -76,7 +94,14 @@ public class PlayerController: MonoBehaviour
 		{
 			timer = 50;
 			MoveSpeed = MoveSpeed + DashSpeed;
-			player.AddForce(transform.forward * MoveSpeed, ForceMode.VelocityChange);
+            if (transform.rotation == Quaternion.Euler(0, -90, 0))
+            {
+                player.AddForce(-transform.forward * MoveSpeed, ForceMode.VelocityChange);
+            }
+            else
+            {
+                player.AddForce(transform.forward * MoveSpeed, ForceMode.VelocityChange);
+            }
 
 			//insert animation code
 
