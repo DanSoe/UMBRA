@@ -3,8 +3,7 @@ using System.Collections;
 
 public class PlayerController: MonoBehaviour 
 {
-	
-	//basic movement
+	//basic movement du lufter piek daniel
 	public float JumpHeight;
 	public float MoveSpeed;
 	public float maxVelocity;
