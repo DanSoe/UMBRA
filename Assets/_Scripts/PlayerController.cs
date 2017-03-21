@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerController: MonoBehaviour 
 {
 	
-	//basic movement fuck deg freddy
+	//basic movement
 	public float JumpHeight;
 	public float MoveSpeed;
 	public float maxVelocity;
