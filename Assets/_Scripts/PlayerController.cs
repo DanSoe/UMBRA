@@ -3,7 +3,9 @@ using System.Collections;
 
 public class PlayerController: MonoBehaviour 
 {
-	
+
+    Animator playerAnim;
+
 	//basic movement
 	public float JumpHeight;
 	public float MoveSpeed;
@@ -27,6 +29,7 @@ public class PlayerController: MonoBehaviour
 	// Use this for initialization
 	void Start()
 	    {
+            playerAnim = GetComponent<Animator>();
 			dash = false;
 			player = GetComponent<Rigidbody>();
 			timer = 0;
