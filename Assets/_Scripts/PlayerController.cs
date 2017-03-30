@@ -5,12 +5,14 @@ public class PlayerController: MonoBehaviour
 {
 
     Animator playerAnim;
+    int jumpHash = Animator.StringToHash("Jump");
 
 	//basic movement
 	public float JumpHeight;
 	public float MoveSpeed;
 	public float maxVelocity = 120f;
 	public Rigidbody player;
+    public GameObject raySpawn;
 
 	//is the player dashing?
 	public bool dash;
@@ -44,7 +46,7 @@ public class PlayerController: MonoBehaviour
 
 			RaycastHit rayOut;
 			//grounded = Physics.SphereCast(player.transform.position, -transform.up, out rayOut, distanceRay, whatIsGround );
-            grounded = Physics.SphereCast(player.transform.position, 0.5f , -transform.up, out rayOut, distanceRay, whatIsGround);
+            grounded = Physics.SphereCast(raySpawn.transform.position, 0.5f , -transform.up, out rayOut, distanceRay, whatIsGround);
 
         //Kontrollerer max farten spilleren kan ha for å hindre tullete sterke dash boosts
             if (player.velocity.magnitude > maxVelocity)
@@ -56,6 +58,7 @@ public class PlayerController: MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	    {
+            playerAnim.SetFloat("Speed", MoveSpeed);
 		//player.AddForce (Vector3.down * 100f); //(Implimenter etter vi har en grounded check)
 		if (Input.GetKey (KeyCode.A))
 		{
@@ -134,6 +137,7 @@ public class PlayerController: MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.Space) && grounded)
 		{
+            playerAnim.SetTrigger(jumpHash);
 
 			player.velocity = new Vector3 (GetComponent<Rigidbody> ().velocity.x, JumpHeight);
 
