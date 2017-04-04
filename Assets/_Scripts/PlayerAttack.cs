@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerAttack : MonoBehaviour 
 {
-
+    Animator playerAnim;
 	public bool attacking = false;
 
 	private float attackTimer = 0;
@@ -14,7 +14,7 @@ public class PlayerAttack : MonoBehaviour
 
 	void Awake()
 	{
-		//	insert animation thing
+        playerAnim = GetComponentInParent<Animator>();
 		attackTrigger.enabled = false;
 		
 	}
@@ -26,7 +26,7 @@ public class PlayerAttack : MonoBehaviour
 		{
 			attacking = true;
 			attackTimer = attackCooldown;
-
+            playerAnim.SetBool("LightAttack", attacking);
 			attackTrigger.enabled = true;
 		}
 
@@ -39,6 +39,7 @@ public class PlayerAttack : MonoBehaviour
 			else 
 			{
 				attacking = false;
+                playerAnim.SetBool("LightAttack", attacking);
 				attackTrigger.enabled = false;
 			}
 		}

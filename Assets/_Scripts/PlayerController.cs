@@ -5,7 +5,6 @@ public class PlayerController: MonoBehaviour
 {
 
     Animator playerAnim;
-    int jumpHash = Animator.StringToHash("Jump");
 
 	//basic movement
 	public float JumpHeight;
@@ -58,12 +57,12 @@ public class PlayerController: MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	    {
-            playerAnim.SetFloat("Speed", MoveSpeed);
+            
 		//player.AddForce (Vector3.down * 100f); //(Implimenter etter vi har en grounded check)
 		if (Input.GetKey (KeyCode.A))
 		{
 			//transform.Translate((-transform.forward) * MoveSpeed * Time.deltaTime, Space.World);
-			
+            playerAnim.SetFloat("Speed", MoveSpeed);
             if (transform.rotation != Quaternion.Euler(0, -90, 0))
             {
                 transform.rotation = Quaternion.Euler(0, -90, 0);
@@ -72,11 +71,16 @@ public class PlayerController: MonoBehaviour
 			//SpeedLimiter ();
 
 		}
+        if(Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
+        {
+            playerAnim.SetFloat("Speed", 0f);
+        }
+        
 
 		if (Input.GetKey (KeyCode.D)) 
 		{
 			//transform.Translate ((transform.forward) * MoveSpeed * Time.deltaTime, Space.World);
-			
+            playerAnim.SetFloat("Speed", MoveSpeed);
             if (transform.rotation != Quaternion.Euler(0, 90, 0))
             {
                 transform.rotation = Quaternion.Euler(0, 90, 0);
@@ -137,12 +141,13 @@ public class PlayerController: MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.Space) && grounded)
 		{
-            playerAnim.SetTrigger(jumpHash);
+            playerAnim.SetBool("Jump",true);
+
 
 			player.velocity = new Vector3 (GetComponent<Rigidbody> ().velocity.x, JumpHeight);
 
-
 		}
+
 		if (player != grounded)
 		{
 			player.AddForce (Vector3.down * 80f); //(Implimenter etter vi har en grounded check)
@@ -171,7 +176,12 @@ public class PlayerController: MonoBehaviour
 		 }
 
 		//	Debug.Log ("velocity " + player.velocity.sqrMagnitude);
+        
 	}
+    void LateUpdate()
+    {
+        playerAnim.SetBool("Jump", false);
+    }
 
     /*
 	void SpeedLimiter()

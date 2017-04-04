@@ -964,7 +964,939 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: imagePlane1
+        weight: 1
+      - path: Knight
+        weight: 1
+      - path: Knight/Belt
+        weight: 1
+      - path: Knight/Body
+        weight: 1
+      - path: Knight/Body/Hand_left
+        weight: 1
+      - path: Knight/Body/Hand_right
+        weight: 1
+      - path: Knight/Body/Legs
+        weight: 1
+      - path: Knight/Body/Torso
+        weight: 1
+      - path: Knight/Elbow_Guards
+        weight: 1
+      - path: Knight/Elbow_Guards/Elbow_Guard_Left
+        weight: 1
+      - path: Knight/Elbow_Guards/Elbow_Guard_Right
+        weight: 1
+      - path: Knight/Hand_Guards
+        weight: 1
+      - path: Knight/Hand_Guards/Hand_Guard_Left
+        weight: 1
+      - path: Knight/Hand_Guards/Hand_Guard_Right
+        weight: 1
+      - path: Knight/Helmet
+        weight: 1
+      - path: Knight/Knees
+        weight: 1
+      - path: Knight/Knees/Knee_Left
+        weight: 1
+      - path: Knight/Knees/Knee_right
+        weight: 1
+      - path: Knight/Shoulder
+        weight: 1
+      - path: Knight/Shoulder/Shoulder_Left
+        weight: 1
+      - path: Knight/Shoulder/Shoulder_Right
+        weight: 1
+      - path: Knight/Waist_Guard
+        weight: 1
+      - path: knight_v20:pCube2
+        weight: 1
+      - path: knight_v20:pCube2/knight_v20:transform1
+        weight: 1
+      - path: knight_v20:pPlane3
+        weight: 1
+      - path: knight_v20:pPlane3/knight_v20:transform37
+        weight: 1
+      - path: knight_v20:pPlane5
+        weight: 1
+      - path: knight_v20:pPlane5/knight_v20:transform35
+        weight: 1
+      - path: knight_v20:pPlane29
+        weight: 1
+      - path: knight_v20:pPlane29/knight_v20:transform58
+        weight: 1
+      - path: knight_v20:pPlane35
+        weight: 1
+      - path: knight_v20:pPlane35/knight_v20:transform61
+        weight: 1
+      - path: knight_v20:pPlane37
+        weight: 1
+      - path: knight_v20:pPlane37/knight_v20:transform63
+        weight: 1
+      - path: knight_v20:pPlane39
+        weight: 1
+      - path: knight_v20:pPlane39/knight_v20:transform67
+        weight: 1
+      - path: left
+        weight: 1
+      - path: Main_Character_SH_ROOTJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_lHipJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_lHipJ/Main_Character_SH_lKneeJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_lHipJ/Main_Character_SH_lKneeJ/Main_Character_SH_lAnkleJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_lHipJ/Main_Character_SH_lKneeJ/Main_Character_SH_lAnkleJ/Main_Character_SH_lBallJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_lHipJ/Main_Character_SH_lKneeJ/Main_Character_SH_lAnkleJ/Main_Character_SH_lBallJ/Main_Character_SH_lToeJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_rHipJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_rHipJ/Main_Character_SH_rKneeJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_rHipJ/Main_Character_SH_rKneeJ/Main_Character_SH_rAnkleJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_rHipJ/Main_Character_SH_rKneeJ/Main_Character_SH_rAnkleJ/Main_Character_SH_rBallJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_rHipJ/Main_Character_SH_rKneeJ/Main_Character_SH_rAnkleJ/Main_Character_SH_rBallJ/Main_Character_SH_rToeJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lForearmJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger1J1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger1J1/Main_Character_SH_lFinger1J2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger1J1/Main_Character_SH_lFinger1J2/Main_Character_SH_lFinger1J3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger1J1/Main_Character_SH_lFinger1J2/Main_Character_SH_lFinger1J3/Main_Character_SH_lFinger1JTip
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger2J1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger2J1/Main_Character_SH_lFinger2J2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger2J1/Main_Character_SH_lFinger2J2/Main_Character_SH_lFinger2J3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger2J1/Main_Character_SH_lFinger2J2/Main_Character_SH_lFinger2J3/Main_Character_SH_lFinger2JTip
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger3J1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger3J1/Main_Character_SH_lFinger3J2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger3J1/Main_Character_SH_lFinger3J2/Main_Character_SH_lFinger3J3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger3J1/Main_Character_SH_lFinger3J2/Main_Character_SH_lFinger3J3/Main_Character_SH_lFinger3JTip
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger4J1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger4J1/Main_Character_SH_lFinger4J2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger4J1/Main_Character_SH_lFinger4J2/Main_Character_SH_lFinger4J3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger4J1/Main_Character_SH_lFinger4J2/Main_Character_SH_lFinger4J3/Main_Character_SH_lFinger4JTip
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lThumbJ1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lThumbJ1/Main_Character_SH_lThumbJ2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lThumbJ1/Main_Character_SH_lThumbJ2/Main_Character_SH_lThumbJ3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lThumbJ1/Main_Character_SH_lThumbJ2/Main_Character_SH_lThumbJ3/Main_Character_SH_lThumbJTip
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_Neck01J
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_Neck01J/Main_Character_SH_Neck02J
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_Neck01J/Main_Character_SH_Neck02J/Main_Character_SH_Neck03J
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_Neck01J/Main_Character_SH_Neck02J/Main_Character_SH_Neck03J/Main_Character_SH_HeadJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_Neck01J/Main_Character_SH_Neck02J/Main_Character_SH_Neck03J/Main_Character_SH_HeadJ/Main_Character_SH_HeadTipJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_Neck01J/Main_Character_SH_Neck02J/Main_Character_SH_Neck03J/Main_Character_SH_HeadJ/Main_Character_SH_JawJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rForearmJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger1J1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger1J1/Main_Character_SH_rFinger1J2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger1J1/Main_Character_SH_rFinger1J2/Main_Character_SH_rFinger1J3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger1J1/Main_Character_SH_rFinger1J2/Main_Character_SH_rFinger1J3/Main_Character_SH_rFinger1JTip
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger2J1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger2J1/Main_Character_SH_rFinger2J2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger2J1/Main_Character_SH_rFinger2J2/Main_Character_SH_rFinger2J3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger2J1/Main_Character_SH_rFinger2J2/Main_Character_SH_rFinger2J3/Main_Character_SH_rFinger2JTip
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger3J1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger3J1/Main_Character_SH_rFinger3J2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger3J1/Main_Character_SH_rFinger3J2/Main_Character_SH_rFinger3J3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger3J1/Main_Character_SH_rFinger3J2/Main_Character_SH_rFinger3J3/Main_Character_SH_rFinger3JTip
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger4J1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger4J1/Main_Character_SH_rFinger4J2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger4J1/Main_Character_SH_rFinger4J2/Main_Character_SH_rFinger4J3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger4J1/Main_Character_SH_rFinger4J2/Main_Character_SH_rFinger4J3/Main_Character_SH_rFinger4JTip
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rThumbJ1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rThumbJ1/Main_Character_SH_rThumbJ2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rThumbJ1/Main_Character_SH_rThumbJ2/Main_Character_SH_rThumbJ3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rThumbJ1/Main_Character_SH_rThumbJ2/Main_Character_SH_rThumbJ3/Main_Character_SH_rThumbJTip
+        weight: 1
+      - path: pCube2
+        weight: 1
+      - path: pCube2/transform1
+        weight: 1
+      - path: Player_Sword_v2_w_UV:Player_sword_v2:pCylinder2
+        weight: 1
+      - path: pPlane29
+        weight: 1
+      - path: pPlane29/transform58
+        weight: 1
+      - path: RRA_MAIN
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Head_RRA_HeadTip_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Head_RRA_HeadTip_AimLctr/RRA_Head_RRA_HeadTip_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Head_RRA_HeadTipConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Head_RRA_Jaw_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Head_RRA_Jaw_AimLctr/RRA_Head_RRA_Jaw_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Head_RRA_JawConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Head_RRA_lEye_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Head_RRA_lEye_AimLctr/RRA_Head_RRA_lEye_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Head_RRA_lEyeConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Head_RRA_rEye_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Head_RRA_rEye_AimLctr/RRA_Head_RRA_rEye_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Head_RRA_rEyeConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Jaw_RRA_JawTip_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Jaw_RRA_JawTip_AimLctr/RRA_Jaw_RRA_JawTip_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Jaw_RRA_JawTipConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lAnkle_RRA_lBall_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lAnkle_RRA_lBall_AimLctr/RRA_lAnkle_RRA_lBall_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lAnkle_RRA_lBallConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lBall_RRA_lToe_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lBall_RRA_lToe_AimLctr/RRA_lBall_RRA_lToe_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lBall_RRA_lToeConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lClavicle_RRA_lShoulder_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lClavicle_RRA_lShoulder_AimLctr/RRA_lClavicle_RRA_lShoulder_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lClavicle_RRA_lShoulderConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lElbow_RRA_lWrist_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lElbow_RRA_lWrist_AimLctr/RRA_lElbow_RRA_lWrist_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lElbow_RRA_lWristConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger1J1_RRA_lFinger1J2_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger1J1_RRA_lFinger1J2_AimLctr/RRA_lFinger1J1_RRA_lFinger1J2_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger1J1_RRA_lFinger1J2Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger1J2_RRA_lFinger1J3_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger1J2_RRA_lFinger1J3_AimLctr/RRA_lFinger1J2_RRA_lFinger1J3_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger1J2_RRA_lFinger1J3Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger1J3_RRA_lFinger1JTip_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger1J3_RRA_lFinger1JTip_AimLctr/RRA_lFinger1J3_RRA_lFinger1JTip_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger1J3_RRA_lFinger1JTipConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger2J1_RRA_lFinger2J2_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger2J1_RRA_lFinger2J2_AimLctr/RRA_lFinger2J1_RRA_lFinger2J2_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger2J1_RRA_lFinger2J2Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger2J2_RRA_lFinger2J3_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger2J2_RRA_lFinger2J3_AimLctr/RRA_lFinger2J2_RRA_lFinger2J3_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger2J2_RRA_lFinger2J3Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger2J3_RRA_lFinger2JTip_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger2J3_RRA_lFinger2JTip_AimLctr/RRA_lFinger2J3_RRA_lFinger2JTip_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger2J3_RRA_lFinger2JTipConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger3J1_RRA_lFinger3J2_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger3J1_RRA_lFinger3J2_AimLctr/RRA_lFinger3J1_RRA_lFinger3J2_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger3J1_RRA_lFinger3J2Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger3J2_RRA_lFinger3J3_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger3J2_RRA_lFinger3J3_AimLctr/RRA_lFinger3J2_RRA_lFinger3J3_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger3J2_RRA_lFinger3J3Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger3J3_RRA_lFinger3JTip_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger3J3_RRA_lFinger3JTip_AimLctr/RRA_lFinger3J3_RRA_lFinger3JTip_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger3J3_RRA_lFinger3JTipConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger4J1_RRA_lFinger4J2_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger4J1_RRA_lFinger4J2_AimLctr/RRA_lFinger4J1_RRA_lFinger4J2_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger4J1_RRA_lFinger4J2Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger4J2_RRA_lFinger4J3_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger4J2_RRA_lFinger4J3_AimLctr/RRA_lFinger4J2_RRA_lFinger4J3_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger4J2_RRA_lFinger4J3Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger4J3_RRA_lFinger4JTip_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger4J3_RRA_lFinger4JTip_AimLctr/RRA_lFinger4J3_RRA_lFinger4JTip_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lFinger4J3_RRA_lFinger4JTipConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lHip_RRA_lKnee_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lHip_RRA_lKnee_AimLctr/RRA_lHip_RRA_lKnee_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lHip_RRA_lKneeConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lKnee_RRA_lAnkle_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lKnee_RRA_lAnkle_AimLctr/RRA_lKnee_RRA_lAnkle_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lKnee_RRA_lAnkleConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lPalm_RRA_lFinger1J1_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lPalm_RRA_lFinger1J1_AimLctr/RRA_lPalm_RRA_lFinger1J1_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lPalm_RRA_lFinger1J1Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lPalm_RRA_lFinger2J1_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lPalm_RRA_lFinger2J1_AimLctr/RRA_lPalm_RRA_lFinger2J1_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lPalm_RRA_lFinger2J1Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lPalm_RRA_lFinger3J1_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lPalm_RRA_lFinger3J1_AimLctr/RRA_lPalm_RRA_lFinger3J1_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lPalm_RRA_lFinger3J1Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lPalm_RRA_lFinger4J1_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lPalm_RRA_lFinger4J1_AimLctr/RRA_lPalm_RRA_lFinger4J1_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lPalm_RRA_lFinger4J1Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lShoulder_RRA_lElbow_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lShoulder_RRA_lElbow_AimLctr/RRA_lShoulder_RRA_lElbow_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lShoulder_RRA_lElbowConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lThumbJ1_RRA_lThumbJ2_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lThumbJ1_RRA_lThumbJ2_AimLctr/RRA_lThumbJ1_RRA_lThumbJ2_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lThumbJ1_RRA_lThumbJ2Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lThumbJ2_RRA_lThumbJ3_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lThumbJ2_RRA_lThumbJ3_AimLctr/RRA_lThumbJ2_RRA_lThumbJ3_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lThumbJ2_RRA_lThumbJ3Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lThumbJ3_RRA_lThumbJTip_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lThumbJ3_RRA_lThumbJTip_AimLctr/RRA_lThumbJ3_RRA_lThumbJTip_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lThumbJ3_RRA_lThumbJTipConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lWrist_RRA_lPalm_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lWrist_RRA_lPalm_AimLctr/RRA_lWrist_RRA_lPalm_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lWrist_RRA_lPalmConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lWrist_RRA_lThumbJ1_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lWrist_RRA_lThumbJ1_AimLctr/RRA_lWrist_RRA_lThumbJ1_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_lWrist_RRA_lThumbJ1Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Neck02_RRA_Neck01_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Neck02_RRA_Neck01_AimLctr/RRA_Neck02_RRA_Neck01_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Neck02_RRA_Neck01Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Neck03_RRA_Head_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Neck03_RRA_Head_AimLctr/RRA_Neck03_RRA_Head_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Neck03_RRA_HeadConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Neck03_RRA_Neck02_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Neck03_RRA_Neck02_AimLctr/RRA_Neck03_RRA_Neck02_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Neck03_RRA_Neck02Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rAnkle_RRA_rBall_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rAnkle_RRA_rBall_AimLctr/RRA_rAnkle_RRA_rBall_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rAnkle_RRA_rBallConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rBall_RRA_rToe_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rBall_RRA_rToe_AimLctr/RRA_rBall_RRA_rToe_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rBall_RRA_rToeConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rClavicle_RRA_rShoulder_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rClavicle_RRA_rShoulder_AimLctr/RRA_rClavicle_RRA_rShoulder_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rClavicle_RRA_rShoulderConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rElbow_RRA_rWrist_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rElbow_RRA_rWrist_AimLctr/RRA_rElbow_RRA_rWrist_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rElbow_RRA_rWristConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger1J1_RRA_rFinger1J2_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger1J1_RRA_rFinger1J2_AimLctr/RRA_rFinger1J1_RRA_rFinger1J2_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger1J1_RRA_rFinger1J2Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger1J2_RRA_rFinger1J3_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger1J2_RRA_rFinger1J3_AimLctr/RRA_rFinger1J2_RRA_rFinger1J3_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger1J2_RRA_rFinger1J3Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger1J3_RRA_rFinger1JTip_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger1J3_RRA_rFinger1JTip_AimLctr/RRA_rFinger1J3_RRA_rFinger1JTip_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger1J3_RRA_rFinger1JTipConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger2J1_RRA_rFinger2J2_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger2J1_RRA_rFinger2J2_AimLctr/RRA_rFinger2J1_RRA_rFinger2J2_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger2J1_RRA_rFinger2J2Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger2J2_RRA_rFinger2J3_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger2J2_RRA_rFinger2J3_AimLctr/RRA_rFinger2J2_RRA_rFinger2J3_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger2J2_RRA_rFinger2J3Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger2J3_RRA_rFinger2JTip_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger2J3_RRA_rFinger2JTip_AimLctr/RRA_rFinger2J3_RRA_rFinger2JTip_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger2J3_RRA_rFinger2JTipConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger3J1_RRA_rFinger3J2_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger3J1_RRA_rFinger3J2_AimLctr/RRA_rFinger3J1_RRA_rFinger3J2_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger3J1_RRA_rFinger3J2Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger3J2_RRA_rFinger3J3_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger3J2_RRA_rFinger3J3_AimLctr/RRA_rFinger3J2_RRA_rFinger3J3_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger3J2_RRA_rFinger3J3Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger3J3_RRA_rFinger3JTip_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger3J3_RRA_rFinger3JTip_AimLctr/RRA_rFinger3J3_RRA_rFinger3JTip_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger3J3_RRA_rFinger3JTipConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger4J1_RRA_rFinger4J2_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger4J1_RRA_rFinger4J2_AimLctr/RRA_rFinger4J1_RRA_rFinger4J2_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger4J1_RRA_rFinger4J2Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger4J2_RRA_rFinger4J3_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger4J2_RRA_rFinger4J3_AimLctr/RRA_rFinger4J2_RRA_rFinger4J3_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger4J2_RRA_rFinger4J3Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger4J3_RRA_rFinger4JTip_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger4J3_RRA_rFinger4JTip_AimLctr/RRA_rFinger4J3_RRA_rFinger4JTip_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rFinger4J3_RRA_rFinger4JTipConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rHip_RRA_rKnee_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rHip_RRA_rKnee_AimLctr/RRA_rHip_RRA_rKnee_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rHip_RRA_rKneeConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rKnee_RRA_rAnkle_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rKnee_RRA_rAnkle_AimLctr/RRA_rKnee_RRA_rAnkle_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rKnee_RRA_rAnkleConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_ROOT_RRA_lHip_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_ROOT_RRA_lHip_AimLctr/RRA_ROOT_RRA_lHip_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_ROOT_RRA_lHipConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_ROOT_RRA_rHip_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_ROOT_RRA_rHip_AimLctr/RRA_ROOT_RRA_rHip_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_ROOT_RRA_rHipConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_ROOT_RRA_Spine01_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_ROOT_RRA_Spine01_AimLctr/RRA_ROOT_RRA_Spine01_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_ROOT_RRA_Spine01Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rPalm_RRA_rFinger1J1_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rPalm_RRA_rFinger1J1_AimLctr/RRA_rPalm_RRA_rFinger1J1_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rPalm_RRA_rFinger1J1Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rPalm_RRA_rFinger2J1_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rPalm_RRA_rFinger2J1_AimLctr/RRA_rPalm_RRA_rFinger2J1_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rPalm_RRA_rFinger2J1Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rPalm_RRA_rFinger3J1_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rPalm_RRA_rFinger3J1_AimLctr/RRA_rPalm_RRA_rFinger3J1_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rPalm_RRA_rFinger3J1Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rPalm_RRA_rFinger4J1_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rPalm_RRA_rFinger4J1_AimLctr/RRA_rPalm_RRA_rFinger4J1_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rPalm_RRA_rFinger4J1Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rShoulder_RRA_rElbow_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rShoulder_RRA_rElbow_AimLctr/RRA_rShoulder_RRA_rElbow_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rShoulder_RRA_rElbowConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rThumbJ1_RRA_rThumbJ2_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rThumbJ1_RRA_rThumbJ2_AimLctr/RRA_rThumbJ1_RRA_rThumbJ2_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rThumbJ1_RRA_rThumbJ2Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rThumbJ2_RRA_rThumbJ3_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rThumbJ2_RRA_rThumbJ3_AimLctr/RRA_rThumbJ2_RRA_rThumbJ3_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rThumbJ2_RRA_rThumbJ3Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rThumbJ3_RRA_rThumbJTip_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rThumbJ3_RRA_rThumbJTip_AimLctr/RRA_rThumbJ3_RRA_rThumbJTip_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rThumbJ3_RRA_rThumbJTipConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rWrist_RRA_rPalm_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rWrist_RRA_rPalm_AimLctr/RRA_rWrist_RRA_rPalm_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rWrist_RRA_rPalmConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rWrist_RRA_rThumbJ1_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rWrist_RRA_rThumbJ1_AimLctr/RRA_rWrist_RRA_rThumbJ1_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_rWrist_RRA_rThumbJ1Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Spine02_RRA_Spine01_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Spine02_RRA_Spine01_AimLctr/RRA_Spine02_RRA_Spine01_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Spine02_RRA_Spine01Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Spine03_RRA_Spine02_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Spine03_RRA_Spine02_AimLctr/RRA_Spine03_RRA_Spine02_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Spine03_RRA_Spine02Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Spine03_RRA_SpineTop_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Spine03_RRA_SpineTop_AimLctr/RRA_Spine03_RRA_SpineTop_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_Spine03_RRA_SpineTopConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_SpineTop_RRA_lClavicle_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_SpineTop_RRA_lClavicle_AimLctr/RRA_SpineTop_RRA_lClavicle_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_SpineTop_RRA_lClavicleConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_SpineTop_RRA_Neck01_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_SpineTop_RRA_Neck01_AimLctr/RRA_SpineTop_RRA_Neck01_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_SpineTop_RRA_Neck01Connector
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_SpineTop_RRA_rClavicle_AimLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_SpineTop_RRA_rClavicle_AimLctr/RRA_SpineTop_RRA_rClavicle_TargetLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_ConnectorG/RRA_SpineTop_RRA_rClavicleConnector
+        weight: 1
+      - path: RRA_MAIN/RRA_Head
+        weight: 1
+      - path: RRA_MAIN/RRA_Head/RRA_HeadTip
+        weight: 1
+      - path: RRA_MAIN/RRA_Head/RRA_Jaw
+        weight: 1
+      - path: RRA_MAIN/RRA_Head/RRA_Jaw/RRA_JawTip
+        weight: 1
+      - path: RRA_MAIN/RRA_Head/RRA_lEye
+        weight: 1
+      - path: RRA_MAIN/RRA_Head/RRA_rEye
+        weight: 1
+      - path: RRA_MAIN/RRA_lAnkle
+        weight: 1
+      - path: RRA_MAIN/RRA_lElbowG
+        weight: 1
+      - path: RRA_MAIN/RRA_lElbowG/RRA_lElbow
+        weight: 1
+      - path: RRA_MAIN/RRA_lElbowParent
+        weight: 1
+      - path: RRA_MAIN/RRA_lElbowParent/RRA_lElbowAim
+        weight: 1
+      - path: RRA_MAIN/RRA_lElbowParentUpG
+        weight: 1
+      - path: RRA_MAIN/RRA_lElbowParentUpG/RRA_lElbowParentUp
+        weight: 1
+      - path: RRA_MAIN/RRA_lFootG
+        weight: 1
+      - path: RRA_MAIN/RRA_lFootG/RRA_lBall
+        weight: 1
+      - path: RRA_MAIN/RRA_lFootG/RRA_lBall/RRA_lBallG
+        weight: 1
+      - path: RRA_MAIN/RRA_lFootG/RRA_lBall/RRA_lBallG/RRA_lFootInTilt
+        weight: 1
+      - path: RRA_MAIN/RRA_lFootG/RRA_lBall/RRA_lBallG/RRA_lFootOutTilt
+        weight: 1
+      - path: RRA_MAIN/RRA_lFootG/RRA_lBall/RRA_lBallG/RRA_lToe
+        weight: 1
+      - path: RRA_MAIN/RRA_lFootG/RRA_lFootHeelPivot
+        weight: 1
+      - path: RRA_MAIN/RRA_lKneeG
+        weight: 1
+      - path: RRA_MAIN/RRA_lKneeG/RRA_lKnee
+        weight: 1
+      - path: RRA_MAIN/RRA_lKneeG/RRA_lKnee/RRA_lKneeLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_lKneeParent
+        weight: 1
+      - path: RRA_MAIN/RRA_lKneeParent/RRA_lKneeAim
+        weight: 1
+      - path: RRA_MAIN/RRA_lKneeParentUpG
+        weight: 1
+      - path: RRA_MAIN/RRA_lKneeParentUpG/RRA_lKneeParentUp
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lPalm
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lPalm/RRA_lFinger1J1
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lPalm/RRA_lFinger1J1/RRA_lFinger1J2
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lPalm/RRA_lFinger1J1/RRA_lFinger1J2/RRA_lFinger1J3
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lPalm/RRA_lFinger1J1/RRA_lFinger1J2/RRA_lFinger1J3/RRA_lFinger1JTip
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lPalm/RRA_lFinger2J1
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lPalm/RRA_lFinger2J1/RRA_lFinger2J2
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lPalm/RRA_lFinger2J1/RRA_lFinger2J2/RRA_lFinger2J3
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lPalm/RRA_lFinger2J1/RRA_lFinger2J2/RRA_lFinger2J3/RRA_lFinger2JTip
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lPalm/RRA_lFinger3J1
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lPalm/RRA_lFinger3J1/RRA_lFinger3J2
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lPalm/RRA_lFinger3J1/RRA_lFinger3J2/RRA_lFinger3J3
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lPalm/RRA_lFinger3J1/RRA_lFinger3J2/RRA_lFinger3J3/RRA_lFinger3JTip
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lPalm/RRA_lFinger4J1
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lPalm/RRA_lFinger4J1/RRA_lFinger4J2
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lPalm/RRA_lFinger4J1/RRA_lFinger4J2/RRA_lFinger4J3
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lPalm/RRA_lFinger4J1/RRA_lFinger4J2/RRA_lFinger4J3/RRA_lFinger4JTip
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lThumbJ1
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lThumbJ1/RRA_lThumbJ2
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lThumbJ1/RRA_lThumbJ2/RRA_lThumbJ3
+        weight: 1
+      - path: RRA_MAIN/RRA_lWrist/RRA_lThumbJ1/RRA_lThumbJ2/RRA_lThumbJ3/RRA_lThumbJTip
+        weight: 1
+      - path: RRA_MAIN/RRA_Neck01G
+        weight: 1
+      - path: RRA_MAIN/RRA_Neck01G/RRA_Neck01
+        weight: 1
+      - path: RRA_MAIN/RRA_Neck02G
+        weight: 1
+      - path: RRA_MAIN/RRA_Neck02G/RRA_Neck02
+        weight: 1
+      - path: RRA_MAIN/RRA_Neck03G
+        weight: 1
+      - path: RRA_MAIN/RRA_Neck03G/RRA_Neck03
+        weight: 1
+      - path: RRA_MAIN/RRA_NeckOrientLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_rAnkle
+        weight: 1
+      - path: RRA_MAIN/RRA_rElbowG
+        weight: 1
+      - path: RRA_MAIN/RRA_rElbowG/RRA_rElbow
+        weight: 1
+      - path: RRA_MAIN/RRA_rElbowParent
+        weight: 1
+      - path: RRA_MAIN/RRA_rElbowParent/RRA_rElbowAim
+        weight: 1
+      - path: RRA_MAIN/RRA_rElbowParentUpG
+        weight: 1
+      - path: RRA_MAIN/RRA_rElbowParentUpG/RRA_rElbowParentUp
+        weight: 1
+      - path: RRA_MAIN/RRA_rFootG
+        weight: 1
+      - path: RRA_MAIN/RRA_rFootG/RRA_rBall
+        weight: 1
+      - path: RRA_MAIN/RRA_rFootG/RRA_rBall/RRA_rBallG
+        weight: 1
+      - path: RRA_MAIN/RRA_rFootG/RRA_rBall/RRA_rBallG/RRA_rFootInTilt
+        weight: 1
+      - path: RRA_MAIN/RRA_rFootG/RRA_rBall/RRA_rBallG/RRA_rFootOutTilt
+        weight: 1
+      - path: RRA_MAIN/RRA_rFootG/RRA_rBall/RRA_rBallG/RRA_rToe
+        weight: 1
+      - path: RRA_MAIN/RRA_rFootG/RRA_rFootHeelPivot
+        weight: 1
+      - path: RRA_MAIN/RRA_rKneeG
+        weight: 1
+      - path: RRA_MAIN/RRA_rKneeG/RRA_rKnee
+        weight: 1
+      - path: RRA_MAIN/RRA_rKneeG/RRA_rKnee/RRA_rKneeLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_rKneeParent
+        weight: 1
+      - path: RRA_MAIN/RRA_rKneeParent/RRA_rKneeAim
+        weight: 1
+      - path: RRA_MAIN/RRA_rKneeParentUpG
+        weight: 1
+      - path: RRA_MAIN/RRA_rKneeParentUpG/RRA_rKneeParentUp
+        weight: 1
+      - path: RRA_MAIN/RRA_ROOT
+        weight: 1
+      - path: RRA_MAIN/RRA_ROOT/RRA_lHip
+        weight: 1
+      - path: RRA_MAIN/RRA_ROOT/RRA_rHip
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rPalm
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rPalm/RRA_rFinger1J1
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rPalm/RRA_rFinger1J1/RRA_rFinger1J2
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rPalm/RRA_rFinger1J1/RRA_rFinger1J2/RRA_rFinger1J3
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rPalm/RRA_rFinger1J1/RRA_rFinger1J2/RRA_rFinger1J3/RRA_rFinger1JTip
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rPalm/RRA_rFinger2J1
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rPalm/RRA_rFinger2J1/RRA_rFinger2J2
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rPalm/RRA_rFinger2J1/RRA_rFinger2J2/RRA_rFinger2J3
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rPalm/RRA_rFinger2J1/RRA_rFinger2J2/RRA_rFinger2J3/RRA_rFinger2JTip
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rPalm/RRA_rFinger3J1
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rPalm/RRA_rFinger3J1/RRA_rFinger3J2
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rPalm/RRA_rFinger3J1/RRA_rFinger3J2/RRA_rFinger3J3
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rPalm/RRA_rFinger3J1/RRA_rFinger3J2/RRA_rFinger3J3/RRA_rFinger3JTip
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rPalm/RRA_rFinger4J1
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rPalm/RRA_rFinger4J1/RRA_rFinger4J2
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rPalm/RRA_rFinger4J1/RRA_rFinger4J2/RRA_rFinger4J3
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rPalm/RRA_rFinger4J1/RRA_rFinger4J2/RRA_rFinger4J3/RRA_rFinger4JTip
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rThumbJ1
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rThumbJ1/RRA_rThumbJ2
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rThumbJ1/RRA_rThumbJ2/RRA_rThumbJ3
+        weight: 1
+      - path: RRA_MAIN/RRA_rWrist/RRA_rThumbJ1/RRA_rThumbJ2/RRA_rThumbJ3/RRA_rThumbJTip
+        weight: 1
+      - path: RRA_MAIN/RRA_Spine01G
+        weight: 1
+      - path: RRA_MAIN/RRA_Spine01G/RRA_Spine01
+        weight: 1
+      - path: RRA_MAIN/RRA_Spine02G
+        weight: 1
+      - path: RRA_MAIN/RRA_Spine02G/RRA_Spine02
+        weight: 1
+      - path: RRA_MAIN/RRA_Spine03G
+        weight: 1
+      - path: RRA_MAIN/RRA_Spine03G/RRA_Spine03
+        weight: 1
+      - path: RRA_MAIN/RRA_SpineOrientLctr
+        weight: 1
+      - path: RRA_MAIN/RRA_SpineTop
+        weight: 1
+      - path: RRA_MAIN/RRA_SpineTop/RRA_lClavicle
+        weight: 1
+      - path: RRA_MAIN/RRA_SpineTop/RRA_lClavicle/RRA_lShoulder
+        weight: 1
+      - path: RRA_MAIN/RRA_SpineTop/RRA_rClavicle
+        weight: 1
+      - path: RRA_MAIN/RRA_SpineTop/RRA_rClavicle/RRA_rShoulder
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []
