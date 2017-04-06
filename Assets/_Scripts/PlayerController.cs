@@ -97,10 +97,12 @@ public class PlayerController: MonoBehaviour
             if (transform.rotation == Quaternion.Euler(0, 90, 0))
             {
                 player.AddForce(-transform.forward * MoveSpeed, ForceMode.VelocityChange);
+                playerAnim.SetBool("DashBackward", true);
             }
             else
             {
                 player.AddForce(transform.forward * MoveSpeed, ForceMode.VelocityChange);
+                playerAnim.SetBool("DashForward", true);
             }
 
 			//insert animation code
@@ -113,13 +115,16 @@ public class PlayerController: MonoBehaviour
             if (transform.rotation == Quaternion.Euler(0, -90, 0))
             {
                 player.AddForce(-transform.forward * MoveSpeed, ForceMode.VelocityChange);
+                playerAnim.SetBool("DashBackward", true);
             }
             else
             {
                 player.AddForce(transform.forward * MoveSpeed, ForceMode.VelocityChange);
+                playerAnim.SetBool("DashForward", true);
             }
 
 			//insert animation code
+            
 
 		}
 		//counts down the duration of the dash
@@ -181,6 +186,8 @@ public class PlayerController: MonoBehaviour
     void LateUpdate()
     {
         playerAnim.SetBool("Jump", false);
+        playerAnim.SetBool("DashForward", false);
+        playerAnim.SetBool("DashBackward", false);
     }
 
     /*
