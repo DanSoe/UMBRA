@@ -151,6 +151,7 @@ public class PlayerController: MonoBehaviour
 
 			player.velocity = new Vector3 (GetComponent<Rigidbody> ().velocity.x, JumpHeight);
 
+
 		}
 
 		if (player != grounded)
@@ -164,6 +165,11 @@ public class PlayerController: MonoBehaviour
 
         }
 */
+        if(player.velocity.y == 0)
+        {
+            playerAnim.SetBool("Landing", true);
+        }
+
 		if (Input.GetKeyDown(KeyCode.LeftShift))
 		{
 			MoveSpeed = MoveSpeed * 2;
@@ -188,6 +194,8 @@ public class PlayerController: MonoBehaviour
         playerAnim.SetBool("Jump", false);
         playerAnim.SetBool("DashForward", false);
         playerAnim.SetBool("DashBackward", false);
+        playerAnim.SetBool("Landing", false);
+
     }
 
     /*
