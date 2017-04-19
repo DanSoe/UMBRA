@@ -9,6 +9,8 @@ public class PlayerController: MonoBehaviour
 	//basic movement
 	public float JumpHeight;
 	public float MoveSpeed;
+    public float RunSpeed;
+    public float WalkSpeed;
 	public float maxVelocity = 120f;
 	public Rigidbody player;
     public GameObject raySpawn;
@@ -42,6 +44,7 @@ public class PlayerController: MonoBehaviour
 		
 	void FixedUpdate()
 		{
+            Debug.Log(player.velocity);
 
 			RaycastHit rayOut;
 			//grounded = Physics.SphereCast(player.transform.position, -transform.up, out rayOut, distanceRay, whatIsGround );
@@ -51,6 +54,7 @@ public class PlayerController: MonoBehaviour
             if (player.velocity.magnitude > maxVelocity)
             {
                 player.velocity = Vector3.ClampMagnitude(player.velocity, maxVelocity);
+                
             }
 	    }
 
@@ -59,7 +63,7 @@ public class PlayerController: MonoBehaviour
 	    {
             
 		//player.AddForce (Vector3.down * 100f); //(Implimenter etter vi har en grounded check)
-		if (Input.GetKey (KeyCode.A))
+		if (Input.GetKey (KeyCode.A) && dash == false)
 		{
 			//transform.Translate((-transform.forward) * MoveSpeed * Time.deltaTime, Space.World);
             playerAnim.SetFloat("Speed", MoveSpeed);
@@ -75,9 +79,9 @@ public class PlayerController: MonoBehaviour
         {
             playerAnim.SetFloat("Speed", 0f);
         }
-        
 
-		if (Input.GetKey (KeyCode.D)) 
+
+        if (Input.GetKey(KeyCode.D) && dash == false) 
 		{
 			//transform.Translate ((transform.forward) * MoveSpeed * Time.deltaTime, Space.World);
             playerAnim.SetFloat("Speed", MoveSpeed);
@@ -92,16 +96,17 @@ public class PlayerController: MonoBehaviour
 
 		if (Input.GetKeyDown (KeyCode.Q) && dash == false) 
 		{
-			timer = 50;
-			MoveSpeed = MoveSpeed + DashSpeed;
+			timer = 20;
+			//MoveSpeed = MoveSpeed + DashSpeed;
             if (transform.rotation == Quaternion.Euler(0, 90, 0))
             {
-                player.AddForce(-transform.forward * MoveSpeed, ForceMode.VelocityChange);
+                player.AddForce(-transform.forward * (MoveSpeed+DashSpeed), ForceMode.VelocityChange);
                 playerAnim.SetBool("DashBackward", true);
+                
             }
             else
             {
-                player.AddForce(transform.forward * MoveSpeed, ForceMode.VelocityChange);
+                player.AddForce(transform.forward * (MoveSpeed + DashSpeed), ForceMode.VelocityChange);
                 playerAnim.SetBool("DashForward", true);
             }
 
@@ -110,16 +115,16 @@ public class PlayerController: MonoBehaviour
 		}
 		if (Input.GetKeyDown (KeyCode.E) && dash == false) 
 		{
-			timer = 50;
-			MoveSpeed = MoveSpeed + DashSpeed;
+			timer = 20;
+			//MoveSpeed = MoveSpeed + DashSpeed;
             if (transform.rotation == Quaternion.Euler(0, -90, 0))
             {
-                player.AddForce(-transform.forward * MoveSpeed, ForceMode.VelocityChange);
+                player.AddForce(-transform.forward * (MoveSpeed + DashSpeed), ForceMode.VelocityChange);
                 playerAnim.SetBool("DashBackward", true);
             }
             else
             {
-                player.AddForce(transform.forward * MoveSpeed, ForceMode.VelocityChange);
+                player.AddForce(transform.forward * (MoveSpeed + DashSpeed), ForceMode.VelocityChange);
                 playerAnim.SetBool("DashForward", true);
             }
 
@@ -138,7 +143,7 @@ public class PlayerController: MonoBehaviour
 		if (timer <= 0 && dash)
 		{
 			dash = false;
-			MoveSpeed = MoveSpeed - DashSpeed;
+			//MoveSpeed = MoveSpeed - DashSpeed;
 			//insert end animation code
 		
 		}
@@ -170,14 +175,16 @@ public class PlayerController: MonoBehaviour
             playerAnim.SetBool("Landing", true);
         }
 
-		if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
 		{
-			MoveSpeed = MoveSpeed * 2;
+			MoveSpeed = RunSpeed;
+            DashSpeed = DashSpeed / 4;
 
 		}
 		else if (Input.GetKeyUp(KeyCode.LeftShift))
 		{
-			MoveSpeed = MoveSpeed / 2;
+			MoveSpeed = WalkSpeed;
+            DashSpeed = DashSpeed * 4;
 		}
 
 
