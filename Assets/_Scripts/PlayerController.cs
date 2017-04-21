@@ -96,7 +96,7 @@ public class PlayerController: MonoBehaviour
 
 		if (Input.GetKeyDown (KeyCode.Q) && dash == false) 
 		{
-			timer = 20;
+			timer = 40;
 			//MoveSpeed = MoveSpeed + DashSpeed;
             if (transform.rotation == Quaternion.Euler(0, 90, 0))
             {
@@ -115,7 +115,7 @@ public class PlayerController: MonoBehaviour
 		}
 		if (Input.GetKeyDown (KeyCode.E) && dash == false) 
 		{
-			timer = 20;
+			timer = 40  ;
 			//MoveSpeed = MoveSpeed + DashSpeed;
             if (transform.rotation == Quaternion.Euler(0, -90, 0))
             {

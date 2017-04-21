@@ -8,7 +8,7 @@ public class Arrow_from_trap : MonoBehaviour
 
     void Start()
     {
-        GetComponent<Rigidbody>().velocity = transform.up * speed;
+        GetComponent<Rigidbody>().velocity = transform.forward * speed;
         Destroy(gameObject, lifetime);
     }
 }
