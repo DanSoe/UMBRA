@@ -44,7 +44,7 @@ public class PlayerController: MonoBehaviour
 		
 	void FixedUpdate()
 		{
-            Debug.Log(player.velocity);
+            //Debug.Log(player.velocity);
 
 			RaycastHit rayOut;
 			//grounded = Physics.SphereCast(player.transform.position, -transform.up, out rayOut, distanceRay, whatIsGround );
@@ -204,17 +204,4 @@ public class PlayerController: MonoBehaviour
         playerAnim.SetBool("Landing", false);
 
     }
-
-    /*
-	void SpeedLimiter()
-	{
-		if (player.velocity.sqrMagnitude > maxVelocity)
-		{
-			var diff = player.velocity.sqrMagnitude - maxVelocity;
-
-			var opposite = player.velocity.normalized * diff;
-			player.AddForce(new Vector3(-opposite.x, 0, 0));
-		}
-	}
-     */
 }

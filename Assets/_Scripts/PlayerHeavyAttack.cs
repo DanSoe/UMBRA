@@ -1,38 +1,46 @@
 ﻿using UnityEngine;
 using System.Collections;
+//using PlayerAttack;
 
 public class PlayerHeavyAttack : MonoBehaviour
 {
+    
     Animator playerAnim;
-    public bool attacking = false;
+    public static bool attacking = false;
 
     private float attackTimer = 0;
-    private float attackCooldown = 0.7f;
+    private float attackCooldown = 1.33f;
 
-    public BoxCollider heavyAttackTrigger;
+    public BoxCollider heavyAttackTrigger;  
 
 
     void Awake()
     {
         playerAnim = GetComponentInParent<Animator>();
         heavyAttackTrigger.enabled = false;
+       // playerAnim.SetBool("CanAttack", false);
 
     }
 
-
+    
     void Update()
     {
-        if (Input.GetKeyDown("g") && !attacking)
+        if (Input.GetKeyDown("g") && !attacking && PlayerAttack.attacking == false) 
         {
             attacking = true;
             attackTimer = attackCooldown;
             playerAnim.SetBool("HeavyAttack", attacking);
             heavyAttackTrigger.enabled = true;
-            playerAnim.SetBool("CanAttack", false);
+           // playerAnim.SetBool("CanAttack", false);
         }
 
         if (attacking)
         {
+            if (attackTimer < 0.2)
+            {
+                playerAnim.SetBool("HeavyAttack", false);
+            }
+
             if (attackTimer > 0)
             {
                 attackTimer -= Time.deltaTime;
@@ -40,14 +48,14 @@ public class PlayerHeavyAttack : MonoBehaviour
             else
             {
                 attacking = false;
-                playerAnim.SetBool("HeavyAttack", attacking);
+                //playerAnim.SetBool("HeavyAttack", attacking);
                 heavyAttackTrigger.enabled = false;
             }
         }
         if(attackTimer < 0)
         {
             attackTimer = 0;
-            playerAnim.SetBool("CanAttack", true);
+          //  playerAnim.SetBool("CanAttack", true);
         }
     }
 }

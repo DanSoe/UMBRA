@@ -4,10 +4,10 @@ using System.Collections;
 public class PlayerAttack : MonoBehaviour 
 {
     Animator playerAnim;
-	public bool attacking = false;
+	public static bool attacking = false;
 
 	private float attackTimer = 0;
-	private float attackCooldown = 0.7f;
+	private float attackCooldown = 1.0f;
 
 	public BoxCollider attackTrigger;
 
@@ -16,23 +16,30 @@ public class PlayerAttack : MonoBehaviour
 	{
         playerAnim = GetComponentInParent<Animator>();
 		attackTrigger.enabled = false;
+      //  playerAnim.SetBool("CanAttack", false);
 		
 	}
 
 
 	void Update () 
 	{
-		if (Input.GetKeyDown("f") && !attacking)
+        Debug.Log(attacking);
+		if (Input.GetKeyDown("f") && !attacking && PlayerHeavyAttack.attacking == false)
 		{
 			attacking = true;
 			attackTimer = attackCooldown;
+          //  playerAnim.SetBool("CanAttack", false);
             playerAnim.SetBool("LightAttack", attacking);
 			attackTrigger.enabled = true;
-            playerAnim.SetBool("CanAttack", false);
+            
 		}
 
 		if (attacking) 
 		{
+            if (attackTimer < 0.2)
+            {
+                playerAnim.SetBool("LightAttack", false);
+            }
             
 			if (attackTimer > 0) 
 			{
@@ -40,15 +47,17 @@ public class PlayerAttack : MonoBehaviour
 			} 
 			else 
 			{
+                
 				attacking = false;
-                playerAnim.SetBool("LightAttack", attacking);
+                
+                //playerAnim.SetBool("LightAttack", attacking);
 				attackTrigger.enabled = false;
 			}
 		}
         if (attackTimer < 0)
         {
             attackTimer = 0;
-            playerAnim.SetBool("CanAttack", true);
+        //    playerAnim.SetBool("CanAttack", true);
         }
 	
 	}

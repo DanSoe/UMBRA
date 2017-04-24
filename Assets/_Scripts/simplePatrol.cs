@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class simplaePatrol : MonoBehaviour {
+public class simplePatrol : MonoBehaviour {
 
     
     public float moveSpeed;
