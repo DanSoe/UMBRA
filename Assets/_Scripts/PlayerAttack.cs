@@ -7,7 +7,7 @@ public class PlayerAttack : MonoBehaviour
 	public bool attacking = false;
 
 	private float attackTimer = 0;
-	private float attackCooldown = 0.3f;
+	private float attackCooldown = 0.7f;
 
 	public BoxCollider attackTrigger;
 
@@ -28,10 +28,12 @@ public class PlayerAttack : MonoBehaviour
 			attackTimer = attackCooldown;
             playerAnim.SetBool("LightAttack", attacking);
 			attackTrigger.enabled = true;
+            playerAnim.SetBool("CanAttack", false);
 		}
 
 		if (attacking) 
 		{
+            
 			if (attackTimer > 0) 
 			{
 				attackTimer -= Time.deltaTime;
@@ -43,6 +45,12 @@ public class PlayerAttack : MonoBehaviour
 				attackTrigger.enabled = false;
 			}
 		}
+        if (attackTimer < 0)
+        {
+            attackTimer = 0;
+            playerAnim.SetBool("CanAttack", true);
+        }
 	
 	}
+
 }
