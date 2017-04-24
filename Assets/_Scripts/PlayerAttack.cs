@@ -23,7 +23,7 @@ public class PlayerAttack : MonoBehaviour
 
 	void Update () 
 	{
-        Debug.Log(attacking);
+       // Debug.Log(attacking);
 		if (Input.GetKeyDown("f") && !attacking && PlayerHeavyAttack.attacking == false)
 		{
 			attacking = true;
