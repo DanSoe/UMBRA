@@ -22,6 +22,10 @@ public class PlayerController: MonoBehaviour
 	//does dash boost the player's speed?
 	public float DashSpeed;
 
+    //Stats
+    public int curHealth;
+    public int maxHealth = 100;
+
 
 	public LayerMask whatIsGround;
 	public bool grounded;
@@ -36,6 +40,8 @@ public class PlayerController: MonoBehaviour
 			dash = false;
 			player = GetComponent<Rigidbody>();
 			timer = 0;
+
+            curHealth = maxHealth;
 
 			//script = GameObject.Find ("DoubleJumpCheckPoint").GetComponent<GetDoublejump>();
 
@@ -60,7 +66,7 @@ public class PlayerController: MonoBehaviour
 
 	// Update is called once per frame
 	void Update()
-	    {
+	    {   
             
 		//player.AddForce (Vector3.down * 100f); //(Implimenter etter vi har en grounded check)
 		if (Input.GetKey (KeyCode.A) && dash == false)
@@ -195,7 +201,20 @@ public class PlayerController: MonoBehaviour
 
 		//	Debug.Log ("velocity " + player.velocity.sqrMagnitude);
         
+        if(curHealth > maxHealth)
+        {
+            curHealth = maxHealth;
+        }
+        if(curHealth <= 0)
+        {
+            Die();
+        }
 	}
+    void Die()
+    {
+        //restart
+        Application.LoadLevel(0);
+    }
     void LateUpdate()
     {
         playerAnim.SetBool("Jump", false);
