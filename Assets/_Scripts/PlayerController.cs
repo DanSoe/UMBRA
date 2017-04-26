@@ -223,4 +223,25 @@ public class PlayerController: MonoBehaviour
         playerAnim.SetBool("Landing", false);
 
     }
+
+
+    void OnTriggerEnter(Collider PlayerColli)
+    {
+        if (PlayerColli.gameObject.tag == "TeleportCube")
+        {
+            transform.position = new Vector3(438f, 91.37f, 10f);
+        }
+        if (PlayerColli.gameObject.tag == "TeleportCage")
+        {
+            transform.position = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - 16f);
+        }
+        if (PlayerColli.gameObject.tag == "TeleportElevator")
+        {
+            transform.position = new Vector3(305f, 258f, 5f);
+        }
+        if (PlayerColli.gameObject.tag == "TeleportElevator")
+        {
+            transform.position = new Vector3(790f, 351f, 5f);
+        }
+    }
 }
