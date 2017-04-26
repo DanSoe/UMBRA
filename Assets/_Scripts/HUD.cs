@@ -5,24 +5,24 @@ using UnityEngine.UI;
 public class HUD : MonoBehaviour 
 {
     
-    //public Animator[] HeartAnimations;
+    public Sprite[] HeartSprites;
 
-    Animator HeartUI;
+    public Image HeartUI;
 
-    private PlayerController player;
+    private PlayerController player;   
 
 	// Use this for initialization
 	void Start () 
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-        HeartUI = GetComponent<Animator>();
+        
 	
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
-        HeartUI.SetFloat("CurHealth", player.curHealth);
+        HeartUI.sprite = HeartSprites[player.curHealth];
 	
 	}
 }
