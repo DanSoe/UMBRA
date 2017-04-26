@@ -1,0 +1,407 @@
+fileFormatVersion: 2
+guid: 11d8be90a0d485148821d64bec53f199
+timeCreated: 1493033323
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Ghoul
+    100002: //RootNode
+    100004: Small_enemy_SH_HeadJ
+    100006: Small_enemy_SH_HeadTipJ
+    100008: Small_enemy_SH_JawJ
+    100010: Small_enemy_SH_JawTipJ
+    100012: Small_enemy_SH_lAnkleJ
+    100014: Small_enemy_SH_lBallJ
+    100016: Small_enemy_SH_lClavicleJ
+    100018: Small_enemy_SH_lElbowJ
+    100020: Small_enemy_SH_lFinger1J1
+    100022: Small_enemy_SH_lFinger1J2
+    100024: Small_enemy_SH_lFinger1J3
+    100026: Small_enemy_SH_lFinger1JTip
+    100028: Small_enemy_SH_lFinger2J1
+    100030: Small_enemy_SH_lFinger2J2
+    100032: Small_enemy_SH_lFinger2J3
+    100034: Small_enemy_SH_lFinger2JTip
+    100036: Small_enemy_SH_lFinger3J1
+    100038: Small_enemy_SH_lFinger3J2
+    100040: Small_enemy_SH_lFinger3J3
+    100042: Small_enemy_SH_lFinger3JTip
+    100044: Small_enemy_SH_lFinger4J1
+    100046: Small_enemy_SH_lFinger4J2
+    100048: Small_enemy_SH_lFinger4J3
+    100050: Small_enemy_SH_lFinger4JTip
+    100052: Small_enemy_SH_lForearmJ
+    100054: Small_enemy_SH_lHipJ
+    100056: Small_enemy_SH_lKneeJ
+    100058: Small_enemy_SH_lPalmJ
+    100060: Small_enemy_SH_lShoulderJ
+    100062: Small_enemy_SH_lThumbJ1
+    100064: Small_enemy_SH_lThumbJ2
+    100066: Small_enemy_SH_lThumbJ3
+    100068: Small_enemy_SH_lThumbJTip
+    100070: Small_enemy_SH_lToeJ
+    100072: Small_enemy_SH_lWristJ
+    100074: Small_enemy_SH_Neck01J
+    100076: Small_enemy_SH_Neck02J
+    100078: Small_enemy_SH_Neck03J
+    100080: Small_enemy_SH_rAnkleJ
+    100082: Small_enemy_SH_rBallJ
+    100084: Small_enemy_SH_rClavicleJ
+    100086: Small_enemy_SH_rElbowJ
+    100088: Small_enemy_SH_rFinger1J1
+    100090: Small_enemy_SH_rFinger1J2
+    100092: Small_enemy_SH_rFinger1J3
+    100094: Small_enemy_SH_rFinger1JTip
+    100096: Small_enemy_SH_rFinger2J1
+    100098: Small_enemy_SH_rFinger2J2
+    100100: Small_enemy_SH_rFinger2J3
+    100102: Small_enemy_SH_rFinger2JTip
+    100104: Small_enemy_SH_rFinger3J1
+    100106: Small_enemy_SH_rFinger3J2
+    100108: Small_enemy_SH_rFinger3J3
+    100110: Small_enemy_SH_rFinger3JTip
+    100112: Small_enemy_SH_rFinger4J1
+    100114: Small_enemy_SH_rFinger4J2
+    100116: Small_enemy_SH_rFinger4J3
+    100118: Small_enemy_SH_rFinger4JTip
+    100120: Small_enemy_SH_rForearmJ
+    100122: Small_enemy_SH_rHipJ
+    100124: Small_enemy_SH_rKneeJ
+    100126: Small_enemy_SH_ROOTJ
+    100128: Small_enemy_SH_rPalmJ
+    100130: Small_enemy_SH_rShoulderJ
+    100132: Small_enemy_SH_rThumbJ1
+    100134: Small_enemy_SH_rThumbJ2
+    100136: Small_enemy_SH_rThumbJ3
+    100138: Small_enemy_SH_rThumbJTip
+    100140: Small_enemy_SH_rToeJ
+    100142: Small_enemy_SH_rWristJ
+    100144: Small_enemy_SH_Spine01J
+    100146: Small_enemy_SH_Spine02J
+    100148: Small_enemy_SH_Spine03J
+    100150: Small_enemy_SH_SpineTopJ
+    400000: Ghoul
+    400002: //RootNode
+    400004: Small_enemy_SH_HeadJ
+    400006: Small_enemy_SH_HeadTipJ
+    400008: Small_enemy_SH_JawJ
+    400010: Small_enemy_SH_JawTipJ
+    400012: Small_enemy_SH_lAnkleJ
+    400014: Small_enemy_SH_lBallJ
+    400016: Small_enemy_SH_lClavicleJ
+    400018: Small_enemy_SH_lElbowJ
+    400020: Small_enemy_SH_lFinger1J1
+    400022: Small_enemy_SH_lFinger1J2
+    400024: Small_enemy_SH_lFinger1J3
+    400026: Small_enemy_SH_lFinger1JTip
+    400028: Small_enemy_SH_lFinger2J1
+    400030: Small_enemy_SH_lFinger2J2
+    400032: Small_enemy_SH_lFinger2J3
+    400034: Small_enemy_SH_lFinger2JTip
+    400036: Small_enemy_SH_lFinger3J1
+    400038: Small_enemy_SH_lFinger3J2
+    400040: Small_enemy_SH_lFinger3J3
+    400042: Small_enemy_SH_lFinger3JTip
+    400044: Small_enemy_SH_lFinger4J1
+    400046: Small_enemy_SH_lFinger4J2
+    400048: Small_enemy_SH_lFinger4J3
+    400050: Small_enemy_SH_lFinger4JTip
+    400052: Small_enemy_SH_lForearmJ
+    400054: Small_enemy_SH_lHipJ
+    400056: Small_enemy_SH_lKneeJ
+    400058: Small_enemy_SH_lPalmJ
+    400060: Small_enemy_SH_lShoulderJ
+    400062: Small_enemy_SH_lThumbJ1
+    400064: Small_enemy_SH_lThumbJ2
+    400066: Small_enemy_SH_lThumbJ3
+    400068: Small_enemy_SH_lThumbJTip
+    400070: Small_enemy_SH_lToeJ
+    400072: Small_enemy_SH_lWristJ
+    400074: Small_enemy_SH_Neck01J
+    400076: Small_enemy_SH_Neck02J
+    400078: Small_enemy_SH_Neck03J
+    400080: Small_enemy_SH_rAnkleJ
+    400082: Small_enemy_SH_rBallJ
+    400084: Small_enemy_SH_rClavicleJ
+    400086: Small_enemy_SH_rElbowJ
+    400088: Small_enemy_SH_rFinger1J1
+    400090: Small_enemy_SH_rFinger1J2
+    400092: Small_enemy_SH_rFinger1J3
+    400094: Small_enemy_SH_rFinger1JTip
+    400096: Small_enemy_SH_rFinger2J1
+    400098: Small_enemy_SH_rFinger2J2
+    400100: Small_enemy_SH_rFinger2J3
+    400102: Small_enemy_SH_rFinger2JTip
+    400104: Small_enemy_SH_rFinger3J1
+    400106: Small_enemy_SH_rFinger3J2
+    400108: Small_enemy_SH_rFinger3J3
+    400110: Small_enemy_SH_rFinger3JTip
+    400112: Small_enemy_SH_rFinger4J1
+    400114: Small_enemy_SH_rFinger4J2
+    400116: Small_enemy_SH_rFinger4J3
+    400118: Small_enemy_SH_rFinger4JTip
+    400120: Small_enemy_SH_rForearmJ
+    400122: Small_enemy_SH_rHipJ
+    400124: Small_enemy_SH_rKneeJ
+    400126: Small_enemy_SH_ROOTJ
+    400128: Small_enemy_SH_rPalmJ
+    400130: Small_enemy_SH_rShoulderJ
+    400132: Small_enemy_SH_rThumbJ1
+    400134: Small_enemy_SH_rThumbJ2
+    400136: Small_enemy_SH_rThumbJ3
+    400138: Small_enemy_SH_rThumbJTip
+    400140: Small_enemy_SH_rToeJ
+    400142: Small_enemy_SH_rWristJ
+    400144: Small_enemy_SH_Spine01J
+    400146: Small_enemy_SH_Spine02J
+    400148: Small_enemy_SH_Spine03J
+    400150: Small_enemy_SH_SpineTopJ
+    4300000: Ghoul
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Ghoul
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 99
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Ghoul
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_lHipJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_lHipJ/Small_enemy_SH_lKneeJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_lHipJ/Small_enemy_SH_lKneeJ/Small_enemy_SH_lAnkleJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_lHipJ/Small_enemy_SH_lKneeJ/Small_enemy_SH_lAnkleJ/Small_enemy_SH_lBallJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_lHipJ/Small_enemy_SH_lKneeJ/Small_enemy_SH_lAnkleJ/Small_enemy_SH_lBallJ/Small_enemy_SH_lToeJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_rHipJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_rHipJ/Small_enemy_SH_rKneeJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_rHipJ/Small_enemy_SH_rKneeJ/Small_enemy_SH_rAnkleJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_rHipJ/Small_enemy_SH_rKneeJ/Small_enemy_SH_rAnkleJ/Small_enemy_SH_rBallJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_rHipJ/Small_enemy_SH_rKneeJ/Small_enemy_SH_rAnkleJ/Small_enemy_SH_rBallJ/Small_enemy_SH_rToeJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lForearmJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lPalmJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lPalmJ/Small_enemy_SH_lFinger1J1
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lPalmJ/Small_enemy_SH_lFinger1J1/Small_enemy_SH_lFinger1J2
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lPalmJ/Small_enemy_SH_lFinger1J1/Small_enemy_SH_lFinger1J2/Small_enemy_SH_lFinger1J3
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lPalmJ/Small_enemy_SH_lFinger1J1/Small_enemy_SH_lFinger1J2/Small_enemy_SH_lFinger1J3/Small_enemy_SH_lFinger1JTip
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lPalmJ/Small_enemy_SH_lFinger2J1
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lPalmJ/Small_enemy_SH_lFinger2J1/Small_enemy_SH_lFinger2J2
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lPalmJ/Small_enemy_SH_lFinger2J1/Small_enemy_SH_lFinger2J2/Small_enemy_SH_lFinger2J3
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lPalmJ/Small_enemy_SH_lFinger2J1/Small_enemy_SH_lFinger2J2/Small_enemy_SH_lFinger2J3/Small_enemy_SH_lFinger2JTip
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lPalmJ/Small_enemy_SH_lFinger3J1
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lPalmJ/Small_enemy_SH_lFinger3J1/Small_enemy_SH_lFinger3J2
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lPalmJ/Small_enemy_SH_lFinger3J1/Small_enemy_SH_lFinger3J2/Small_enemy_SH_lFinger3J3
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lPalmJ/Small_enemy_SH_lFinger3J1/Small_enemy_SH_lFinger3J2/Small_enemy_SH_lFinger3J3/Small_enemy_SH_lFinger3JTip
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lPalmJ/Small_enemy_SH_lFinger4J1
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lPalmJ/Small_enemy_SH_lFinger4J1/Small_enemy_SH_lFinger4J2
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lPalmJ/Small_enemy_SH_lFinger4J1/Small_enemy_SH_lFinger4J2/Small_enemy_SH_lFinger4J3
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lPalmJ/Small_enemy_SH_lFinger4J1/Small_enemy_SH_lFinger4J2/Small_enemy_SH_lFinger4J3/Small_enemy_SH_lFinger4JTip
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lThumbJ1
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lThumbJ1/Small_enemy_SH_lThumbJ2
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lThumbJ1/Small_enemy_SH_lThumbJ2/Small_enemy_SH_lThumbJ3
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_lClavicleJ/Small_enemy_SH_lShoulderJ/Small_enemy_SH_lElbowJ/Small_enemy_SH_lWristJ/Small_enemy_SH_lThumbJ1/Small_enemy_SH_lThumbJ2/Small_enemy_SH_lThumbJ3/Small_enemy_SH_lThumbJTip
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_Neck01J
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_Neck01J/Small_enemy_SH_Neck02J
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_Neck01J/Small_enemy_SH_Neck02J/Small_enemy_SH_Neck03J
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_Neck01J/Small_enemy_SH_Neck02J/Small_enemy_SH_Neck03J/Small_enemy_SH_HeadJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_Neck01J/Small_enemy_SH_Neck02J/Small_enemy_SH_Neck03J/Small_enemy_SH_HeadJ/Small_enemy_SH_HeadTipJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_Neck01J/Small_enemy_SH_Neck02J/Small_enemy_SH_Neck03J/Small_enemy_SH_HeadJ/Small_enemy_SH_JawJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_Neck01J/Small_enemy_SH_Neck02J/Small_enemy_SH_Neck03J/Small_enemy_SH_HeadJ/Small_enemy_SH_JawJ/Small_enemy_SH_JawTipJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rForearmJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rPalmJ
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rPalmJ/Small_enemy_SH_rFinger1J1
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rPalmJ/Small_enemy_SH_rFinger1J1/Small_enemy_SH_rFinger1J2
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rPalmJ/Small_enemy_SH_rFinger1J1/Small_enemy_SH_rFinger1J2/Small_enemy_SH_rFinger1J3
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rPalmJ/Small_enemy_SH_rFinger1J1/Small_enemy_SH_rFinger1J2/Small_enemy_SH_rFinger1J3/Small_enemy_SH_rFinger1JTip
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rPalmJ/Small_enemy_SH_rFinger2J1
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rPalmJ/Small_enemy_SH_rFinger2J1/Small_enemy_SH_rFinger2J2
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rPalmJ/Small_enemy_SH_rFinger2J1/Small_enemy_SH_rFinger2J2/Small_enemy_SH_rFinger2J3
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rPalmJ/Small_enemy_SH_rFinger2J1/Small_enemy_SH_rFinger2J2/Small_enemy_SH_rFinger2J3/Small_enemy_SH_rFinger2JTip
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rPalmJ/Small_enemy_SH_rFinger3J1
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rPalmJ/Small_enemy_SH_rFinger3J1/Small_enemy_SH_rFinger3J2
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rPalmJ/Small_enemy_SH_rFinger3J1/Small_enemy_SH_rFinger3J2/Small_enemy_SH_rFinger3J3
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rPalmJ/Small_enemy_SH_rFinger3J1/Small_enemy_SH_rFinger3J2/Small_enemy_SH_rFinger3J3/Small_enemy_SH_rFinger3JTip
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rPalmJ/Small_enemy_SH_rFinger4J1
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rPalmJ/Small_enemy_SH_rFinger4J1/Small_enemy_SH_rFinger4J2
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rPalmJ/Small_enemy_SH_rFinger4J1/Small_enemy_SH_rFinger4J2/Small_enemy_SH_rFinger4J3
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rPalmJ/Small_enemy_SH_rFinger4J1/Small_enemy_SH_rFinger4J2/Small_enemy_SH_rFinger4J3/Small_enemy_SH_rFinger4JTip
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rThumbJ1
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rThumbJ1/Small_enemy_SH_rThumbJ2
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rThumbJ1/Small_enemy_SH_rThumbJ2/Small_enemy_SH_rThumbJ3
+        weight: 1
+      - path: Small_enemy_SH_ROOTJ/Small_enemy_SH_Spine01J/Small_enemy_SH_Spine02J/Small_enemy_SH_Spine03J/Small_enemy_SH_SpineTopJ/Small_enemy_SH_rClavicleJ/Small_enemy_SH_rShoulderJ/Small_enemy_SH_rElbowJ/Small_enemy_SH_rWristJ/Small_enemy_SH_rThumbJ1/Small_enemy_SH_rThumbJ2/Small_enemy_SH_rThumbJ3/Small_enemy_SH_rThumbJTip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.7
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
