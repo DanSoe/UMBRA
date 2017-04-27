@@ -253,7 +253,229 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Knight
+        weight: 1
+      - path: Knight/Arms
+        weight: 1
+      - path: Knight/Arms/Arms 1
+        weight: 1
+      - path: Knight/Arms/Spikes
+        weight: 1
+      - path: Knight/Helmet
+        weight: 1
+      - path: Knight/Legs
+        weight: 1
+      - path: Knight/Shinguard
+        weight: 1
+      - path: Knight/Shinguard/Shhinguard_Right
+        weight: 1
+      - path: Knight/Shinguard/Shinguard_Left
+        weight: 1
+      - path: Knight/Shoulders
+        weight: 1
+      - path: Knight/Shoulders/Shoulder_Left
+        weight: 1
+      - path: Knight/Shoulders/Shoulder_Right
+        weight: 1
+      - path: Knight/Skirt
+        weight: 1
+      - path: Knight/Torso
+        weight: 1
+      - path: Knight/Torso/Spikes 1
+        weight: 1
+      - path: Knight/Wristguards
+        weight: 1
+      - path: Knight/Wristguards/Wrist_Left
+        weight: 1
+      - path: Knight/Wristguards/Wrist_Right
+        weight: 1
+      - path: Medium_SH_ROOTJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_lHipJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_lHipJ/Medium_SH_lKneeJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_lHipJ/Medium_SH_lKneeJ/Medium_SH_lAnkleJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_lHipJ/Medium_SH_lKneeJ/Medium_SH_lAnkleJ/Medium_SH_lBallJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_lHipJ/Medium_SH_lKneeJ/Medium_SH_lAnkleJ/Medium_SH_lBallJ/Medium_SH_lToeJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_rHipJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_rHipJ/Medium_SH_rKneeJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_rHipJ/Medium_SH_rKneeJ/Medium_SH_rAnkleJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_rHipJ/Medium_SH_rKneeJ/Medium_SH_rAnkleJ/Medium_SH_rBallJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_rHipJ/Medium_SH_rKneeJ/Medium_SH_rAnkleJ/Medium_SH_rBallJ/Medium_SH_rToeJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lForearmJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lPalmJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lPalmJ/Medium_SH_lFinger1J1
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lPalmJ/Medium_SH_lFinger1J1/Medium_SH_lFinger1J2
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lPalmJ/Medium_SH_lFinger1J1/Medium_SH_lFinger1J2/Medium_SH_lFinger1J3
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lPalmJ/Medium_SH_lFinger1J1/Medium_SH_lFinger1J2/Medium_SH_lFinger1J3/Medium_SH_lFinger1JTip
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lPalmJ/Medium_SH_lFinger2J1
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lPalmJ/Medium_SH_lFinger2J1/Medium_SH_lFinger2J2
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lPalmJ/Medium_SH_lFinger2J1/Medium_SH_lFinger2J2/Medium_SH_lFinger2J3
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lPalmJ/Medium_SH_lFinger2J1/Medium_SH_lFinger2J2/Medium_SH_lFinger2J3/Medium_SH_lFinger2JTip
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lPalmJ/Medium_SH_lFinger3J1
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lPalmJ/Medium_SH_lFinger3J1/Medium_SH_lFinger3J2
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lPalmJ/Medium_SH_lFinger3J1/Medium_SH_lFinger3J2/Medium_SH_lFinger3J3
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lPalmJ/Medium_SH_lFinger3J1/Medium_SH_lFinger3J2/Medium_SH_lFinger3J3/Medium_SH_lFinger3JTip
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lPalmJ/Medium_SH_lFinger4J1
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lPalmJ/Medium_SH_lFinger4J1/Medium_SH_lFinger4J2
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lPalmJ/Medium_SH_lFinger4J1/Medium_SH_lFinger4J2/Medium_SH_lFinger4J3
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lPalmJ/Medium_SH_lFinger4J1/Medium_SH_lFinger4J2/Medium_SH_lFinger4J3/Medium_SH_lFinger4JTip
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lThumbJ1
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lThumbJ1/Medium_SH_lThumbJ2
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lThumbJ1/Medium_SH_lThumbJ2/Medium_SH_lThumbJ3
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_lClavicleJ/Medium_SH_lShoulderJ/Medium_SH_lElbowJ/Medium_SH_lWristJ/Medium_SH_lThumbJ1/Medium_SH_lThumbJ2/Medium_SH_lThumbJ3/Medium_SH_lThumbJTip
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_Neck01J
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_Neck01J/Medium_SH_Neck02J
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_Neck01J/Medium_SH_Neck02J/Medium_SH_Neck03J
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_Neck01J/Medium_SH_Neck02J/Medium_SH_Neck03J/Medium_SH_HeadJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_Neck01J/Medium_SH_Neck02J/Medium_SH_Neck03J/Medium_SH_HeadJ/Medium_SH_HeadTipJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_Neck01J/Medium_SH_Neck02J/Medium_SH_Neck03J/Medium_SH_HeadJ/Medium_SH_JawJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_Neck01J/Medium_SH_Neck02J/Medium_SH_Neck03J/Medium_SH_HeadJ/Medium_SH_JawJ/Medium_SH_JawTipJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_Neck01J/Medium_SH_Neck02J/Medium_SH_Neck03J/Medium_SH_HeadJ/Medium_SH_lEyeJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_Neck01J/Medium_SH_Neck02J/Medium_SH_Neck03J/Medium_SH_HeadJ/Medium_SH_rEyeJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rForearmJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rPalmJ
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rPalmJ/Medium_SH_rFinger1J1
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rPalmJ/Medium_SH_rFinger1J1/Medium_SH_rFinger1J2
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rPalmJ/Medium_SH_rFinger1J1/Medium_SH_rFinger1J2/Medium_SH_rFinger1J3
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rPalmJ/Medium_SH_rFinger1J1/Medium_SH_rFinger1J2/Medium_SH_rFinger1J3/Medium_SH_rFinger1JTip
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rPalmJ/Medium_SH_rFinger2J1
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rPalmJ/Medium_SH_rFinger2J1/Medium_SH_rFinger2J2
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rPalmJ/Medium_SH_rFinger2J1/Medium_SH_rFinger2J2/Medium_SH_rFinger2J3
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rPalmJ/Medium_SH_rFinger2J1/Medium_SH_rFinger2J2/Medium_SH_rFinger2J3/Medium_SH_rFinger2JTip
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rPalmJ/Medium_SH_rFinger3J1
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rPalmJ/Medium_SH_rFinger3J1/Medium_SH_rFinger3J2
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rPalmJ/Medium_SH_rFinger3J1/Medium_SH_rFinger3J2/Medium_SH_rFinger3J3
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rPalmJ/Medium_SH_rFinger3J1/Medium_SH_rFinger3J2/Medium_SH_rFinger3J3/Medium_SH_rFinger3JTip
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rPalmJ/Medium_SH_rFinger4J1
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rPalmJ/Medium_SH_rFinger4J1/Medium_SH_rFinger4J2
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rPalmJ/Medium_SH_rFinger4J1/Medium_SH_rFinger4J2/Medium_SH_rFinger4J3
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rPalmJ/Medium_SH_rFinger4J1/Medium_SH_rFinger4J2/Medium_SH_rFinger4J3/Medium_SH_rFinger4JTip
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rThumbJ1
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rThumbJ1/Medium_SH_rThumbJ2
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rThumbJ1/Medium_SH_rThumbJ2/Medium_SH_rThumbJ3
+        weight: 1
+      - path: Medium_SH_ROOTJ/Medium_SH_Spine01J/Medium_SH_Spine02J/Medium_SH_Spine03J/Medium_SH_SpineTopJ/Medium_SH_rClavicleJ/Medium_SH_rShoulderJ/Medium_SH_rElbowJ/Medium_SH_rWristJ/Medium_SH_rThumbJ1/Medium_SH_rThumbJ2/Medium_SH_rThumbJ3/Medium_SH_rThumbJTip
+        weight: 1
+      - path: MedSword_w_UV:Sword
+        weight: 1
+      - path: Shield_w_UV:pCube1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []
