@@ -66,10 +66,23 @@ public class PlayerController: MonoBehaviour
 
 	// Update is called once per frame
 	void Update()
-	    {   
+	    {
+            float realDashSpeed = DashSpeed;
+
+            if (Input.GetAxisRaw("Sprint") > 0.5f) //(KeyCode.LeftShift))
+            {
+                MoveSpeed = RunSpeed;
+                realDashSpeed = 0.75f;
+
+            }
+            else if (Input.GetAxisRaw("Sprint") < 0.5f) //(Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                MoveSpeed = WalkSpeed;
+                realDashSpeed = 1.5f;
+            }
             
 		//player.AddForce (Vector3.down * 100f); //(Implimenter etter vi har en grounded check)
-		if (Input.GetKey (KeyCode.A) && dash == false)
+		if (Input.GetAxisRaw("Horizontal") < -0.001f && dash == false)
 		{
 			//transform.Translate((-transform.forward) * MoveSpeed * Time.deltaTime, Space.World);
             playerAnim.SetFloat("Speed", MoveSpeed);
@@ -81,13 +94,13 @@ public class PlayerController: MonoBehaviour
 			//SpeedLimiter ();
 
 		}
-        if(Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
+        if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) < 0.001f)//(Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
         {
             playerAnim.SetFloat("Speed", 0f);
         }
 
 
-        if (Input.GetKey(KeyCode.D) && dash == false) 
+        if (Input.GetAxisRaw("Horizontal") > 0.001f  && dash == false) 
 		{
 			//transform.Translate ((transform.forward) * MoveSpeed * Time.deltaTime, Space.World);
             playerAnim.SetFloat("Speed", MoveSpeed);
@@ -100,37 +113,39 @@ public class PlayerController: MonoBehaviour
 
 		}
 
-		if (Input.GetKeyDown (KeyCode.Q) && dash == false) 
+		if (Input.GetButtonDown("Dash Left") /*(Input.GetKeyDown (KeyCode.Q)*/ && dash == false) 
 		{
 			timer = 40;
 			//MoveSpeed = MoveSpeed + DashSpeed;
             if (transform.rotation == Quaternion.Euler(0, 90, 0))
             {
-                player.AddForce(-transform.forward * (MoveSpeed+DashSpeed), ForceMode.VelocityChange);
+                player.AddForce(-transform.forward * (MoveSpeed * realDashSpeed), ForceMode.VelocityChange);
                 playerAnim.SetBool("DashBackward", true);
+                //print(realDashSpeed);
                 
             }
             else
             {
-                player.AddForce(transform.forward * (MoveSpeed + DashSpeed), ForceMode.VelocityChange);
+                player.AddForce(transform.forward * (MoveSpeed * realDashSpeed), ForceMode.VelocityChange);
+                //print(realDashSpeed);
                 playerAnim.SetBool("DashForward", true);
             }
 
 			//insert animation code
 
 		}
-		if (Input.GetKeyDown (KeyCode.E) && dash == false) 
+        if (Input.GetButtonDown("Dash Right") /*(Input.GetKeyDown (KeyCode.E)*/ && dash == false) 
 		{
-			timer = 35  ;
+			timer = 40  ;
 			//MoveSpeed = MoveSpeed + DashSpeed;
             if (transform.rotation == Quaternion.Euler(0, -90, 0))
             {
-                player.AddForce(-transform.forward * (MoveSpeed + DashSpeed), ForceMode.VelocityChange);
+                player.AddForce(-transform.forward * (MoveSpeed + realDashSpeed), ForceMode.VelocityChange);
                 playerAnim.SetBool("DashBackward", true);
             }
             else
             {
-                player.AddForce(transform.forward * (MoveSpeed + DashSpeed), ForceMode.VelocityChange);
+                player.AddForce(transform.forward * (MoveSpeed + realDashSpeed), ForceMode.VelocityChange);
                 playerAnim.SetBool("DashForward", true);
             }
 
@@ -143,7 +158,7 @@ public class PlayerController: MonoBehaviour
 		{
 			dash = true;
 			--timer;
-			//SpeedLimiter ();
+
 		}
 		//ends the dash once the timer reaches 0
 		if (timer <= 0 && dash)
@@ -155,7 +170,7 @@ public class PlayerController: MonoBehaviour
 		}
 
 
-		if (Input.GetKeyDown(KeyCode.Space) && grounded)
+		if (Input.GetButtonDown("Jump")/*(Input.GetKeyDown(KeyCode.Space)*/ && grounded)
 		{
             playerAnim.SetBool("Jump",true);
 
@@ -181,17 +196,7 @@ public class PlayerController: MonoBehaviour
             playerAnim.SetBool("Landing", true);
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-		{
-			MoveSpeed = RunSpeed;
-            DashSpeed = DashSpeed / 5;
-
-		}
-		else if (Input.GetKeyUp(KeyCode.LeftShift))
-		{
-			MoveSpeed = WalkSpeed;
-            DashSpeed = DashSpeed * 5;
-		}
+       
 
 
 		if (Input.GetKey("escape"))
@@ -237,9 +242,9 @@ public class PlayerController: MonoBehaviour
         }
         if (PlayerColli.gameObject.tag == "TeleportElevator")
         {
-            transform.position = new Vector3(305f, 258f, 5f);
+            transform.position = new Vector3(314f, 258f, 5f);
         }
-        if (PlayerColli.gameObject.tag == "TeleportElevator")
+        if (PlayerColli.gameObject.tag == "TeleportElevator1")
         {
             transform.position = new Vector3(790f, 351f, 5f);
         }
