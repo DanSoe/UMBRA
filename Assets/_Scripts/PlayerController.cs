@@ -191,11 +191,16 @@ public class PlayerController: MonoBehaviour
 
         }
 */
+/*
         if(player.velocity.y == 0)
         {
             playerAnim.SetBool("Landing", true);
         }
-
+        */
+        if(grounded == true)
+        {
+            playerAnim.SetBool("Landing", true);
+        }   
        
 
 
@@ -247,6 +252,10 @@ public class PlayerController: MonoBehaviour
         if (PlayerColli.gameObject.tag == "TeleportElevator1")
         {
             transform.position = new Vector3(790f, 351f, 5f);
+        }
+        if (PlayerColli.gameObject.tag == "GameDone")
+        {
+            Application.LoadLevel(0);
         }
     }
 }
