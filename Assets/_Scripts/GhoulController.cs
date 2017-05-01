@@ -3,12 +3,14 @@ using System.Collections;
 
 public class GhoulController : MonoBehaviour 
 {
+    private PlayerController player;
     Animator playerAnim;
     public Rigidbody ghoul;
 
 
 	void Start () 
     {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         playerAnim = GetComponent<Animator>();
         ghoul = GetComponent<Rigidbody>();
 	
@@ -19,19 +21,17 @@ public class GhoulController : MonoBehaviour
     {
 	
 	}
-    /*
+    
     void OnCollisionEnter(Collision ghoul)
     {
-        Debug.Log(ghoul.gameObject.name);
-        if (ghoul.gameObject.tag == "sword")
+        if (ghoul.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Halla");
-            Destroy(this);
+            player.takeDamage(1);
+            StartCoroutine(player.Knockback(0.02f, 1750, player.transform.position, transform.position));
             
             
             
         }
 
     }
-    */
 }

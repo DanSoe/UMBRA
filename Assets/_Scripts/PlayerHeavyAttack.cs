@@ -25,7 +25,7 @@ public class PlayerHeavyAttack : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown("g") && !attacking && PlayerAttack.attacking == false) 
+        if (Input.GetButton("HAttack" )/*(Input.GetKeyDown("g")*/ && !attacking && PlayerAttack.attacking == false) 
         {
             attacking = true;
             attackTimer = attackCooldown;

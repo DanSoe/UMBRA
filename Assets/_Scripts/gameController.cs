@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class gameController : MonoBehaviour {
+public class gameController : MonoBehaviour 
+{
 
     public Transform[] spawnPoints;
     public Collider[] spawnTrigger;
@@ -17,7 +18,8 @@ public class gameController : MonoBehaviour {
 
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+    {
         health = 5;
 
         Instantiate(playerChar, playerSpawn[0].position, Quaternion.identity);
@@ -27,7 +29,8 @@ public class gameController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+    {
 	
 	}
 

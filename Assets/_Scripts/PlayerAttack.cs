@@ -24,7 +24,7 @@ public class PlayerAttack : MonoBehaviour
 	void Update () 
 	{
        // Debug.Log(attacking);
-		if (Input.GetKeyDown("f") && !attacking && PlayerHeavyAttack.attacking == false)
+		if (Input.GetButton("LAttack")/*(Input.GetKeyDown("f")*/ && !attacking && PlayerHeavyAttack.attacking == false)
 		{
 			attacking = true;
 			attackTimer = attackCooldown;
