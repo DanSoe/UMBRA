@@ -27,7 +27,7 @@ public class GhoulController : MonoBehaviour
         if (ghoul.gameObject.CompareTag("Player"))
         {
             player.takeDamage(1);
-            StartCoroutine(player.Knockback(0.02f, 20, player.transform.position, transform.position));
+            StartCoroutine(player.Knockback(0.02f, 1750, player.transform.position, transform.position));
             
             
             

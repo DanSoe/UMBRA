@@ -284,11 +284,11 @@ public class PlayerController : MonoBehaviour
             timer+=Time.deltaTime;
             if (transform.position.x < targetPosition.x)
             {
-                player.AddForce(new Vector3(knockbackDir.x * -150, knockbackDir.y * knockbackPower, transform.position.z));
+                player.AddForce(new Vector3(-1500, knockbackPower, 0));
             }
             else if (transform.position.x > targetPosition.x)
             {
-                player.AddForce(new Vector3(knockbackDir.x * 150, knockbackDir.y * knockbackPower, transform.position.z));
+                player.AddForce(new Vector3(1500, knockbackPower, 0));
             }
         }
         yield return 0;
