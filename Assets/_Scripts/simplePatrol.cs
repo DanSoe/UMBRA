@@ -33,17 +33,17 @@ public class simplePatrol : MonoBehaviour
     void FixedUpdate()
     {
         body.velocity = transform.forward * moveSpeed;
-        /*RaycastHit rayOut;
+        RaycastHit rayOut;
         groundHere = Physics.Raycast(stillground.transform.position, -temp2, out rayOut, distanceRay, whatIsGround);
-        Debug.DrawRay(stillground.transform.position, -temp2,Color.cyan, 10, false);*/
+        Debug.DrawRay(stillground.transform.position, -temp2,Color.cyan, 10, false);
 
-        /* if (groundHere == false)
+         if (groundHere == false)
          {
              body.transform.rotation = Quaternion.AngleAxis(180, transform.up) * transform.rotation;
              Vector3 noAngle = stillground.forward;
              Quaternion spreadAngle = Quaternion.AngleAxis(135, new Vector3(0, 0, 1));
              temp2 = spreadAngle * noAngle;
-         }*/
+         }
     }
 
     // Update is called once per frame
