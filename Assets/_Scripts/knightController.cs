@@ -4,11 +4,15 @@ using System.Collections;
 public class knightController : MonoBehaviour
 {
 
+    private PlayerController player;
+
+
     public float moveSpeed;
     public Rigidbody body;
 
     float maxHealt;
     float curHealt;
+    float invtime;
 
     public GameObject target;
     public float targetdist;
@@ -36,6 +40,11 @@ public class knightController : MonoBehaviour
     void Start()
     {
         Anim = GetComponent<Animator>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+
+        maxHealt = 3;
+        curHealt = maxHealt;
+
         rayoffset = new Vector3(0, 3, 0);
 
         //for rotating raycast
@@ -51,27 +60,28 @@ public class knightController : MonoBehaviour
     {
         Anim.SetFloat("Speed", moveSpeed);
 
-        if (target != null)
-        {
-            eneDist = Vector3.Distance(body.position, target.transform.position);
 
-            if (eneDist < 5f && chase == true)
-            {
-                Anim.SetBool("Attack", true);
-                moveSpeed = 0f;
-                Anim.SetFloat("Speed", 0f);
-            }
-            else if (eneDist > 5f && chase == true)
-            {
-                moveSpeed = 11f;
-            }
-            else
-            {
-                Anim.SetBool("Attack", false);
-                moveSpeed = 7f;
-                Anim.SetFloat("Speed", moveSpeed);
-            }
+      
+
+        eneDist = Vector3.Distance(body.position, target.transform.position);
+
+        if (eneDist < 5f && chase == true)
+        {
+            Anim.SetBool("Attack", true);
+            moveSpeed = 0f;
+            Anim.SetFloat("Speed", 0f);
         }
+        else if (eneDist > 5f && chase == true)
+        {
+            moveSpeed = 11f;
+        }
+        else
+        {
+            Anim.SetBool("Attack", false);
+            moveSpeed = 7f;
+            Anim.SetFloat("Speed", moveSpeed);
+        }
+
     }
     void FixedUpdate()
     {
@@ -103,19 +113,32 @@ public class knightController : MonoBehaviour
         {
             turnTimer--;
         }
+        if (invtime > 0)
+        {
+            invtime--;
+        }
 
 
     }
     void LateUpdate()
     {
-        
-     
+        Anim.SetBool("SheildHit", false);
+
     }
     void OnTriggerEnter(Collider other)
     {
-        /*if (other.tag == "edge")
+        if (other.tag == "Sword" && chase == true)
         {
-            body.transform.rotation = Quaternion.AngleAxis(180, transform.up) * transform.rotation;
-        }*/
+            invtime = 3;
+            curHealt -= 1;
+            Anim.SetBool("SheildHit", true);
+        }
+
+        if (other.tag == "Sword" && chase == false)
+        {
+            invtime = 3;
+            curHealt -= 2;
+            Anim.SetBool("Hit", true);
+        }
     }
 }
