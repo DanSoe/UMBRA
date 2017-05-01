@@ -275,20 +275,20 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    public IEnumerator Knockback(float knockDur, float knockbackPower, Vector3 knockbackDir)
+    public IEnumerator Knockback(float knockDur, float knockbackPower, Vector3 knockbackDir, Vector3 targetPosition)
     {
         float timer = 0;
 
         while( knockDur > timer)
         {
             timer+=Time.deltaTime;
-            if (transform.rotation == Quaternion.Euler(0, 90, 0))
+            if (transform.position.x < targetPosition.x)
             {
                 player.AddForce(new Vector3(knockbackDir.x * -150, knockbackDir.y * knockbackPower, transform.position.z));
             }
-            else
+            else if (transform.position.x > targetPosition.x)
             {
-                player.AddForce(new Vector3(-knockbackDir.x * -150, -knockbackDir.y * knockbackPower, transform.position.z));
+                player.AddForce(new Vector3(knockbackDir.x * 150, knockbackDir.y * knockbackPower, transform.position.z));
             }
         }
         yield return 0;

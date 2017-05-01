@@ -20,7 +20,7 @@ public class Arrow_from_trap : MonoBehaviour
         if(col.CompareTag("Player"))
         {
             player.takeDamage(1);
-            StartCoroutine(player.Knockback(0.02f, 20, player.transform.position));
+            StartCoroutine(player.Knockback(0.02f, 20, player.transform.position, transform.position));
         }
     }
 }
