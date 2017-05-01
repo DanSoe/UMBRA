@@ -105,13 +105,13 @@ public class PlayerController : MonoBehaviour
         if (Input.GetAxisRaw("Sprint") > 0.5f) //(KeyCode.LeftShift))
         {
             MoveSpeed = RunSpeed;
-            realDashSpeed = 0.70f;
+            realDashSpeed = 0.8f;
 
         }
         else if (Input.GetAxisRaw("Sprint") < 0.5f) //(Input.GetKeyUp(KeyCode.LeftShift))
         {
             MoveSpeed = WalkSpeed;
-            realDashSpeed = 1.5f;
+            realDashSpeed = 1.2f;
         }
 
         //player.AddForce (Vector3.down * 100f); //(Implimenter etter vi har en grounded check)
@@ -157,7 +157,7 @@ public class PlayerController : MonoBehaviour
             //MoveSpeed = MoveSpeed + DashSpeed;
             if (transform.rotation == Quaternion.Euler(0, 90, 0))
             {
-                Movement = -transform.forward * (MoveSpeed + realDashSpeed);
+                Movement = -transform.forward * (MoveSpeed * realDashSpeed);
                 instaMovement = true;
 
                 //player.AddForce(-transform.forward * (MoveSpeed * realDashSpeed), ForceMode.VelocityChange);
@@ -167,7 +167,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                Movement = transform.forward * (MoveSpeed + realDashSpeed);
+                Movement = transform.forward * (MoveSpeed * realDashSpeed);
                 instaMovement = true;
                 //print(realDashSpeed);
                 playerAnim.SetBool("DashForward", true);
@@ -182,13 +182,13 @@ public class PlayerController : MonoBehaviour
             //MoveSpeed = MoveSpeed + DashSpeed;
             if (transform.rotation == Quaternion.Euler(0, -90, 0))
             {
-                Movement = -transform.forward * (MoveSpeed + realDashSpeed);
+                Movement = -transform.forward * (MoveSpeed * realDashSpeed);
                 instaMovement = true;
                 playerAnim.SetBool("DashBackward", true);
             }
             else
             {
-                Movement = transform.forward * (MoveSpeed + realDashSpeed);
+                Movement = transform.forward * (MoveSpeed * realDashSpeed);
                 instaMovement = true;
                 playerAnim.SetBool("DashForward", true);
             }
@@ -267,12 +267,39 @@ public class PlayerController : MonoBehaviour
         //restart
         Application.LoadLevel(0);
     }
+    public void takeDamage(int dmg)
+    {
+        curHealth -= dmg;
+        playerAnim.SetBool("TakeDamage", true);
+
+    }
+
+
+    public IEnumerator Knockback(float knockDur, float knockbackPower, Vector3 knockbackDir)
+    {
+        float timer = 0;
+
+        while( knockDur > timer)
+        {
+            timer+=Time.deltaTime;
+            if (transform.rotation == Quaternion.Euler(0, 90, 0))
+            {
+                player.AddForce(new Vector3(knockbackDir.x * -150, knockbackDir.y * knockbackPower, transform.position.z));
+            }
+            else
+            {
+                player.AddForce(new Vector3(-knockbackDir.x * -150, -knockbackDir.y * knockbackPower, transform.position.z));
+            }
+        }
+        yield return 0;
+    }
     void LateUpdate()
     {
         playerAnim.SetBool("Jump", false);
         playerAnim.SetBool("DashForward", false);
         playerAnim.SetBool("DashBackward", false);
         playerAnim.SetBool("Landing", false);
+        playerAnim.SetBool("TakeDamage", false);
 
     }
 
