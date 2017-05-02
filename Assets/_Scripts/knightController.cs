@@ -14,6 +14,8 @@ public class knightController : MonoBehaviour
     float curHealt;
     float invtime;
 
+    public BoxCollider attackTrigger;
+
     public GameObject target;
     public float targetdist;
     public float rayDist;
@@ -27,7 +29,6 @@ public class knightController : MonoBehaviour
 
     private float turnTimer;
 
-    
     private Vector3 rayoffset;
 
     public float eneDist;
@@ -40,7 +41,6 @@ public class knightController : MonoBehaviour
     void Start()
     {
         Anim = GetComponent<Animator>();
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 
         maxHealt = 3;
         curHealt = maxHealt;
@@ -55,13 +55,18 @@ public class knightController : MonoBehaviour
         temp1 = spreadAngle2 * noAngle;
     }
 
+    void awake()
+    {
+        //player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+    }
+
     // Update is called once per frame
     void Update()
     {
         Anim.SetFloat("Speed", moveSpeed);
 
 
-      
+
 
         eneDist = Vector3.Distance(body.position, target.transform.position);
 
@@ -70,16 +75,18 @@ public class knightController : MonoBehaviour
             Anim.SetBool("Attack", true);
             moveSpeed = 0f;
             Anim.SetFloat("Speed", 0f);
+            attackTrigger.enabled = true;
         }
         else if (eneDist > 5f && chase == true)
         {
-            moveSpeed = 11f;
+            moveSpeed = 9f;
         }
         else
         {
             Anim.SetBool("Attack", false);
-            moveSpeed = 7f;
+            moveSpeed = 6f;
             Anim.SetFloat("Speed", moveSpeed);
+            attackTrigger.enabled = false;
         }
 
     }
@@ -99,14 +106,14 @@ public class knightController : MonoBehaviour
         lCont = Physics.Raycast(body.transform.position + rayoffset, -temp1, out rayOut, rayDist, whereWalk);
         Debug.DrawRay(body.transform.position + rayoffset, -temp1, Color.green, 10, false);
         // detecting if anything is in the knights path.
-        stuff = Physics.Raycast(body.transform.position + new Vector3 (0,1,0), transform.forward, out rayOut, 3f, obstacle);
-        Debug.DrawRay(body.transform.position + new Vector3(0,1,0), transform.forward, Color.yellow, 10, false);
+        stuff = Physics.Raycast(body.transform.position + new Vector3(0, 1, 0), transform.forward, out rayOut, 3f, obstacle);
+        Debug.DrawRay(body.transform.position + new Vector3(0, 1, 0), transform.forward, Color.yellow, 10, false);
 
         if (lCont == false && turnTimer == 0 || rCont == false && turnTimer == 0 || stuff == true && turnTimer == 0)
         {
             turnTimer = 10;
             body.transform.rotation = Quaternion.AngleAxis(180, transform.up) * transform.rotation;
-            
+
         }
 
         if (turnTimer > 0)
@@ -123,6 +130,7 @@ public class knightController : MonoBehaviour
     void LateUpdate()
     {
         Anim.SetBool("SheildHit", false);
+        Anim.SetBool("Hit", false);
 
     }
     void OnTriggerEnter(Collider other)
