@@ -312,15 +312,15 @@ public class PlayerController : MonoBehaviour
         }
         if (PlayerColli.gameObject.tag == "TeleportCage")
         {
-            transform.position = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - 16f);
+            transform.position = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - 20f);
         }
         if (PlayerColli.gameObject.tag == "TeleportElevator")
         {
-            transform.position = new Vector3(314f, 258f, 5f);
+            transform.position = new Vector3(310f, 256f, -10f);
         }
         if (PlayerColli.gameObject.tag == "TeleportElevator1")
         {
-            transform.position = new Vector3(790f, 351f, 5f);
+            transform.position = new Vector3(790f, 351f, -10f);
         }
         if (PlayerColli.gameObject.tag == "GameDone")
         {
