@@ -103,7 +103,7 @@ public class knightController : MonoBehaviour
     {
         if (buildupMovement)
         {
-            body.AddForce(Movement);
+            body.InstantForce(Movement);
             //player.AddForce(transform.forward * MoveSpeed);
             buildupMovement = false;
         }
