@@ -10,8 +10,8 @@ public class knightController : MonoBehaviour
     public float moveSpeed;
     public Rigidbody body;
 
-    float maxHealt;
-    float curHealt;
+    public int maxHealth = 3;
+    public int curHealth;
     float invtime;
 
     public BoxCollider attackTrigger;
@@ -32,18 +32,23 @@ public class knightController : MonoBehaviour
     private Vector3 rayoffset;
 
     public float eneDist;
+    public float atDist;
+    public float chaseDist;
     Animator Anim;
 
     private Vector3 temp2;
     private Vector3 temp1;
+    Vector3 Movement;
+    bool buildupMovement;
 
     // Use this for initialization
     void Start()
     {
+        chase = false;
+        attackTrigger.enabled = false;
         Anim = GetComponent<Animator>();
 
-        maxHealt = 3;
-        curHealt = maxHealt;
+        curHealth = maxHealth;
 
         rayoffset = new Vector3(0, 3, 0);
 
@@ -58,11 +63,13 @@ public class knightController : MonoBehaviour
     void awake()
     {
         //player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+
         Anim.SetFloat("Speed", moveSpeed);
 
 
@@ -70,44 +77,51 @@ public class knightController : MonoBehaviour
 
         eneDist = Vector3.Distance(body.position, target.transform.position);
 
-        if (eneDist < 5f && chase == true)
+        if (eneDist < atDist && chase == true)
         {
             Anim.SetBool("Attack", true);
             moveSpeed = 0f;
             Anim.SetFloat("Speed", 0f);
             attackTrigger.enabled = true;
         }
-        else if (eneDist > 5f && chase == true)
+        else if (eneDist > atDist && chase == true)
         {
             moveSpeed = 9f;
         }
         else
         {
             Anim.SetBool("Attack", false);
-            moveSpeed = 6f;
+            moveSpeed = 12f;
             Anim.SetFloat("Speed", moveSpeed);
             attackTrigger.enabled = false;
         }
+        Movement = transform.forward * moveSpeed;
+        buildupMovement = true;
 
     }
     void FixedUpdate()
     {
-        body.velocity = transform.forward * moveSpeed;
+        if (buildupMovement)
+        {
+            body.AddForce(Movement);
+            //player.AddForce(transform.forward * MoveSpeed);
+            buildupMovement = false;
+        }
         RaycastHit rayOut;
 
         // detecting if the player is in front of the knight.
         chase = Physics.Raycast(body.transform.position + rayoffset, transform.forward, out rayOut, targetdist, WhatIsEnemy);
-        Debug.DrawRay(body.transform.position + rayoffset, transform.forward, Color.cyan, 10, false);
+        //Debug.DrawRay(body.transform.position + rayoffset, transform.forward, Color.cyan, 10, false);
 
         // detecting if there is surface to walk on in fron of the knight.
         rCont = Physics.Raycast(body.transform.position + rayoffset, -temp2, out rayOut, rayDist, whereWalk);
-        Debug.DrawRay(body.transform.position + rayoffset, -temp2, Color.green, 10, false);
+        //Debug.DrawRay(body.transform.position + rayoffset, -temp2, Color.green, 10, false);
 
         lCont = Physics.Raycast(body.transform.position + rayoffset, -temp1, out rayOut, rayDist, whereWalk);
-        Debug.DrawRay(body.transform.position + rayoffset, -temp1, Color.green, 10, false);
+       // Debug.DrawRay(body.transform.position + rayoffset, -temp1, Color.green, 10, false);
         // detecting if anything is in the knights path.
         stuff = Physics.Raycast(body.transform.position + new Vector3(0, 1, 0), transform.forward, out rayOut, 3f, obstacle);
-        Debug.DrawRay(body.transform.position + new Vector3(0, 1, 0), transform.forward, Color.yellow, 10, false);
+        //Debug.DrawRay(body.transform.position + new Vector3(0, 1, 0), transform.forward, Color.yellow, 10, false);
 
         if (lCont == false && turnTimer == 0 || rCont == false && turnTimer == 0 || stuff == true && turnTimer == 0)
         {
@@ -124,7 +138,21 @@ public class knightController : MonoBehaviour
         {
             invtime--;
         }
+        if (curHealth > maxHealth)
+        {
+            curHealth = maxHealth;
+        }
+        if(curHealth <= 0)
+        {
+            Destroy(this.gameObject);
+        }
 
+
+    }
+    public void takeDamage(int dmg)
+    {
+        curHealth -= dmg;
+        //playerAnim.SetBool("TakeDamage", true);
 
     }
     void LateUpdate()
@@ -138,14 +166,14 @@ public class knightController : MonoBehaviour
         if (other.tag == "Sword" && chase == true)
         {
             invtime = 3;
-            curHealt -= 1;
+            curHealth -= 1;
             Anim.SetBool("SheildHit", true);
         }
 
         if (other.tag == "Sword" && chase == false)
         {
             invtime = 3;
-            curHealt -= 2;
+            curHealth -= 2;
             Anim.SetBool("Hit", true);
         }
     }
