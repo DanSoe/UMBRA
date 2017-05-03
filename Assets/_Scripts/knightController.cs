@@ -27,6 +27,7 @@ public class knightController : MonoBehaviour
     public bool lCont;
     public bool stuff;
     public float maxVel;
+    bool move;
 
     private float turnTimer;
 
@@ -79,6 +80,7 @@ public class knightController : MonoBehaviour
 
         if (eneDist < atDist && chase == true)
         {
+            move = false;
             Anim.SetBool("Attack", true);
             maxVel = 0f;
             Anim.SetFloat("Speed", 0f);
@@ -86,26 +88,28 @@ public class knightController : MonoBehaviour
         }
         else if (eneDist > atDist && chase == true)
         {
+            move = true;
             maxVel = 10f;
         }
         else
         {
+            move = true;
             Anim.SetBool("Attack", false);
             maxVel = 7f;
             Anim.SetFloat("Speed", moveSpeed);
             attackTrigger.enabled = false;
         }
         Movement = transform.forward * moveSpeed;
-        buildupMovement = true;
+        
 
     }
     void FixedUpdate()
     {
-        if (buildupMovement)
+        if (move)
         {
             body.AddForce(Movement,ForceMode.VelocityChange);
            // body.AddForce(transform.forward * MoveSpeed);
-            buildupMovement = false;
+            
         }
 
         if (body.velocity.magnitude > maxVel)
@@ -151,6 +155,9 @@ public class knightController : MonoBehaviour
         }
         if(curHealth <= 0)
         {
+            move = false;
+            maxVel = 0;
+            Anim.SetFloat("Health", curHealth);
             Destroy(this.gameObject,3);
         }
 
