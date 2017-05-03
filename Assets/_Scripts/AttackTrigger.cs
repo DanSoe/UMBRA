@@ -9,8 +9,8 @@ public class AttackTrigger : MonoBehaviour
     void Start()
     {
         
-        enemyKnight = GameObject.FindGameObjectWithTag("Knight").GetComponent<knightController>();
-        enemyKnight.chase = false;
+      //  enemyKnight = GameObject.FindGameObjectWithTag("Knight").GetComponent<knightController>();
+
 
     }
 
@@ -32,10 +32,9 @@ public class AttackTrigger : MonoBehaviour
             }
             if (hittarget.gameObject.tag == "Knight")
             {
-                
+                enemyKnight = hittarget.GetComponent<knightController>();
                 if (enemyKnight.chase == true)
                 {
-                    
                     enemyKnight.takeDamage(1);
                 }
                 else
@@ -54,6 +53,8 @@ public class AttackTrigger : MonoBehaviour
             }
             if (hittarget.gameObject.tag == "Knight")
             {
+                enemyKnight = hittarget.GetComponent<knightController>();
+
                 if (enemyKnight.chase == true)
                 {
                     enemyKnight.takeDamage(2);

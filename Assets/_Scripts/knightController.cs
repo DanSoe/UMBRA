@@ -58,11 +58,13 @@ public class knightController : MonoBehaviour
         Quaternion spreadAngle2 = Quaternion.AngleAxis(45, new Vector3(0, 0, 1));
         temp2 = spreadAngle * noAngle;
         temp1 = spreadAngle2 * noAngle;
+
+        Anim.SetFloat("Health", curHealth);
     }
 
     void awake()
     {
-        //player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        target = GameObject.FindGameObjectWithTag("Player");
         
     }
 
@@ -103,7 +105,7 @@ public class knightController : MonoBehaviour
     {
         if (buildupMovement)
         {
-            body.InstantForce(Movement);
+            //body.Force(Movement);
             //player.AddForce(transform.forward * MoveSpeed);
             buildupMovement = false;
         }
@@ -144,7 +146,7 @@ public class knightController : MonoBehaviour
         }
         if(curHealth <= 0)
         {
-            Destroy(this.gameObject);
+            Destroy(this.gameObject,3);
         }
 
 
