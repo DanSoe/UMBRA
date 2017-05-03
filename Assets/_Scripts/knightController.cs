@@ -26,6 +26,7 @@ public class knightController : MonoBehaviour
     public bool rCont;
     public bool lCont;
     public bool stuff;
+    public float maxVel;
 
     private float turnTimer;
 
@@ -64,7 +65,7 @@ public class knightController : MonoBehaviour
 
     void awake()
     {
-        target = GameObject.FindGameObjectWithTag("Player");
+        //target = GameObject.FindGameObjectWithTag("Player").GetComponent;
         
     }
 
@@ -74,26 +75,23 @@ public class knightController : MonoBehaviour
 
         Anim.SetFloat("Speed", moveSpeed);
 
-
-
-
         eneDist = Vector3.Distance(body.position, target.transform.position);
 
         if (eneDist < atDist && chase == true)
         {
             Anim.SetBool("Attack", true);
-            moveSpeed = 0f;
+            maxVel = 0f;
             Anim.SetFloat("Speed", 0f);
             attackTrigger.enabled = true;
         }
         else if (eneDist > atDist && chase == true)
         {
-            moveSpeed = 9f;
+            maxVel = 10f;
         }
         else
         {
             Anim.SetBool("Attack", false);
-            moveSpeed = 12f;
+            maxVel = 7f;
             Anim.SetFloat("Speed", moveSpeed);
             attackTrigger.enabled = false;
         }
@@ -105,9 +103,15 @@ public class knightController : MonoBehaviour
     {
         if (buildupMovement)
         {
-            //body.Force(Movement);
-            //player.AddForce(transform.forward * MoveSpeed);
+            body.AddForce(Movement,ForceMode.VelocityChange);
+           // body.AddForce(transform.forward * MoveSpeed);
             buildupMovement = false;
+        }
+
+        if (body.velocity.magnitude > maxVel)
+        {
+            body.velocity = Vector3.ClampMagnitude(body.velocity, maxVel);
+
         }
         RaycastHit rayOut;
 
@@ -127,8 +131,9 @@ public class knightController : MonoBehaviour
 
         if (lCont == false && turnTimer == 0 || rCont == false && turnTimer == 0 || stuff == true && turnTimer == 0)
         {
-            turnTimer = 10;
+            turnTimer = 50;
             body.transform.rotation = Quaternion.AngleAxis(180, transform.up) * transform.rotation;
+            //body.AddForce(Movement, ForceMode.VelocityChange);
 
         }
 
@@ -148,6 +153,8 @@ public class knightController : MonoBehaviour
         {
             Destroy(this.gameObject,3);
         }
+
+        
 
 
     }
