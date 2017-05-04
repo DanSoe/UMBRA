@@ -61,7 +61,7 @@ public class knightController : MonoBehaviour
         temp2 = spreadAngle * noAngle;
         temp1 = spreadAngle2 * noAngle;
 
-        Anim.SetFloat("Health", curHealth);
+        Anim.SetFloat("Life", curHealth);
     }
 
     void awake()
@@ -81,7 +81,7 @@ public class knightController : MonoBehaviour
         if (eneDist < atDist && chase == true)
         {
             move = false;
-            Anim.SetBool("Attack", true);
+            //Anim.SetBool("Attack", true);
             maxVel = 0f;
             Anim.SetFloat("Speed", 0f);
             attackTrigger.enabled = true;
@@ -157,7 +157,7 @@ public class knightController : MonoBehaviour
         {
             move = false;
             maxVel = 0;
-            Anim.SetFloat("Health", curHealth);
+            Anim.SetFloat("Life", curHealth);
             Destroy(this.gameObject,3);
         }
 
@@ -167,9 +167,12 @@ public class knightController : MonoBehaviour
     }
     public void takeDamage(int dmg)
     {
-        curHealth -= dmg;
-        //playerAnim.SetBool("TakeDamage", true);
-
+        if (invtime <= 0)
+        {
+            invtime = 150;
+            curHealth -= dmg;
+            //playerAnim.SetBool("TakeDamage", true);
+        }
     }
     void LateUpdate()
     {

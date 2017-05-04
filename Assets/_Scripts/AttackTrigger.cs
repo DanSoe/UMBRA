@@ -36,6 +36,7 @@ public class AttackTrigger : MonoBehaviour
                 if (enemyKnight.chase == true)
                 {
                     enemyKnight.takeDamage(1);
+                    Debug.Log("1 dmg");
                 }
                 else
                 {
