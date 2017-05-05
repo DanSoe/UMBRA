@@ -271,6 +271,8 @@ public class PlayerController : MonoBehaviour
             MoveSpeed = 0;
             RunSpeed = 0;
             WalkSpeed = 0;
+            dash = true;
+
             //player.GetComponent<(PlayerController)>.enabled;
             if (timeTilDeath < 0)
             {

@@ -4,7 +4,6 @@ using System.Collections;
 
 public class PlayerHeavyAttack : MonoBehaviour
 {
-    
     Animator playerAnim;
     public static bool attacking = false;
 
