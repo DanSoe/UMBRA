@@ -30,7 +30,7 @@ public class ElevatorScript : MonoBehaviour
         }
         if (other.tag == "Player")
         {
-            speed = 10;
+            speed = 15;
         }
     }
      /*
