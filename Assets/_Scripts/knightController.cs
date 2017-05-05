@@ -26,6 +26,8 @@ public class knightController : MonoBehaviour
     public bool rCont;
     public bool lCont;
     public bool stuff;
+    public float maxVel;
+    bool move;
 
     private float turnTimer;
 
@@ -58,11 +60,13 @@ public class knightController : MonoBehaviour
         Quaternion spreadAngle2 = Quaternion.AngleAxis(45, new Vector3(0, 0, 1));
         temp2 = spreadAngle * noAngle;
         temp1 = spreadAngle2 * noAngle;
+
+        Anim.SetFloat("Life", curHealth);
     }
 
     void awake()
     {
-        //player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        //target = GameObject.FindGameObjectWithTag("Player").GetComponent;
         
     }
 
@@ -72,40 +76,46 @@ public class knightController : MonoBehaviour
 
         Anim.SetFloat("Speed", moveSpeed);
 
-
-
-
         eneDist = Vector3.Distance(body.position, target.transform.position);
 
         if (eneDist < atDist && chase == true)
         {
-            Anim.SetBool("Attack", true);
-            moveSpeed = 0f;
+            move = false;
+            //Anim.SetBool("Attack", true);
+            maxVel = 0f;
             Anim.SetFloat("Speed", 0f);
             attackTrigger.enabled = true;
         }
         else if (eneDist > atDist && chase == true)
         {
-            moveSpeed = 9f;
+            move = true;
+            maxVel = 10f;
         }
         else
         {
+            move = true;
             Anim.SetBool("Attack", false);
-            moveSpeed = 12f;
+            maxVel = 7f;
             Anim.SetFloat("Speed", moveSpeed);
             attackTrigger.enabled = false;
         }
         Movement = transform.forward * moveSpeed;
-        buildupMovement = true;
+        
 
     }
     void FixedUpdate()
     {
-        if (buildupMovement)
+        if (move)
         {
-           // body.InstantForce(Movement);
-            //player.AddForce(transform.forward * MoveSpeed);
-            buildupMovement = false;
+            body.AddForce(Movement,ForceMode.VelocityChange);
+           // body.AddForce(transform.forward * MoveSpeed);
+            
+        }
+
+        if (body.velocity.magnitude > maxVel)
+        {
+            body.velocity = Vector3.ClampMagnitude(body.velocity, maxVel);
+
         }
         RaycastHit rayOut;
 
@@ -125,8 +135,9 @@ public class knightController : MonoBehaviour
 
         if (lCont == false && turnTimer == 0 || rCont == false && turnTimer == 0 || stuff == true && turnTimer == 0)
         {
-            turnTimer = 10;
+            turnTimer = 50;
             body.transform.rotation = Quaternion.AngleAxis(180, transform.up) * transform.rotation;
+            //body.AddForce(Movement, ForceMode.VelocityChange);
 
         }
 
@@ -144,16 +155,24 @@ public class knightController : MonoBehaviour
         }
         if(curHealth <= 0)
         {
-            Destroy(this.gameObject);
+            move = false;
+            maxVel = 0;
+            Anim.SetFloat("Life", curHealth);
+            Destroy(this.gameObject,3);
         }
+
+        
 
 
     }
     public void takeDamage(int dmg)
     {
-        curHealth -= dmg;
-        //playerAnim.SetBool("TakeDamage", true);
-
+        if (invtime <= 0)
+        {
+            invtime = 150;
+            curHealth -= dmg;
+            //playerAnim.SetBool("TakeDamage", true);
+        }
     }
     void LateUpdate()
     {
