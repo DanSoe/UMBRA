@@ -166,10 +166,10 @@ public class knightController : MonoBehaviour
         }
         if(curHealth <= 0)
         {
+            Anim.SetBool("Attack", false);
             move = false;
             maxVel = 0;
-            Anim.SetFloat("Life", curHealth);
-            Destroy(this.gameObject,3);
+            Destroy(this.gameObject,2.75f);
         }
 
         
@@ -178,10 +178,12 @@ public class knightController : MonoBehaviour
     }
     public void takeDamage(int dmg)
     {
+       
         if (invtime <= 0)
         {
             invtime = 100;
             curHealth -= dmg;
+            Anim.SetFloat("Life", curHealth);
             //playerAnim.SetBool("TakeDamage", true);
         }
     }
@@ -195,14 +197,14 @@ public class knightController : MonoBehaviour
     {
         if (other.tag == "Sword" && chase == true)
         {
-            invtime = 3;
+            invtime = 2;
             curHealth -= 1;
             Anim.SetBool("SheildHit", true);
         }
 
         if (other.tag == "Sword" && chase == false)
         {
-            invtime = 3;
+            invtime = 2;
             curHealth -= 2;
             Anim.SetBool("Hit", true);
         }
