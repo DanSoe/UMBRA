@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public float maxVelocity = 120f;
     public Rigidbody player;
     public GameObject raySpawn;
+    
 
     //is the player dashing?
     public bool dash;
@@ -34,6 +35,7 @@ public class PlayerController : MonoBehaviour
     bool buildupMovement;
     bool instaMovement;
     bool jumpMovement;
+    float timeTilDeath = 3.25f;
 
     Vector3 Movement;
 
@@ -47,10 +49,9 @@ public class PlayerController : MonoBehaviour
         timer = 0;
 
         curHealth = maxHealth;
+        playerAnim.SetFloat("PlayerLife", curHealth);
 
-        //script = GameObject.Find ("DoubleJumpCheckPoint").GetComponent<GetDoublejump>();
 
-        //nextFire = Time.time;
     }
     //Awake test for framerate limitation
     void Awake()
@@ -94,6 +95,7 @@ public class PlayerController : MonoBehaviour
             player.velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, JumpHeight);
             jumpMovement = false;
         }
+
 
     }
 
@@ -257,9 +259,23 @@ public class PlayerController : MonoBehaviour
         {
             curHealth = maxHealth;
         }
+        /*
         if (curHealth <= 0)
         {
             Die();
+        }
+         * */
+        if (curHealth <= 0)
+        {
+            timeTilDeath -= Time.deltaTime;
+            MoveSpeed = 0;
+            RunSpeed = 0;
+            WalkSpeed = 0;
+            //player.GetComponent<(PlayerController)>.enabled;
+            if (timeTilDeath < 0)
+            {
+                Die();
+            }
         }
     }
     void Die()
@@ -270,6 +286,7 @@ public class PlayerController : MonoBehaviour
     public void takeDamage(int dmg)
     {
         curHealth -= dmg;
+        playerAnim.SetFloat("PlayerLife", curHealth);
         playerAnim.SetBool("TakeDamage", true);
 
     }
