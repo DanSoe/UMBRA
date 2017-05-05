@@ -70,7 +70,11 @@ public class knightController : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    IEnumerator wait(float time)
+    {
+        yield return new WaitForSeconds(time);
+    }
+
     void Update()
     {
 
@@ -78,18 +82,21 @@ public class knightController : MonoBehaviour
 
         eneDist = Vector3.Distance(body.position, target.transform.position);
 
+
+
         if (eneDist < atDist && chase == true)
         {
             move = false;
-            //Anim.SetBool("Attack", true);
+            Anim.SetBool("Attack", true);
             maxVel = 0f;
             Anim.SetFloat("Speed", 0f);
             attackTrigger.enabled = true;
+            //StartCoroutine(wait(2));
         }
         else if (eneDist > atDist && chase == true)
         {
             move = true;
-            maxVel = 10f;
+            maxVel = 7f;
         }
         else
         {
@@ -105,12 +112,16 @@ public class knightController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (move)
+        if (Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") == false && Anim.GetCurrentAnimatorStateInfo(0).IsName("Death") == false)
         {
-            body.AddForce(Movement,ForceMode.VelocityChange);
-           // body.AddForce(transform.forward * MoveSpeed);
-            
+            if (move)
+            {
+                body.AddForce(Movement, ForceMode.VelocityChange);
+                // body.AddForce(transform.forward * MoveSpeed);
+
+            }
         }
+      
 
         if (body.velocity.magnitude > maxVel)
         {
@@ -169,7 +180,7 @@ public class knightController : MonoBehaviour
     {
         if (invtime <= 0)
         {
-            invtime = 150;
+            invtime = 100;
             curHealth -= dmg;
             //playerAnim.SetBool("TakeDamage", true);
         }
