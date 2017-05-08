@@ -69,8 +69,8 @@ public class knightController : MonoBehaviour
     void awake()
     {
         //target = GameObject.FindGameObjectWithTag("Player").GetComponent;
-        Physics.IgnoreLayerCollision(11, 12, true);
-        Physics.IgnoreLayerCollision(11, 11, true);
+        /*Physics.IgnoreLayerCollision(11, 12, true);
+        Physics.IgnoreLayerCollision(11, 11, true);*/
         
     }
 

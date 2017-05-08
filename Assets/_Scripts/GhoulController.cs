@@ -16,9 +16,13 @@ public class GhoulController : MonoBehaviour
     public bool stuff;
     private Vector3 temp2;
     private Vector3 temp1;
-
     private Vector3 rayoffset;
 
+    //movement
+    Vector3 movement;
+    public float moveSpeed;
+    float turnTimer;
+    public float maxVel;
 
     //enemy detection
     public bool chase;
@@ -48,7 +52,8 @@ public class GhoulController : MonoBehaviour
 
     void Awake()
     {
-        Physics.IgnoreLayerCollision(12, 11, true);
+        /*Physics.IgnoreLayerCollision(12, 11, true);
+        Physics.IgnoreLayerCollision(12, 12, true);*/
     }
 	
 
@@ -59,6 +64,7 @@ public class GhoulController : MonoBehaviour
 
     void FixedUpdate()
     {
+
         RaycastHit rayOut;
 
         // detecting if the player is in front of the knight.
@@ -74,6 +80,31 @@ public class GhoulController : MonoBehaviour
         // detecting if anything is in the knights path.
         stuff = Physics.Raycast(ghoul.transform.position + new Vector3(0, 1, 0), transform.forward, out rayOut, 3f, obstacle);
         //Debug.DrawRay(ghoul.transform.position + new Vector3(0, 1, 0), transform.forward, Color.yellow, 10, false);
+
+        // movement
+        movement = transform.forward * moveSpeed;
+        //ghoul.AddForce(movement, ForceMode.VelocityChange);
+        ghoul.AddForce(movement);
+
+        if (lCont == false && turnTimer == 0 || rCont == false && turnTimer == 0 || stuff == true && turnTimer == 0)
+        {
+            turnTimer = 50;
+            ghoul.transform.rotation = Quaternion.AngleAxis(180, transform.up) * transform.rotation;
+            //body.AddForce(Movement, ForceMode.VelocityChange);
+
+        }
+
+        if (turnTimer > 0)
+        {
+            turnTimer--;
+        }
+        if (ghoul.velocity.magnitude > maxVel)
+        {
+            ghoul.velocity = Vector3.ClampMagnitude(ghoul.velocity, maxVel);
+
+        }
+
+
     }
 
     void OnCollisionEnter(Collision ghoul)
