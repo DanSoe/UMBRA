@@ -55,9 +55,11 @@ public class knightController : MonoBehaviour
         rayoffset = new Vector3(0, 3, 0);
 
         //for rotating raycast
-        Vector3 noAngle = body.transform.forward;
-        Quaternion spreadAngle = Quaternion.AngleAxis(135, new Vector3(0, 0, 1));
-        Quaternion spreadAngle2 = Quaternion.AngleAxis(45, new Vector3(0, 0, 1));
+        Vector3 noAngle = body.transform.up;
+        //Quaternion spreadAngle = Quaternion.AngleAxis(45, new Vector3(0, 0, 1));
+        //Quaternion spreadAngle2 = Quaternion.AngleAxis(-45, new Vector3(0, 0, 1));
+        Quaternion spreadAngle = Quaternion.Euler(0,0,45);
+        Quaternion spreadAngle2 = Quaternion.Euler(0,0,-45);
         temp2 = spreadAngle * noAngle;
         temp1 = spreadAngle2 * noAngle;
 
@@ -67,6 +69,8 @@ public class knightController : MonoBehaviour
     void awake()
     {
         //target = GameObject.FindGameObjectWithTag("Player").GetComponent;
+        /*Physics.IgnoreLayerCollision(11, 12, true);
+        Physics.IgnoreLayerCollision(11, 11, true);*/
         
     }
 
@@ -96,13 +100,15 @@ public class knightController : MonoBehaviour
         else if (eneDist > atDist && chase == true)
         {
             move = true;
-            maxVel = 7f;
+            maxVel = 9f;
+            moveSpeed = 9f;
         }
         else
         {
             move = true;
+            moveSpeed = 5f;
             Anim.SetBool("Attack", false);
-            maxVel = 7f;
+            maxVel = 5f;
             Anim.SetFloat("Speed", moveSpeed);
             attackTrigger.enabled = false;
         }
@@ -136,10 +142,10 @@ public class knightController : MonoBehaviour
 
         // detecting if there is surface to walk on in fron of the knight.
         rCont = Physics.Raycast(body.transform.position + rayoffset, -temp2, out rayOut, rayDist, whereWalk);
-        //Debug.DrawRay(body.transform.position + rayoffset, -temp2, Color.green, 10, false);
+        Debug.DrawRay(body.transform.position + rayoffset, -temp2, Color.green, 10, false);
 
         lCont = Physics.Raycast(body.transform.position + rayoffset, -temp1, out rayOut, rayDist, whereWalk);
-       // Debug.DrawRay(body.transform.position + rayoffset, -temp1, Color.green, 10, false);
+        Debug.DrawRay(body.transform.position + rayoffset, -temp1, Color.green, 10, false);
         // detecting if anything is in the knights path.
         stuff = Physics.Raycast(body.transform.position + new Vector3(0, 1, 0), transform.forward, out rayOut, 3f, obstacle);
         //Debug.DrawRay(body.transform.position + new Vector3(0, 1, 0), transform.forward, Color.yellow, 10, false);
@@ -209,4 +215,5 @@ public class knightController : MonoBehaviour
             Anim.SetBool("Hit", true);
         }
     }
+    
 }

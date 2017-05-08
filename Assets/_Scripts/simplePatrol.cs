@@ -44,6 +44,8 @@ public class simplePatrol : MonoBehaviour
              Quaternion spreadAngle = Quaternion.AngleAxis(135, new Vector3(0, 0, 1));
              temp2 = spreadAngle * noAngle;
          }
+
+
     }
 
     // Update is called once per frame
