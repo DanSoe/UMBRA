@@ -30,6 +30,9 @@ public class GhoulController : MonoBehaviour
     public GameObject target;
     public float targetdist;
 
+    //Div Variables
+    bool IsAlive;
+    public float curSpeed;
 
     void Start () 
     {
@@ -48,6 +51,10 @@ public class GhoulController : MonoBehaviour
         temp2 = spreadAngle * noAngle;
         temp1 = spreadAngle2 * noAngle;
 
+        curSpeed = ghoul.velocity.magnitude;
+        IsAlive = true;
+        playerAnim.SetBool("IsAlive", IsAlive);
+        playerAnim.SetFloat("Speed", curSpeed);
     }
 
     void Awake()
