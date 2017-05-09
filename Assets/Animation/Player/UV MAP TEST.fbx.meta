@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 85ee4387979f18643a07bebc9190064e
+timeCreated: 1494333145
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Belt
+    100002: Body
+    100004: Body2
+    100006: Elbow_Guard_Left
+    100008: Elbow_Guard_Right
+    100010: Elbow_Guards
+    100012: Hand_Guard_Left
+    100014: Hand_Guard_Right
+    100016: Hand_Guards
+    100018: Hand_left
+    100020: Hand_right
+    100022: Helmet
+    100024: Knee_Left
+    100026: Knee_right
+    100028: Knees
+    100030: Knight
+    100032: Knight1
+    100034: Legs
+    100036: Main_Character_SH_HeadJ
+    100038: Main_Character_SH_HeadTipJ
+    100040: Main_Character_SH_JawJ
+    100042: Main_Character_SH_lAnkleJ
+    100044: Main_Character_SH_lBallJ
+    100046: Main_Character_SH_lClavicleJ
+    100048: Main_Character_SH_lElbowJ
+    100050: Main_Character_SH_lFinger1J1
+    100052: Main_Character_SH_lFinger1J2
+    100054: Main_Character_SH_lFinger1J3
+    100056: Main_Character_SH_lFinger1JTip
+    100058: Main_Character_SH_lFinger2J1
+    100060: Main_Character_SH_lFinger2J2
+    100062: Main_Character_SH_lFinger2J3
+    100064: Main_Character_SH_lFinger2JTip
+    100066: Main_Character_SH_lFinger3J1
+    100068: Main_Character_SH_lFinger3J2
+    100070: Main_Character_SH_lFinger3J3
+    100072: Main_Character_SH_lFinger3JTip
+    100074: Main_Character_SH_lFinger4J1
+    100076: Main_Character_SH_lFinger4J2
+    100078: Main_Character_SH_lFinger4J3
+    100080: Main_Character_SH_lFinger4JTip
+    100082: Main_Character_SH_lForearmJ
+    100084: Main_Character_SH_lHipJ
+    100086: Main_Character_SH_lKneeJ
+    100088: Main_Character_SH_lPalmJ
+    100090: Main_Character_SH_lShoulderJ
+    100092: Main_Character_SH_lThumbJ1
+    100094: Main_Character_SH_lThumbJ2
+    100096: Main_Character_SH_lThumbJ3
+    100098: Main_Character_SH_lThumbJTip
+    100100: Main_Character_SH_lToeJ
+    100102: Main_Character_SH_lWristJ
+    100104: Main_Character_SH_Neck01J
+    100106: Main_Character_SH_Neck02J
+    100108: Main_Character_SH_Neck03J
+    100110: Main_Character_SH_rAnkleJ
+    100112: Main_Character_SH_rBallJ
+    100114: Main_Character_SH_rClavicleJ
+    100116: Main_Character_SH_rElbowJ
+    100118: Main_Character_SH_rFinger1J1
+    100120: Main_Character_SH_rFinger1J2
+    100122: Main_Character_SH_rFinger1J3
+    100124: Main_Character_SH_rFinger1JTip
+    100126: Main_Character_SH_rFinger2J1
+    100128: Main_Character_SH_rFinger2J2
+    100130: Main_Character_SH_rFinger2J3
+    100132: Main_Character_SH_rFinger2JTip
+    100134: Main_Character_SH_rFinger3J1
+    100136: Main_Character_SH_rFinger3J2
+    100138: Main_Character_SH_rFinger3J3
+    100140: Main_Character_SH_rFinger3JTip
+    100142: Main_Character_SH_rFinger4J1
+    100144: Main_Character_SH_rFinger4J2
+    100146: Main_Character_SH_rFinger4J3
+    100148: Main_Character_SH_rFinger4JTip
+    100150: Main_Character_SH_rForearmJ
+    100152: Main_Character_SH_rHipJ
+    100154: Main_Character_SH_rKneeJ
+    100156: Main_Character_SH_ROOTJ
+    100158: Main_Character_SH_rPalmJ
+    100160: Main_Character_SH_rShoulderJ
+    100162: Main_Character_SH_rThumbJ1
+    100164: Main_Character_SH_rThumbJ2
+    100166: Main_Character_SH_rThumbJ3
+    100168: Main_Character_SH_rThumbJTip
+    100170: Main_Character_SH_rToeJ
+    100172: Main_Character_SH_rWristJ
+    100174: Main_Character_SH_Spine01J
+    100176: Main_Character_SH_Spine02J
+    100178: Main_Character_SH_Spine03J
+    100180: Main_Character_SH_SpineTopJ
+    100182: Player_Sword_v2_w_UV:Player_sword_v2:pCylinder2
+    100184: Shoulder
+    100186: Shoulder_Left
+    100188: Shoulder_Right
+    100190: Torso
+    100192: Torso2
+    100194: //RootNode
+    100196: Waist_Guard
+    400000: Belt
+    400002: Body
+    400004: Body2
+    400006: Elbow_Guard_Left
+    400008: Elbow_Guard_Right
+    400010: Elbow_Guards
+    400012: Hand_Guard_Left
+    400014: Hand_Guard_Right
+    400016: Hand_Guards
+    400018: Hand_left
+    400020: Hand_right
+    400022: Helmet
+    400024: Knee_Left
+    400026: Knee_right
+    400028: Knees
+    400030: Knight
+    400032: Knight1
+    400034: Legs
+    400036: Main_Character_SH_HeadJ
+    400038: Main_Character_SH_HeadTipJ
+    400040: Main_Character_SH_JawJ
+    400042: Main_Character_SH_lAnkleJ
+    400044: Main_Character_SH_lBallJ
+    400046: Main_Character_SH_lClavicleJ
+    400048: Main_Character_SH_lElbowJ
+    400050: Main_Character_SH_lFinger1J1
+    400052: Main_Character_SH_lFinger1J2
+    400054: Main_Character_SH_lFinger1J3
+    400056: Main_Character_SH_lFinger1JTip
+    400058: Main_Character_SH_lFinger2J1
+    400060: Main_Character_SH_lFinger2J2
+    400062: Main_Character_SH_lFinger2J3
+    400064: Main_Character_SH_lFinger2JTip
+    400066: Main_Character_SH_lFinger3J1
+    400068: Main_Character_SH_lFinger3J2
+    400070: Main_Character_SH_lFinger3J3
+    400072: Main_Character_SH_lFinger3JTip
+    400074: Main_Character_SH_lFinger4J1
+    400076: Main_Character_SH_lFinger4J2
+    400078: Main_Character_SH_lFinger4J3
+    400080: Main_Character_SH_lFinger4JTip
+    400082: Main_Character_SH_lForearmJ
+    400084: Main_Character_SH_lHipJ
+    400086: Main_Character_SH_lKneeJ
+    400088: Main_Character_SH_lPalmJ
+    400090: Main_Character_SH_lShoulderJ
+    400092: Main_Character_SH_lThumbJ1
+    400094: Main_Character_SH_lThumbJ2
+    400096: Main_Character_SH_lThumbJ3
+    400098: Main_Character_SH_lThumbJTip
+    400100: Main_Character_SH_lToeJ
+    400102: Main_Character_SH_lWristJ
+    400104: Main_Character_SH_Neck01J
+    400106: Main_Character_SH_Neck02J
+    400108: Main_Character_SH_Neck03J
+    400110: Main_Character_SH_rAnkleJ
+    400112: Main_Character_SH_rBallJ
+    400114: Main_Character_SH_rClavicleJ
+    400116: Main_Character_SH_rElbowJ
+    400118: Main_Character_SH_rFinger1J1
+    400120: Main_Character_SH_rFinger1J2
+    400122: Main_Character_SH_rFinger1J3
+    400124: Main_Character_SH_rFinger1JTip
+    400126: Main_Character_SH_rFinger2J1
+    400128: Main_Character_SH_rFinger2J2
+    400130: Main_Character_SH_rFinger2J3
+    400132: Main_Character_SH_rFinger2JTip
+    400134: Main_Character_SH_rFinger3J1
+    400136: Main_Character_SH_rFinger3J2
+    400138: Main_Character_SH_rFinger3J3
+    400140: Main_Character_SH_rFinger3JTip
+    400142: Main_Character_SH_rFinger4J1
+    400144: Main_Character_SH_rFinger4J2
+    400146: Main_Character_SH_rFinger4J3
+    400148: Main_Character_SH_rFinger4JTip
+    400150: Main_Character_SH_rForearmJ
+    400152: Main_Character_SH_rHipJ
+    400154: Main_Character_SH_rKneeJ
+    400156: Main_Character_SH_ROOTJ
+    400158: Main_Character_SH_rPalmJ
+    400160: Main_Character_SH_rShoulderJ
+    400162: Main_Character_SH_rThumbJ1
+    400164: Main_Character_SH_rThumbJ2
+    400166: Main_Character_SH_rThumbJ3
+    400168: Main_Character_SH_rThumbJTip
+    400170: Main_Character_SH_rToeJ
+    400172: Main_Character_SH_rWristJ
+    400174: Main_Character_SH_Spine01J
+    400176: Main_Character_SH_Spine02J
+    400178: Main_Character_SH_Spine03J
+    400180: Main_Character_SH_SpineTopJ
+    400182: Player_Sword_v2_w_UV:Player_sword_v2:pCylinder2
+    400184: Shoulder
+    400186: Shoulder_Left
+    400188: Shoulder_Right
+    400190: Torso
+    400192: Torso2
+    400194: //RootNode
+    400196: Waist_Guard
+    2300000: Player_Sword_v2_w_UV:Player_sword_v2:pCylinder2
+    2300002: Torso2
+    3300000: Player_Sword_v2_w_UV:Player_sword_v2:pCylinder2
+    3300002: Torso2
+    4300000: Torso2
+    4300002: Helmet
+    4300004: Shoulder_Left
+    4300006: Shoulder_Right
+    4300008: Torso
+    4300010: Hand_right
+    4300012: Hand_left
+    4300014: Legs
+    4300016: Elbow_Guard_Right
+    4300018: Elbow_Guard_Left
+    4300020: Hand_Guard_Left
+    4300022: Hand_Guard_Right
+    4300024: Belt
+    4300026: Waist_Guard
+    4300028: Knee_Left
+    4300030: Knee_right
+    4300032: Player_Sword_v2_w_UV:Player_sword_v2:pCylinder2
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Belt
+    13700002: Elbow_Guard_Left
+    13700004: Elbow_Guard_Right
+    13700006: Hand_Guard_Left
+    13700008: Hand_Guard_Right
+    13700010: Hand_left
+    13700012: Hand_right
+    13700014: Helmet
+    13700016: Knee_Left
+    13700018: Knee_right
+    13700020: Legs
+    13700022: Shoulder_Left
+    13700024: Shoulder_Right
+    13700026: Torso
+    13700028: Waist_Guard
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Knight
+        weight: 1
+      - path: Knight/Belt
+        weight: 1
+      - path: Knight/Body
+        weight: 1
+      - path: Knight/Body/Hand_left
+        weight: 1
+      - path: Knight/Body/Hand_right
+        weight: 1
+      - path: Knight/Body/Legs
+        weight: 1
+      - path: Knight/Body/Torso
+        weight: 1
+      - path: Knight/Elbow_Guards
+        weight: 1
+      - path: Knight/Elbow_Guards/Elbow_Guard_Left
+        weight: 1
+      - path: Knight/Elbow_Guards/Elbow_Guard_Right
+        weight: 1
+      - path: Knight/Hand_Guards
+        weight: 1
+      - path: Knight/Hand_Guards/Hand_Guard_Left
+        weight: 1
+      - path: Knight/Hand_Guards/Hand_Guard_Right
+        weight: 1
+      - path: Knight/Helmet
+        weight: 1
+      - path: Knight/Knees
+        weight: 1
+      - path: Knight/Knees/Knee_Left
+        weight: 1
+      - path: Knight/Knees/Knee_right
+        weight: 1
+      - path: Knight/Shoulder
+        weight: 1
+      - path: Knight/Shoulder/Shoulder_Left
+        weight: 1
+      - path: Knight/Shoulder/Shoulder_Right
+        weight: 1
+      - path: Knight/Waist_Guard
+        weight: 1
+      - path: Knight1
+        weight: 1
+      - path: Knight1/Body2
+        weight: 1
+      - path: Knight1/Body2/Torso2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_lHipJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_lHipJ/Main_Character_SH_lKneeJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_lHipJ/Main_Character_SH_lKneeJ/Main_Character_SH_lAnkleJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_lHipJ/Main_Character_SH_lKneeJ/Main_Character_SH_lAnkleJ/Main_Character_SH_lBallJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_lHipJ/Main_Character_SH_lKneeJ/Main_Character_SH_lAnkleJ/Main_Character_SH_lBallJ/Main_Character_SH_lToeJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_rHipJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_rHipJ/Main_Character_SH_rKneeJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_rHipJ/Main_Character_SH_rKneeJ/Main_Character_SH_rAnkleJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_rHipJ/Main_Character_SH_rKneeJ/Main_Character_SH_rAnkleJ/Main_Character_SH_rBallJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_rHipJ/Main_Character_SH_rKneeJ/Main_Character_SH_rAnkleJ/Main_Character_SH_rBallJ/Main_Character_SH_rToeJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lForearmJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger1J1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger1J1/Main_Character_SH_lFinger1J2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger1J1/Main_Character_SH_lFinger1J2/Main_Character_SH_lFinger1J3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger1J1/Main_Character_SH_lFinger1J2/Main_Character_SH_lFinger1J3/Main_Character_SH_lFinger1JTip
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger2J1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger2J1/Main_Character_SH_lFinger2J2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger2J1/Main_Character_SH_lFinger2J2/Main_Character_SH_lFinger2J3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger2J1/Main_Character_SH_lFinger2J2/Main_Character_SH_lFinger2J3/Main_Character_SH_lFinger2JTip
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger3J1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger3J1/Main_Character_SH_lFinger3J2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger3J1/Main_Character_SH_lFinger3J2/Main_Character_SH_lFinger3J3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger3J1/Main_Character_SH_lFinger3J2/Main_Character_SH_lFinger3J3/Main_Character_SH_lFinger3JTip
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger4J1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger4J1/Main_Character_SH_lFinger4J2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger4J1/Main_Character_SH_lFinger4J2/Main_Character_SH_lFinger4J3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lPalmJ/Main_Character_SH_lFinger4J1/Main_Character_SH_lFinger4J2/Main_Character_SH_lFinger4J3/Main_Character_SH_lFinger4JTip
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lThumbJ1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lThumbJ1/Main_Character_SH_lThumbJ2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lThumbJ1/Main_Character_SH_lThumbJ2/Main_Character_SH_lThumbJ3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_lClavicleJ/Main_Character_SH_lShoulderJ/Main_Character_SH_lElbowJ/Main_Character_SH_lWristJ/Main_Character_SH_lThumbJ1/Main_Character_SH_lThumbJ2/Main_Character_SH_lThumbJ3/Main_Character_SH_lThumbJTip
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_Neck01J
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_Neck01J/Main_Character_SH_Neck02J
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_Neck01J/Main_Character_SH_Neck02J/Main_Character_SH_Neck03J
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_Neck01J/Main_Character_SH_Neck02J/Main_Character_SH_Neck03J/Main_Character_SH_HeadJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_Neck01J/Main_Character_SH_Neck02J/Main_Character_SH_Neck03J/Main_Character_SH_HeadJ/Main_Character_SH_HeadTipJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_Neck01J/Main_Character_SH_Neck02J/Main_Character_SH_Neck03J/Main_Character_SH_HeadJ/Main_Character_SH_JawJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rForearmJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger1J1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger1J1/Main_Character_SH_rFinger1J2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger1J1/Main_Character_SH_rFinger1J2/Main_Character_SH_rFinger1J3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger1J1/Main_Character_SH_rFinger1J2/Main_Character_SH_rFinger1J3/Main_Character_SH_rFinger1JTip
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger2J1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger2J1/Main_Character_SH_rFinger2J2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger2J1/Main_Character_SH_rFinger2J2/Main_Character_SH_rFinger2J3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger2J1/Main_Character_SH_rFinger2J2/Main_Character_SH_rFinger2J3/Main_Character_SH_rFinger2JTip
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger3J1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger3J1/Main_Character_SH_rFinger3J2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger3J1/Main_Character_SH_rFinger3J2/Main_Character_SH_rFinger3J3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger3J1/Main_Character_SH_rFinger3J2/Main_Character_SH_rFinger3J3/Main_Character_SH_rFinger3JTip
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger4J1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger4J1/Main_Character_SH_rFinger4J2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger4J1/Main_Character_SH_rFinger4J2/Main_Character_SH_rFinger4J3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rPalmJ/Main_Character_SH_rFinger4J1/Main_Character_SH_rFinger4J2/Main_Character_SH_rFinger4J3/Main_Character_SH_rFinger4JTip
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rThumbJ1
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rThumbJ1/Main_Character_SH_rThumbJ2
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rThumbJ1/Main_Character_SH_rThumbJ2/Main_Character_SH_rThumbJ3
+        weight: 1
+      - path: Main_Character_SH_ROOTJ/Main_Character_SH_Spine01J/Main_Character_SH_Spine02J/Main_Character_SH_Spine03J/Main_Character_SH_SpineTopJ/Main_Character_SH_rClavicleJ/Main_Character_SH_rShoulderJ/Main_Character_SH_rElbowJ/Main_Character_SH_rWristJ/Main_Character_SH_rThumbJ1/Main_Character_SH_rThumbJ2/Main_Character_SH_rThumbJ3/Main_Character_SH_rThumbJTip
+        weight: 1
+      - path: Player_Sword_v2_w_UV:Player_sword_v2:pCylinder2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 32
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
