@@ -76,7 +76,7 @@ public class GhoulController : MonoBehaviour
         Debug.DrawRay(ghoul.transform.position + rayoffset, -temp2, Color.green, 10, false);
 
         lCont = Physics.Raycast(ghoul.transform.position + rayoffset, -temp1, out rayOut, rayDist, whereWalk);
-        Debug.DrawRay(ghoul.transform.position + rayoffset, -temp1, Color.green, 10, false);
+       // Debug.DrawRay(ghoul.transform.position + rayoffset, -temp1, Color.green, 10, false);
         // detecting if anything is in the knights path.
         stuff = Physics.Raycast(ghoul.transform.position + new Vector3(0, 1, 0), transform.forward, out rayOut, 3f, obstacle);
         //Debug.DrawRay(ghoul.transform.position + new Vector3(0, 1, 0), transform.forward, Color.yellow, 10, false);
