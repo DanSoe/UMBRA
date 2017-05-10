@@ -119,14 +119,14 @@ public class GhoulController : MonoBehaviour
 
     void OnCollisionEnter(Collision ghoul)
     {
-        if (ghoul.gameObject.CompareTag("Player"))
+        /*if (ghoul.gameObject.CompareTag("Player"))
         {
             player.takeDamage(1);
             StartCoroutine(player.Knockback(0.02f, 1750, player.transform.position, transform.position));
             
             
             
-        }
+        }*/
 
     }
 }
