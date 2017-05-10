@@ -21,6 +21,7 @@ public class Arrow_from_trap : MonoBehaviour
         {
             player.takeDamage(1);
             StartCoroutine(player.Knockback(0.04f, 750, player.transform.position, transform.position));
+            Destroy(this.gameObject);
         }
     }
 }
