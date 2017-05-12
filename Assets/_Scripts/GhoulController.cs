@@ -51,10 +51,10 @@ public class GhoulController : MonoBehaviour
         temp2 = spreadAngle * noAngle;
         temp1 = spreadAngle2 * noAngle;
 
-        curSpeed = ghoul.velocity.magnitude;
+        //curSpeed = ghoul.velocity.magnitude;
         IsAlive = true;
         playerAnim.SetBool("IsAlive", IsAlive);
-        playerAnim.SetFloat("Speed", curSpeed);
+        
     }
 
     void Awake()
@@ -66,12 +66,15 @@ public class GhoulController : MonoBehaviour
 
 	void Update () 
     {
-	
-	}
+
+        //Debug.Log(ghoul.velocity.magnitude);
+        Debug.Log(curSpeed);
+    }
 
     void FixedUpdate()
     {
-
+        playerAnim.SetFloat("Speed", ghoul.velocity.magnitude);
+        curSpeed = ghoul.velocity.magnitude;
         RaycastHit rayOut;
 
         // detecting if the player is in front of the knight.
@@ -116,14 +119,14 @@ public class GhoulController : MonoBehaviour
 
     void OnCollisionEnter(Collision ghoul)
     {
-        if (ghoul.gameObject.CompareTag("Player"))
+        /*if (ghoul.gameObject.CompareTag("Player"))
         {
             player.takeDamage(1);
             StartCoroutine(player.Knockback(0.02f, 1750, player.transform.position, transform.position));
             
             
             
-        }
+        }*/
 
     }
 }
