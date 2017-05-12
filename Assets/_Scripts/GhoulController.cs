@@ -27,8 +27,9 @@ public class GhoulController : MonoBehaviour
     //enemy detection
     public bool chase;
     public LayerMask WhatIsEnemy;
-    public GameObject target;
+    private GameObject target;
     public float targetdist;
+    float eneDist;
 
     //Div Variables
     bool IsAlive;
@@ -36,6 +37,7 @@ public class GhoulController : MonoBehaviour
 
     void Start () 
     {
+        target = GameObject.FindGameObjectWithTag("Player");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         playerAnim = GetComponent<Animator>();
         ghoul = GetComponent<Rigidbody>();
@@ -68,11 +70,13 @@ public class GhoulController : MonoBehaviour
     {
 
         //Debug.Log(ghoul.velocity.magnitude);
-        Debug.Log(curSpeed);
+        //Debug.Log(curSpeed);
     }
 
     void FixedUpdate()
     {
+
+        eneDist = Vector3.Distance(ghoul.position, target.transform.position);
         playerAnim.SetFloat("Speed", ghoul.velocity.magnitude);
         curSpeed = ghoul.velocity.magnitude;
         RaycastHit rayOut;
