@@ -37,6 +37,9 @@ public class PlayerController : MonoBehaviour
     bool jumpMovement;
     float timeTilDeath = 3.25f;
 
+    float jumpTime, jumpDelay = 0.5f;
+    bool jumped;
+
     Vector3 Movement;
 
 
@@ -93,7 +96,15 @@ public class PlayerController : MonoBehaviour
         if (jumpMovement)
         {
             player.velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, JumpHeight);
+            jumpTime = jumpDelay;
             jumpMovement = false;
+            jumped = true;
+        }
+        jumpTime -= Time.deltaTime;
+        if(jumpTime <= 0 && grounded && jumped)
+        {
+            playerAnim.SetTrigger("Land");
+            jumped = false;
         }
 
 
@@ -164,6 +175,7 @@ public class PlayerController : MonoBehaviour
 
                 //player.AddForce(-transform.forward * (MoveSpeed * realDashSpeed), ForceMode.VelocityChange);
                 playerAnim.SetBool("DashBackward", true);
+                //playerAnim.SetTrigger("DashBackTest");
                 //print(realDashSpeed);
 
             }
@@ -173,6 +185,7 @@ public class PlayerController : MonoBehaviour
                 instaMovement = true;
                 //print(realDashSpeed);
                 playerAnim.SetBool("DashForward", true);
+               // playerAnim.SetTrigger("DashForwTest");
             }
 
             //insert animation code
@@ -218,7 +231,8 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Jump")/*(Input.GetKeyDown(KeyCode.Space)*/ && grounded)
         {
-            playerAnim.SetBool("Jump", true);
+            //playerAnim.SetBool("Jump", true);
+            playerAnim.SetTrigger("JumpTrigger");
             jumpMovement = true;
 
 
