@@ -23,9 +23,11 @@ public class GhoulController : MonoBehaviour
     public float moveSpeed;
     float turnTimer;
     public float maxVel;
+    bool move;
 
     //enemy detection
     public bool chase;
+    public bool inFront;
     public LayerMask WhatIsEnemy;
     private GameObject target;
     public float targetdist;
@@ -56,7 +58,12 @@ public class GhoulController : MonoBehaviour
         //curSpeed = ghoul.velocity.magnitude;
         IsAlive = true;
         playerAnim.SetBool("IsAlive", IsAlive);
-        
+
+        // starting idle animation at random time
+
+
+        playerAnim.Play("Idle", 0 ,Random.value);
+
     }
 
     void Awake()
@@ -94,11 +101,13 @@ public class GhoulController : MonoBehaviour
         // detecting if anything is in the knights path.
         stuff = Physics.Raycast(ghoul.transform.position + new Vector3(0, 1, 0), transform.forward, out rayOut, 3f, obstacle);
         //Debug.DrawRay(ghoul.transform.position + new Vector3(0, 1, 0), transform.forward, Color.yellow, 10, false);
+        inFront = Physics.Raycast(ghoul.transform.position + rayoffset, transform.forward, out rayOut, 5f, WhatIsEnemy);
+        Debug.DrawRay(ghoul.transform.position + rayoffset, transform.forward, Color.black,10,false);
 
         // movement
         movement = transform.forward * moveSpeed;
         //ghoul.AddForce(movement, ForceMode.VelocityChange);
-        ghoul.AddForce(movement);
+        
 
         if (lCont == false && turnTimer == 0 || rCont == false && turnTimer == 0 || stuff == true && turnTimer == 0)
         {
@@ -106,6 +115,32 @@ public class GhoulController : MonoBehaviour
             ghoul.transform.rotation = Quaternion.AngleAxis(180, transform.up) * transform.rotation;
             //body.AddForce(Movement, ForceMode.VelocityChange);
 
+        }
+
+        if (chase == true && inFront == true)
+        {
+            move = false;
+            playerAnim.SetBool("Attack", true);
+        }
+        else if (chase == true)
+        {
+            maxVel = 5f;
+            move = true;
+        }
+        else
+        {
+            move = true;
+            maxVel = 3f;
+            playerAnim.SetBool("Attack", false);
+        }
+
+        if (playerAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack") == false && playerAnim.GetCurrentAnimatorStateInfo(0).IsName("Death") == false)
+        {
+            if (move)
+            {
+                ghoul.AddForce(movement);
+
+            }
         }
 
         if (turnTimer > 0)
@@ -117,10 +152,26 @@ public class GhoulController : MonoBehaviour
             ghoul.velocity = Vector3.ClampMagnitude(ghoul.velocity, maxVel);
 
         }
+        if (IsAlive == false)
+        {
+            playerAnim.SetBool("IsAlive", IsAlive);
+            playerAnim.SetBool("Attack", false);
+            move = false;
+            maxVel = 0;
+            if (playerAnim.GetCurrentAnimatorStateInfo(0).IsName("Death") == false)
+            {
+                Destroy(this.gameObject, 1.2f);
+            }
+        }
 
 
     }
+    public void takeDamage(int dmg)
+    {
+        IsAlive = false;
+        
 
+    }
     void OnCollisionEnter(Collision ghoul)
     {
         /*if (ghoul.gameObject.CompareTag("Player"))
