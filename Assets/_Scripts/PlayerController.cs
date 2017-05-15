@@ -331,7 +331,7 @@ public class PlayerController : MonoBehaviour
     {
         if (PlayerColli.gameObject.tag == "TeleportCube")
         {
-            transform.position = new Vector3(438f, 91.37f, 10f);
+            transform.position = new Vector3(440f, 91.37f, 10f);
         }
         if (PlayerColli.gameObject.tag == "TeleportCage")
         {
