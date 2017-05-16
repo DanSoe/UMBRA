@@ -4,6 +4,7 @@ using System.Collections;
 public class AttackTrigger : MonoBehaviour
 {
     private knightController enemyKnight;
+    private GhoulController enemyGhoul;
 
     // Use this for initialization
     void Start()
@@ -26,9 +27,10 @@ public class AttackTrigger : MonoBehaviour
         {
             if (hittarget.gameObject.tag == "ghoul")
             {
+                enemyGhoul = hittarget.GetComponent<GhoulController>();
                 Debug.Log("One Damage");
+                enemyGhoul.takeDamage(1);
 
-                Destroy(hittarget.gameObject);
             }
             if (hittarget.gameObject.tag == "Knight")
             {
@@ -49,8 +51,9 @@ public class AttackTrigger : MonoBehaviour
         {
             if (hittarget.gameObject.tag == "ghoul")
             {
+                enemyGhoul = hittarget.GetComponent<GhoulController>();
                 Debug.Log("Two Damage");
-                Destroy(hittarget.gameObject);
+                enemyGhoul.takeDamage(1);
             }
             if (hittarget.gameObject.tag == "Knight")
             {
