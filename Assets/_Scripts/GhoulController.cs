@@ -91,18 +91,20 @@ public class GhoulController : MonoBehaviour
         // detecting if the player is in front of the knight.
         chase = Physics.Raycast(ghoul.transform.position + rayoffset, transform.forward, out rayOut, targetdist, WhatIsEnemy);
         //Debug.DrawRay(ghoul.transform.position + rayoffset, transform.forward, Color.cyan, 10, false);
+        inFront = Physics.Raycast(ghoul.transform.position + rayoffset, transform.forward, out rayOut, 5f, WhatIsEnemy);
+        //Debug.DrawRay(ghoul.transform.position + rayoffset, transform.forward, Color.black,10,false);
 
         // detecting if there is surface to walk on in fron of the knight.
         rCont = Physics.Raycast(ghoul.transform.position + rayoffset, -temp2, out rayOut, rayDist, whereWalk);
-        Debug.DrawRay(ghoul.transform.position + rayoffset, -temp2, Color.green, 10, false);
+        //Debug.DrawRay(ghoul.transform.position + rayoffset, -temp2, Color.green, 10, false);
 
         lCont = Physics.Raycast(ghoul.transform.position + rayoffset, -temp1, out rayOut, rayDist, whereWalk);
        // Debug.DrawRay(ghoul.transform.position + rayoffset, -temp1, Color.green, 10, false);
+       
         // detecting if anything is in the knights path.
         stuff = Physics.Raycast(ghoul.transform.position + new Vector3(0, 1, 0), transform.forward, out rayOut, 3f, obstacle);
         //Debug.DrawRay(ghoul.transform.position + new Vector3(0, 1, 0), transform.forward, Color.yellow, 10, false);
-        inFront = Physics.Raycast(ghoul.transform.position + rayoffset, transform.forward, out rayOut, 5f, WhatIsEnemy);
-        Debug.DrawRay(ghoul.transform.position + rayoffset, transform.forward, Color.black,10,false);
+        
 
         // movement
         movement = transform.forward * moveSpeed;
