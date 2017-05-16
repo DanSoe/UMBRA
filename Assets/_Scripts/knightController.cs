@@ -118,7 +118,7 @@ public class knightController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") == false && Anim.GetCurrentAnimatorStateInfo(0).IsName("Death") == false)
+        if (Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") == false && Anim.GetCurrentAnimatorStateInfo(0).IsName("Death") == false && Anim.GetCurrentAnimatorStateInfo(0).IsName("Hit") == false && Anim.GetCurrentAnimatorStateInfo(0).IsName("SheildHit") == false)
         {
             if (move)
             {
@@ -191,6 +191,17 @@ public class knightController : MonoBehaviour
             curHealth -= dmg;
             Anim.SetFloat("Life", curHealth);
             //playerAnim.SetBool("TakeDamage", true);
+        }
+    }
+    public void hitAnim()
+    {
+        if (chase == true)
+        {
+            Anim.SetBool("Hit", true);
+        }
+        else
+        {
+            Anim.SetBool("SheildHit", true);
         }
     }
     void LateUpdate()
