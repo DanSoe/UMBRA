@@ -39,11 +39,14 @@ public class AttackTrigger : MonoBehaviour
                 {
                     enemyKnight.takeDamage(1);
                     Debug.Log("1 dmg");
+                    enemyKnight.hitAnim();
+                    StartCoroutine(enemyKnight.Knockback(0.02f, 1750, enemyKnight.transform.position, transform.position));
                 }
                 else
                 {
                     enemyKnight.takeDamage(2);
-                    
+                    enemyKnight.hitAnim();
+                    StartCoroutine(enemyKnight.Knockback(0.02f, 1750, enemyKnight.transform.position, transform.position));
                 }
             }
         }
@@ -62,10 +65,14 @@ public class AttackTrigger : MonoBehaviour
                 if (enemyKnight.chase == true)
                 {
                     enemyKnight.takeDamage(2);
+                    enemyKnight.hitAnim();
+                    StartCoroutine(enemyKnight.Knockback(0.02f, 1750, enemyKnight.transform.position, transform.position));
                 }
                 else
                 {
                     enemyKnight.takeDamage(4);
+                    enemyKnight.hitAnim();
+                    StartCoroutine(enemyKnight.Knockback(0.02f, 1750, enemyKnight.transform.position, transform.position));
                 }
                 
 

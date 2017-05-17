@@ -91,8 +91,8 @@ public class GhoulController : MonoBehaviour
         // detecting if the player is in front of the knight.
         chase = Physics.Raycast(ghoul.transform.position + rayoffset, transform.forward, out rayOut, targetdist, WhatIsEnemy);
         //Debug.DrawRay(ghoul.transform.position + rayoffset, transform.forward, Color.cyan, 10, false);
-        inFront = Physics.Raycast(ghoul.transform.position + rayoffset, transform.forward, out rayOut, 5f, WhatIsEnemy);
-        //Debug.DrawRay(ghoul.transform.position + rayoffset, transform.forward, Color.black,10,false);
+        inFront = Physics.Raycast(ghoul.transform.position + rayoffset, transform.forward, out rayOut, 3f, WhatIsEnemy);
+        //Debug.DrawRay(ghoul.transform.position + rayoffset, transform.forward, Color.black,1,true);
 
         // detecting if there is surface to walk on in fron of the knight.
         rCont = Physics.Raycast(ghoul.transform.position + rayoffset, -temp2, out rayOut, rayDist, whereWalk);

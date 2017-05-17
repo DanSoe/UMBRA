@@ -99,13 +99,13 @@ public class knightController : MonoBehaviour
         }
         else if (eneDist > atDist && chase == true)
         {
-            move = true;
+            //move = true;
             maxVel = 9f;
             moveSpeed = 9f;
         }
         else
         {
-            move = true;
+            //move = true;
             moveSpeed = 5f;
             Anim.SetBool("Attack", false);
             maxVel = 5f;
@@ -118,7 +118,7 @@ public class knightController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") == false && Anim.GetCurrentAnimatorStateInfo(0).IsName("Death") == false)
+        if (Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") == false && Anim.GetCurrentAnimatorStateInfo(0).IsName("Death") == false && Anim.GetCurrentAnimatorStateInfo(0).IsName("Hit") == false && Anim.GetCurrentAnimatorStateInfo(0).IsName("SheildHit") == false)
         {
             if (move)
             {
@@ -191,6 +191,18 @@ public class knightController : MonoBehaviour
             curHealth -= dmg;
             Anim.SetFloat("Life", curHealth);
             //playerAnim.SetBool("TakeDamage", true);
+            
+        }
+    }
+    public void hitAnim()
+    {
+        if (chase == true)
+        {
+            Anim.SetBool("Hit", true);
+        }
+        else
+        {
+            Anim.SetBool("SheildHit", true);
         }
     }
     void LateUpdate()
@@ -215,5 +227,23 @@ public class knightController : MonoBehaviour
             Anim.SetBool("Hit", true);
         }
     }
-    
+    public IEnumerator Knockback(float knockDur, float knockbackPower, Vector3 knockbackDir, Vector3 targetPosition)
+    {
+        float timer = 0;
+
+        while (knockDur > timer)
+        {
+            timer += Time.deltaTime;
+            if (transform.position.x < targetPosition.x)
+            {
+                body.AddForce(new Vector3(-1500, knockbackPower, 0));
+            }
+            else if (transform.position.x > targetPosition.x)
+            {
+                body.AddForce(new Vector3(1500, knockbackPower, 0));
+            }
+        }
+        yield return 0;
+    }
+
 }
