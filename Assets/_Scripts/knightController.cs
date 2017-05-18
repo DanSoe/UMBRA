@@ -99,13 +99,13 @@ public class knightController : MonoBehaviour
         }
         else if (eneDist > atDist && chase == true)
         {
-            //move = true;
+            move = true;
             maxVel = 9f;
             moveSpeed = 9f;
         }
         else
         {
-            //move = true;
+            move = true;
             moveSpeed = 5f;
             Anim.SetBool("Attack", false);
             maxVel = 5f;
@@ -123,7 +123,7 @@ public class knightController : MonoBehaviour
             if (move)
             {
                 body.AddForce(Movement, ForceMode.VelocityChange);
-                // body.AddForce(transform.forward * MoveSpeed);
+                // body.AddForce(Movement);
 
             }
         }
@@ -211,7 +211,7 @@ public class knightController : MonoBehaviour
         Anim.SetBool("Hit", false);
 
     }
-    void OnTriggerEnter(Collider other)
+    /*void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Sword" && chase == true)
         {
@@ -226,7 +226,7 @@ public class knightController : MonoBehaviour
             curHealth -= 2;
             Anim.SetBool("Hit", true);
         }
-    }
+    }*/
     public IEnumerator Knockback(float knockDur, float knockbackPower, Vector3 knockbackDir, Vector3 targetPosition)
     {
         float timer = 0;
