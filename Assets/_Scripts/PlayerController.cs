@@ -101,7 +101,7 @@ public class PlayerController : MonoBehaviour
             jumped = true;
         }
         jumpTime -= Time.deltaTime;
-        if (jumpTime <= 0 && grounded && jumped)
+        if(jumpTime <= 0 && grounded && jumped)
         {
             playerAnim.SetTrigger("Land");
             jumped = false;
@@ -175,6 +175,7 @@ public class PlayerController : MonoBehaviour
 
                 //player.AddForce(-transform.forward * (MoveSpeed * realDashSpeed), ForceMode.VelocityChange);
                 playerAnim.SetBool("DashBackward", true);
+                //playerAnim.SetTrigger("DashBackTest");
                 //print(realDashSpeed);
 
             }
@@ -184,6 +185,7 @@ public class PlayerController : MonoBehaviour
                 instaMovement = true;
                 //print(realDashSpeed);
                 playerAnim.SetBool("DashForward", true);
+               // playerAnim.SetTrigger("DashForwTest");
             }
 
             //insert animation code
@@ -229,6 +231,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Jump")/*(Input.GetKeyDown(KeyCode.Space)*/ && grounded)
         {
+            //playerAnim.SetBool("Jump", true);
             playerAnim.SetTrigger("JumpTrigger");
             jumpMovement = true;
 
@@ -342,7 +345,7 @@ public class PlayerController : MonoBehaviour
     {
         if (PlayerColli.gameObject.tag == "TeleportCube")
         {
-            transform.position = new Vector3(440f, 91.37f, 10f);
+            transform.position = new Vector3(444f, 91.37f, 10f);
         }
         if (PlayerColli.gameObject.tag == "TeleportCage")
         {
