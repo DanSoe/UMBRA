@@ -175,7 +175,7 @@ public class knightController : MonoBehaviour
             Anim.SetBool("Attack", false);
             move = false;
             maxVel = 0;
-            Destroy(this.gameObject,2.75f);
+            Destroy(this.gameObject,2.55f);
         }
 
         
