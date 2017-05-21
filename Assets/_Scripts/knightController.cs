@@ -18,7 +18,7 @@ public class knightController : MonoBehaviour
 
     public GameObject target;
     public float targetdist;
-    public float rayDist;
+    //public float rayDist;
     public LayerMask WhatIsEnemy;
     public LayerMask whereWalk;
     public LayerMask obstacle;
@@ -26,6 +26,7 @@ public class knightController : MonoBehaviour
     public bool rCont;
     public bool lCont;
     public bool stuff;
+    public bool ground;
     public float maxVel;
     bool move;
 
@@ -42,6 +43,7 @@ public class knightController : MonoBehaviour
     private Vector3 temp1;
     Vector3 Movement;
     bool buildupMovement;
+    float curSpeed;
 
     // Use this for initialization
     void Start()
@@ -82,7 +84,7 @@ public class knightController : MonoBehaviour
     void Update()
     {
 
-        Anim.SetFloat("Speed", moveSpeed);
+        Anim.SetFloat("Speed", curSpeed);
 
         eneDist = Vector3.Distance(body.position, target.transform.position);
 
@@ -101,15 +103,15 @@ public class knightController : MonoBehaviour
         {
             move = true;
             maxVel = 9f;
-            moveSpeed = 9f;
+            moveSpeed = 150f;
         }
         else
         {
             move = true;
-            moveSpeed = 5f;
+            moveSpeed = 150f;
             Anim.SetBool("Attack", false);
             maxVel = 5f;
-            Anim.SetFloat("Speed", moveSpeed);
+            Anim.SetFloat("Speed", curSpeed);
             attackTrigger.enabled = false;
         }
         Movement = transform.forward * moveSpeed;
@@ -120,20 +122,24 @@ public class knightController : MonoBehaviour
     {
         if (Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") == false && Anim.GetCurrentAnimatorStateInfo(0).IsName("Death") == false && Anim.GetCurrentAnimatorStateInfo(0).IsName("Hit") == false && Anim.GetCurrentAnimatorStateInfo(0).IsName("SheildHit") == false)
         {
-            if (move)
+            if (ground == true)
             {
-                body.AddForce(Movement, ForceMode.VelocityChange);
-                // body.AddForce(Movement);
+                if (move)
+                {
+                    //body.AddForce(Movement, ForceMode.VelocityChange);
+                    body.AddForce(Movement);
+                    if (body.velocity.magnitude > maxVel)
+                    {
+                        body.velocity = Vector3.ClampMagnitude(body.velocity, maxVel);
 
+                    }
+                }
+              
             }
         }
-      
 
-        if (body.velocity.magnitude > maxVel)
-        {
-            body.velocity = Vector3.ClampMagnitude(body.velocity, maxVel);
-
-        }
+        curSpeed = body.velocity.magnitude;
+        
         RaycastHit rayOut;
 
         // detecting if the player is in front of the knight.
@@ -141,11 +147,13 @@ public class knightController : MonoBehaviour
         //Debug.DrawRay(body.transform.position + rayoffset, transform.forward, Color.cyan, 10, false);
 
         // detecting if there is surface to walk on in fron of the knight.
-        rCont = Physics.Raycast(body.transform.position + rayoffset, -temp2, out rayOut, rayDist, whereWalk);
-        Debug.DrawRay(body.transform.position + rayoffset, -temp2, Color.green, 10, false);
+        rCont = Physics.Raycast(body.transform.position + rayoffset, -temp2, out rayOut, 4.55f, whereWalk);
+        //Debug.DrawRay(body.transform.position + rayoffset, -temp2, Color.green, 10, false);
 
-        lCont = Physics.Raycast(body.transform.position + rayoffset, -temp1, out rayOut, rayDist, whereWalk);
-        Debug.DrawRay(body.transform.position + rayoffset, -temp1, Color.green, 10, false);
+        lCont = Physics.Raycast(body.transform.position + rayoffset, -temp1, out rayOut, 4.55f, whereWalk);
+        //Debug.DrawRay(body.transform.position + rayoffset, -temp1, Color.green, 10, false);
+        ground = Physics.Raycast(body.transform.position, -transform.up, out rayOut, 0.25f, whereWalk);
+
         // detecting if anything is in the knights path.
         stuff = Physics.Raycast(body.transform.position + new Vector3(0, 1, 0), transform.forward, out rayOut, 3f, obstacle);
         //Debug.DrawRay(body.transform.position + new Vector3(0, 1, 0), transform.forward, Color.yellow, 10, false);
@@ -172,10 +180,13 @@ public class knightController : MonoBehaviour
         }
         if(curHealth <= 0)
         {
+
             Anim.SetBool("Attack", false);
             move = false;
             maxVel = 0;
+            body.velocity = Vector3.ClampMagnitude(body.velocity, maxVel);
             Destroy(this.gameObject,2.55f);
+            
         }
 
         
@@ -199,10 +210,12 @@ public class knightController : MonoBehaviour
         if (chase == true)
         {
             Anim.SetBool("Hit", true);
+            
         }
         else
         {
             Anim.SetBool("SheildHit", true);
+            
         }
     }
     void LateUpdate()
@@ -236,11 +249,11 @@ public class knightController : MonoBehaviour
             timer += Time.deltaTime;
             if (transform.position.x < targetPosition.x)
             {
-                body.AddForce(new Vector3(-1500, knockbackPower, 0));
+                body.AddForce(new Vector3(-300, knockbackPower, 0));
             }
             else if (transform.position.x > targetPosition.x)
             {
-                body.AddForce(new Vector3(1500, knockbackPower, 0));
+                body.AddForce(new Vector3(300, knockbackPower, 0));
             }
         }
         yield return 0;
