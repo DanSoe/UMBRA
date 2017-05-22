@@ -57,12 +57,13 @@ public class PlayerController : MonoBehaviour
 
     }
     //Awake test for framerate limitation
+    /*
     void Awake()
     {
         QualitySettings.vSyncCount = 0;  // VSync must be disabled
         Application.targetFrameRate = 60;
     }
-
+    */
     void FixedUpdate()
     {
         //Debug.Log(player.velocity);
