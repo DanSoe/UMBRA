@@ -98,7 +98,7 @@ public class GhoulController : MonoBehaviour
         // detecting if the player is in front of the knight.
         chase = Physics.Raycast(ghoul.transform.position + rayoffset, transform.forward, out rayOut, targetdist, WhatIsEnemy);
         //Debug.DrawRay(ghoul.transform.position + rayoffset, transform.forward, Color.cyan, 10, false);
-        inFront = Physics.Raycast(ghoul.transform.position + rayoffset, transform.forward, out rayOut, 3f, WhatIsEnemy);
+        inFront = Physics.Raycast(ghoul.transform.position + rayoffset, transform.forward, out rayOut, 2.5f, WhatIsEnemy);
         //Debug.DrawRay(ghoul.transform.position + rayoffset, transform.forward, Color.black,1,true);
 
         // detecting if there is surface to walk on in fron of the knight.
@@ -167,15 +167,19 @@ public class GhoulController : MonoBehaviour
             torso.enabled = false;
             hands[0].enabled = false;
             hands[1].enabled = false;
+            ghoul.useGravity = false;
             playerAnim.SetBool("IsAlive", IsAlive);
             playerAnim.SetBool("Attack", false);
             move = false;
             ghoul.velocity = Vector3.ClampMagnitude(ghoul.velocity, maxVel);
             maxVel = 0;
+            
             if (playerAnim.GetCurrentAnimatorStateInfo(0).IsName("Death") == false)
             {
-                Destroy(this.gameObject, 1.2f);
                 
+                Destroy(this.gameObject, 1.5f);
+                
+
             }
         }
 
@@ -198,5 +202,23 @@ public class GhoulController : MonoBehaviour
             
         }*/
 
+    }
+    public IEnumerator Knockback(float knockDur, float knockbackPower, Vector3 knockbackDir, Vector3 targetPosition)
+    {
+        float timer = 0;
+
+        while (knockDur > timer)
+        {
+            timer += Time.deltaTime;
+            if (transform.position.x < targetPosition.x)
+            {
+                ghoul.AddForce(new Vector3(-300, knockbackPower, 0));
+            }
+            else if (transform.position.x > targetPosition.x)
+            {
+                ghoul.AddForce(new Vector3(300, knockbackPower, 0));
+            }
+        }
+        yield return 0;
     }
 }
