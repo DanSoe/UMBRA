@@ -66,13 +66,13 @@ public class AttackTrigger : MonoBehaviour
                 {
                     enemyKnight.takeDamage(2);
                     enemyKnight.hitAnim();
-                    StartCoroutine(enemyKnight.Knockback(0.02f, 1750, enemyKnight.transform.position, transform.position));
+                    StartCoroutine(enemyKnight.Knockback(0.1f, 30, enemyKnight.transform.position, transform.position));
                 }
                 else
                 {
                     enemyKnight.takeDamage(4);
                     enemyKnight.hitAnim();
-                    StartCoroutine(enemyKnight.Knockback(0.02f, 1750, enemyKnight.transform.position, transform.position));
+                    StartCoroutine(enemyKnight.Knockback(0.1f, 30, enemyKnight.transform.position, transform.position));
                 }
                 
 
