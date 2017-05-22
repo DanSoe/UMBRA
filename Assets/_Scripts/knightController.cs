@@ -45,6 +45,9 @@ public class knightController : MonoBehaviour
     bool buildupMovement;
     float curSpeed;
 
+    BoxCollider sword;
+    CapsuleCollider torso;
+
     // Use this for initialization
     void Start()
     {
@@ -66,6 +69,9 @@ public class knightController : MonoBehaviour
         temp1 = spreadAngle2 * noAngle;
 
         Anim.SetFloat("Life", curHealth);
+
+        sword = body.GetComponentInChildren<BoxCollider>();
+        torso = body.GetComponent<CapsuleCollider>();
     }
 
     void awake()
@@ -181,11 +187,13 @@ public class knightController : MonoBehaviour
         if(curHealth <= 0)
         {
 
+            sword.enabled = false;
+            torso.enabled = false;
             Anim.SetBool("Attack", false);
             move = false;
             maxVel = 0;
             body.velocity = Vector3.ClampMagnitude(body.velocity, maxVel);
-            Destroy(this.gameObject,2.55f);
+            //Destroy(this.gameObject,2.55f);
             
         }
 

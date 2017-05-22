@@ -37,6 +37,10 @@ public class GhoulController : MonoBehaviour
     bool IsAlive;
     public float curSpeed;
 
+    CapsuleCollider torso;
+    BoxCollider[] hands;
+    
+
     void Start () 
     {
         target = GameObject.FindGameObjectWithTag("Player");
@@ -63,6 +67,9 @@ public class GhoulController : MonoBehaviour
 
 
         playerAnim.Play("Idle", 0 ,Random.value);
+
+        torso = ghoul.GetComponent<CapsuleCollider>();
+        hands = ghoul.GetComponentsInChildren<BoxCollider>();
 
     }
 
@@ -141,6 +148,11 @@ public class GhoulController : MonoBehaviour
             if (move)
             {
                 ghoul.AddForce(movement);
+                if (ghoul.velocity.magnitude > maxVel)
+                {
+                    ghoul.velocity = Vector3.ClampMagnitude(ghoul.velocity, maxVel);
+
+                }
 
             }
         }
@@ -149,20 +161,21 @@ public class GhoulController : MonoBehaviour
         {
             turnTimer--;
         }
-        if (ghoul.velocity.magnitude > maxVel)
-        {
-            ghoul.velocity = Vector3.ClampMagnitude(ghoul.velocity, maxVel);
-
-        }
+        
         if (IsAlive == false)
         {
+            torso.enabled = false;
+            hands[0].enabled = false;
+            hands[1].enabled = false;
             playerAnim.SetBool("IsAlive", IsAlive);
             playerAnim.SetBool("Attack", false);
             move = false;
+            ghoul.velocity = Vector3.ClampMagnitude(ghoul.velocity, maxVel);
             maxVel = 0;
             if (playerAnim.GetCurrentAnimatorStateInfo(0).IsName("Death") == false)
             {
                 Destroy(this.gameObject, 1.2f);
+                
             }
         }
 
