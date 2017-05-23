@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
 {
 
     Animator playerAnim;
+    public Fading fading;
 
     //basic movement
     public float JumpHeight;
@@ -53,6 +54,7 @@ public class PlayerController : MonoBehaviour
 
         curHealth = maxHealth;
         playerAnim.SetFloat("PlayerLife", curHealth);
+        fading = GameObject.FindGameObjectWithTag("FinishGame").GetComponent<Fading>();
 
 
     }
@@ -342,7 +344,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    void OnTriggerEnter(Collider PlayerColli)
+    IEnumerator OnTriggerEnter(Collider PlayerColli)
     {
         if (PlayerColli.gameObject.tag == "TeleportCube")
         {
@@ -360,9 +362,23 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(790f, 351f, -10f);
         }
-        if (PlayerColli.gameObject.tag == "GameDone")
+        if (PlayerColli.gameObject.tag == "EndGame")
         {
             Application.LoadLevel(0);
         }
+        if (PlayerColli.gameObject.tag == "FinishGame")
+        {
+            fading.BeginFade(+1);
+            yield return new WaitForSeconds(3);
+
+            Application.LoadLevel(0);
+        }
+
     }
+    /*
+    IEnumerator OnTriggerEnter(Collider EndGame)
+    {
+        
+    }
+     * */
 }
