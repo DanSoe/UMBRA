@@ -38,16 +38,17 @@ public class AttackTrigger : MonoBehaviour
                 enemyKnight = hittarget.GetComponent<knightController>();
                 if (enemyKnight.chase == true)
                 {
-                    enemyKnight.takeDamage(1);
+                    enemyKnight.takeDamage(1,1);
                     Debug.Log("1 dmg");
-                    enemyKnight.hitAnim();
-                    StartCoroutine(enemyKnight.Knockback(0.02f, 1750, enemyKnight.transform.position, transform.position));
+                    //enemyKnight.hitAnim();
+                    StartCoroutine(enemyKnight.Knockback(0.02f, 10000, enemyKnight.transform.position, transform.position));
                 }
                 else
                 {
-                    enemyKnight.takeDamage(2);
-                    enemyKnight.hitAnim();
-                    StartCoroutine(enemyKnight.Knockback(0.02f, 1750, enemyKnight.transform.position, transform.position));
+                    enemyKnight.takeDamage(2,2);
+                    Debug.Log("2dmg");
+                    //enemyKnight.hitAnim();
+                    StartCoroutine(enemyKnight.Knockback(0.02f, 10000, enemyKnight.transform.position, transform.position));
                 }
             }
         }
@@ -66,15 +67,15 @@ public class AttackTrigger : MonoBehaviour
 
                 if (enemyKnight.chase == true)
                 {
-                    enemyKnight.takeDamage(2);
-                    enemyKnight.hitAnim();
-                    StartCoroutine(enemyKnight.Knockback(0.1f, 30, enemyKnight.transform.position, transform.position));
+                    enemyKnight.takeDamage(2,1);
+                    //enemyKnight.hitAnim();
+                    StartCoroutine(enemyKnight.Knockback(0.1f, 2000, enemyKnight.transform.position, transform.position));
                 }
                 else
                 {
-                    enemyKnight.takeDamage(4);
-                    enemyKnight.hitAnim();
-                    StartCoroutine(enemyKnight.Knockback(0.1f, 30, enemyKnight.transform.position, transform.position));
+                    enemyKnight.takeDamage(4,2);
+                    //enemyKnight.hitAnim();
+                    StartCoroutine(enemyKnight.Knockback(0.1f, 2000, enemyKnight.transform.position, transform.position));
                 }
                 
 
