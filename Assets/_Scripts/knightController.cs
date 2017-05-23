@@ -63,8 +63,8 @@ public class knightController : MonoBehaviour
         Vector3 noAngle = body.transform.up;
         //Quaternion spreadAngle = Quaternion.AngleAxis(45, new Vector3(0, 0, 1));
         //Quaternion spreadAngle2 = Quaternion.AngleAxis(-45, new Vector3(0, 0, 1));
-        Quaternion spreadAngle = Quaternion.Euler(0,0,45);
-        Quaternion spreadAngle2 = Quaternion.Euler(0,0,-45);
+        Quaternion spreadAngle = Quaternion.Euler(0, 0, 45);
+        Quaternion spreadAngle2 = Quaternion.Euler(0, 0, -45);
         temp2 = spreadAngle * noAngle;
         temp1 = spreadAngle2 * noAngle;
 
@@ -72,6 +72,7 @@ public class knightController : MonoBehaviour
 
         sword = body.GetComponentInChildren<BoxCollider>();
         torso = body.GetComponent<CapsuleCollider>();
+        target = GameObject.FindGameObjectWithTag("Player");
     }
 
     void awake()
@@ -79,7 +80,7 @@ public class knightController : MonoBehaviour
         //target = GameObject.FindGameObjectWithTag("Player").GetComponent;
         /*Physics.IgnoreLayerCollision(11, 12, true);
         Physics.IgnoreLayerCollision(11, 11, true);*/
-        
+
     }
 
     IEnumerator wait(float time)
@@ -96,37 +97,37 @@ public class knightController : MonoBehaviour
 
 
 
-        if (eneDist < atDist && chase == true)
+        if (eneDist < atDist && chase == true && Anim.GetCurrentAnimatorStateInfo(0).IsName("shield hit") == false)
         {
             move = false;
             Anim.SetBool("Attack", true);
             maxVel = 0f;
             Anim.SetFloat("Speed", 0f);
-            attackTrigger.enabled = true;
+            //attackTrigger.enabled = true;
             //StartCoroutine(wait(2));
         }
         else if (eneDist > atDist && chase == true)
         {
             move = true;
-            maxVel = 9f;
-            moveSpeed = 150f;
+            maxVel = 12f;
+
         }
         else
         {
             move = true;
-            moveSpeed = 150f;
+
             Anim.SetBool("Attack", false);
             maxVel = 5f;
             Anim.SetFloat("Speed", curSpeed);
             attackTrigger.enabled = false;
         }
         Movement = transform.forward * moveSpeed;
-        
+
 
     }
     void FixedUpdate()
     {
-        if (Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") == false && Anim.GetCurrentAnimatorStateInfo(0).IsName("Death") == false && Anim.GetCurrentAnimatorStateInfo(0).IsName("Hit") == false && Anim.GetCurrentAnimatorStateInfo(0).IsName("SheildHit") == false)
+        if (Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") == false && Anim.GetCurrentAnimatorStateInfo(0).IsName("Death") == false && Anim.GetCurrentAnimatorStateInfo(0).IsName("backhit") == false && Anim.GetCurrentAnimatorStateInfo(0).IsName("shield hit") == false)
         {
             if (ground == true)
             {
@@ -140,12 +141,12 @@ public class knightController : MonoBehaviour
 
                     }
                 }
-              
+
             }
         }
 
         curSpeed = body.velocity.magnitude;
-        
+
         RaycastHit rayOut;
 
         // detecting if the player is in front of the knight.
@@ -184,7 +185,7 @@ public class knightController : MonoBehaviour
         {
             curHealth = maxHealth;
         }
-        if(curHealth <= 0)
+        if (curHealth <= 0)
         {
 
             sword.enabled = false;
@@ -193,27 +194,38 @@ public class knightController : MonoBehaviour
             move = false;
             maxVel = 0;
             body.velocity = Vector3.ClampMagnitude(body.velocity, maxVel);
-            //Destroy(this.gameObject,2.55f);
-            
+            Destroy(this.gameObject, 2.55f);
+
         }
 
-        
+
 
 
     }
-    public void takeDamage(int dmg)
+    public void takeDamage(int dmg, int mode)
     {
-       
+
         if (invtime <= 0)
         {
+
+            if (mode == 1)
+            {
+                Anim.SetTrigger("BeenHit");
+            }
+            else if (mode == 2)
+            {
+                Anim.SetTrigger("BackHit");
+            }
             invtime = 100;
             curHealth -= dmg;
             Anim.SetFloat("Life", curHealth);
             //playerAnim.SetBool("TakeDamage", true);
-            
+            Debug.Log(curHealth);
+
+
         }
     }
-    public void hitAnim()
+    /*public void hitAnim()
     {
         if (chase == true)
         {
@@ -222,14 +234,15 @@ public class knightController : MonoBehaviour
         }
         else
         {
-            Anim.SetBool("SheildHit", true);
+            Debug.Log("ahhh that hurts");
+            Anim.SetTrigger("BeenHit");
             
         }
-    }
+    }*/
     void LateUpdate()
     {
-        Anim.SetBool("SheildHit", false);
-        Anim.SetBool("Hit", false);
+
+
 
     }
     /*void OnTriggerEnter(Collider other)
@@ -257,14 +270,13 @@ public class knightController : MonoBehaviour
             timer += Time.deltaTime;
             if (transform.position.x < targetPosition.x)
             {
-                body.AddForce(new Vector3(-300, knockbackPower, 0));
+                body.AddForce(new Vector3(-10000, knockbackPower, 0));
             }
             else if (transform.position.x > targetPosition.x)
             {
-                body.AddForce(new Vector3(300, knockbackPower, 0));
+                body.AddForce(new Vector3(10000, knockbackPower, 0));
             }
         }
         yield return 0;
     }
-
 }
