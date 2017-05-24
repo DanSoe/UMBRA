@@ -140,15 +140,18 @@ public class knightController : MonoBehaviour
                         body.velocity = Vector3.ClampMagnitude(body.velocity, maxVel);
 
                     }
-                }
-                if (lCont == false && turnTimer == 0 || rCont == false && turnTimer == 0 || stuff == true && turnTimer == 0)
-                {
-                    turnTimer = 50;
-                    body.transform.rotation = Quaternion.AngleAxis(180, transform.up) * transform.rotation;
-                    //body.AddForce(Movement, ForceMode.VelocityChange);
+                    if (lCont == false && turnTimer == 0 || rCont == false && turnTimer == 0 || stuff == true && turnTimer == 0)
+                    {
+                        turnTimer = 50;
+                        body.transform.rotation = Quaternion.AngleAxis(180, transform.up) * transform.rotation;
+                        //body.AddForce(Movement, ForceMode.VelocityChange);
 
+                    }
                 }
-
+            }
+            else
+            {
+                body.AddForce(Vector3.down * 120f);
             }
         }
 
