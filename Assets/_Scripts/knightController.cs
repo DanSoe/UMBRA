@@ -141,6 +141,13 @@ public class knightController : MonoBehaviour
 
                     }
                 }
+                if (lCont == false && turnTimer == 0 || rCont == false && turnTimer == 0 || stuff == true && turnTimer == 0)
+                {
+                    turnTimer = 50;
+                    body.transform.rotation = Quaternion.AngleAxis(180, transform.up) * transform.rotation;
+                    //body.AddForce(Movement, ForceMode.VelocityChange);
+
+                }
 
             }
         }
