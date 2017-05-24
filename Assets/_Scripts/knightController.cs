@@ -100,10 +100,10 @@ public class knightController : MonoBehaviour
         if (eneDist < atDist && chase == true && Anim.GetCurrentAnimatorStateInfo(0).IsName("shield hit") == false)
         {
             move = false;
-            Anim.SetTrigger("Attack");
+            Anim.SetBool("Attack", true);
             maxVel = 0f;
             Anim.SetFloat("Speed", 0f);
-            attackTrigger.enabled = true;
+            //attackTrigger.enabled = true;
             //StartCoroutine(wait(2));
         }
         else if (eneDist > atDist && chase == true)
@@ -116,7 +116,7 @@ public class knightController : MonoBehaviour
         {
             move = true;
 
-            
+            Anim.SetBool("Attack", false);
             maxVel = 5f;
             Anim.SetFloat("Speed", curSpeed);
             attackTrigger.enabled = false;
