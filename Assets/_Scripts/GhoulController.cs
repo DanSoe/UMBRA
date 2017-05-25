@@ -39,7 +39,7 @@ public class GhoulController : MonoBehaviour
 
     CapsuleCollider torso;
     BoxCollider[] hands;
-    
+
 
     void Start () 
     {
@@ -118,13 +118,7 @@ public class GhoulController : MonoBehaviour
         //ghoul.AddForce(movement, ForceMode.VelocityChange);
         
 
-        if (lCont == false && turnTimer == 0 || rCont == false && turnTimer == 0 || stuff == true && turnTimer == 0)
-        {
-            turnTimer = 50;
-            ghoul.transform.rotation = Quaternion.AngleAxis(180, transform.up) * transform.rotation;
-            //body.AddForce(Movement, ForceMode.VelocityChange);
-
-        }
+       
 
         if (chase == true && inFront == true)
         {
@@ -153,6 +147,13 @@ public class GhoulController : MonoBehaviour
                     ghoul.velocity = Vector3.ClampMagnitude(ghoul.velocity, maxVel);
 
                 }
+                if (lCont == false && turnTimer == 0 || rCont == false && turnTimer == 0 || stuff == true && turnTimer == 0)
+                {
+                    turnTimer = 50;
+                    ghoul.transform.rotation = Quaternion.AngleAxis(180, transform.up) * transform.rotation;
+                    //body.AddForce(Movement, ForceMode.VelocityChange);
+
+                }
 
             }
         }
@@ -164,15 +165,18 @@ public class GhoulController : MonoBehaviour
         
         if (IsAlive == false)
         {
+
+            move = false;
+            playerAnim.SetBool("IsAlive", IsAlive);
+            playerAnim.SetBool("Attack", false);
             torso.enabled = false;
             hands[0].enabled = false;
             hands[1].enabled = false;
-            ghoul.useGravity = false;
-            playerAnim.SetBool("IsAlive", IsAlive);
-            playerAnim.SetBool("Attack", false);
-            move = false;
             ghoul.velocity = Vector3.ClampMagnitude(ghoul.velocity, maxVel);
             maxVel = 0;
+            
+            ghoul.useGravity = false;
+
             
             if (playerAnim.GetCurrentAnimatorStateInfo(0).IsName("Death") == false)
             {

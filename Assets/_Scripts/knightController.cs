@@ -161,14 +161,14 @@ public class knightController : MonoBehaviour
 
         // detecting if the player is in front of the knight.
         chase = Physics.Raycast(body.transform.position + rayoffset, transform.forward, out rayOut, targetdist, WhatIsEnemy);
-        Debug.DrawRay(body.transform.position + rayoffset, transform.forward, Color.cyan, 0.1f, false);
+       // Debug.DrawRay(body.transform.position + rayoffset, transform.forward, Color.cyan, 0.1f, false);
 
         // detecting if there is surface to walk on in fron of the knight.
         rCont = Physics.Raycast(body.transform.position + rayoffset, -temp2, out rayOut, 4.55f, whereWalk);
-        Debug.DrawRay(body.transform.position + rayoffset, -temp2, Color.green, 0.1f, false);
+       // Debug.DrawRay(body.transform.position + rayoffset, -temp2, Color.green, 0.1f, false);
 
         lCont = Physics.Raycast(body.transform.position + rayoffset, -temp1, out rayOut, 4.55f, whereWalk);
-        Debug.DrawRay(body.transform.position + rayoffset, -temp1, Color.green, 0.1f, false);
+       // Debug.DrawRay(body.transform.position + rayoffset, -temp1, Color.green, 0.1f, false);
         ground = Physics.Raycast(body.transform.position, -transform.up, out rayOut, 0.25f, whereWalk);
 
         // detecting if anything is in the knights path.
