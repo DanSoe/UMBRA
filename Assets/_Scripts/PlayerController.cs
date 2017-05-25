@@ -110,7 +110,21 @@ public class PlayerController : MonoBehaviour
             playerAnim.SetTrigger("Land");
             jumped = false;
         }
+        //counts down the duration of the dash
+        if (timer > 0)
+        {
+            dash = true;
+            --timer;
 
+        }
+        //ends the dash once the timer reaches 0
+        if (timer <= 0 && dash)
+        {
+            dash = false;
+            //MoveSpeed = MoveSpeed - DashSpeed;
+            //insert end animation code
+
+        }
 
     }
 
@@ -216,21 +230,7 @@ public class PlayerController : MonoBehaviour
 
 
         }
-        //counts down the duration of the dash
-        if (timer > 0)
-        {
-            dash = true;
-            --timer;
 
-        }
-        //ends the dash once the timer reaches 0
-        if (timer <= 0 && dash)
-        {
-            dash = false;
-            //MoveSpeed = MoveSpeed - DashSpeed;
-            //insert end animation code
-
-        }
 
 
         if (Input.GetButtonDown("Jump")/*(Input.GetKeyDown(KeyCode.Space)*/ && grounded)
