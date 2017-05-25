@@ -30,7 +30,7 @@ public class AttackTrigger : MonoBehaviour
                 enemyGhoul = hittarget.GetComponent<GhoulController>();
                 Debug.Log("One Damage");
                 enemyGhoul.takeDamage(1);
-                StartCoroutine(enemyGhoul.Knockback(0.02f, 1750, enemyKnight.transform.position, transform.position));
+                StartCoroutine(enemyGhoul.Knockback(0.02f, 1750, enemyGhoul.transform.position, transform.position));
 
             }
             if (hittarget.gameObject.tag == "Knight")
