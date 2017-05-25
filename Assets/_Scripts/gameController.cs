@@ -3,7 +3,7 @@ using System.Collections;
 
 public class gameController : MonoBehaviour 
 {
-
+    /*
     public Transform[] spawnPoints;
     public Collider[] spawnTrigger;
 
@@ -33,5 +33,5 @@ public class gameController : MonoBehaviour
     {
 	
 	}
-
+    */
 }
