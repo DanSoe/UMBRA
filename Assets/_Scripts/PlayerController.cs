@@ -363,7 +363,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(790f, 351f, -10f);
         }
-        if (PlayerColli.gameObject.tag == "EndGame")
+        if (PlayerColli.gameObject.tag == "GameDone")
         {
             SceneManager.LoadScene(1);
         }

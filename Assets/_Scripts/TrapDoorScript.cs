@@ -6,6 +6,8 @@ public class TrapDoorScript : MonoBehaviour
     Animator anim;
     public BoxCollider left;
     public BoxCollider right;
+
+    public BoxCollider Main;
     // Use this for initialization
     void Start()
     {
@@ -22,6 +24,7 @@ public class TrapDoorScript : MonoBehaviour
     {
         if ((trapdoor.gameObject.tag == "Player"))
         {
+            Main.enabled = false;
             anim.SetBool("TrapActivator", true);
             yield return new WaitForSeconds(2);
             left.enabled = false;
