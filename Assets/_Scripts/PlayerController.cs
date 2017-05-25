@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -304,7 +305,7 @@ public class PlayerController : MonoBehaviour
     void Die()
     {
         //restart
-        Application.LoadLevel(0);
+        SceneManager.LoadScene(0);
     }
     public void takeDamage(int dmg)
     {
@@ -364,14 +365,14 @@ public class PlayerController : MonoBehaviour
         }
         if (PlayerColli.gameObject.tag == "EndGame")
         {
-            Application.LoadLevel(0);
+            SceneManager.LoadScene(1);
         }
         if (PlayerColli.gameObject.tag == "FinishGame")
         {
             fading.BeginFade(+1);
             yield return new WaitForSeconds(3);
 
-            Application.LoadLevel(0);
+            SceneManager.LoadScene(0);
         }
 
     }

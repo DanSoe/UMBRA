@@ -50,8 +50,8 @@ TextureImporter:
   textureType: -1
   buildTargetSettings:
   - buildTarget: Standalone
-    maxTextureSize: 4096
-    textureFormat: -3
+    maxTextureSize: 2048
+    textureFormat: -1
     compressionQuality: 50
     allowsAlphaSplitting: 0
   spriteSheet:

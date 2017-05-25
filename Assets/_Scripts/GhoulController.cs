@@ -31,7 +31,7 @@ public class GhoulController : MonoBehaviour
     public LayerMask WhatIsEnemy;
     private GameObject target;
     public float targetdist;
-    float eneDist;
+    //float eneDist;
 
     //Div Variables
     bool IsAlive;
@@ -90,7 +90,7 @@ public class GhoulController : MonoBehaviour
     void FixedUpdate()
     {
 
-        eneDist = Vector3.Distance(ghoul.position, target.transform.position);
+        //eneDist = Vector3.Distance(ghoul.position, target.transform.position);
         playerAnim.SetFloat("Speed", ghoul.velocity.magnitude);
         curSpeed = ghoul.velocity.magnitude;
         RaycastHit rayOut;
