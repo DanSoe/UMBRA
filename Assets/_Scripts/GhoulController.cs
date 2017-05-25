@@ -206,17 +206,18 @@ public class GhoulController : MonoBehaviour
     public IEnumerator Knockback(float knockDur, float knockbackPower, Vector3 knockbackDir, Vector3 targetPosition)
     {
         float timer = 0;
+        float dist = 15000;
 
         while (knockDur > timer)
         {
             timer += Time.deltaTime;
             if (transform.position.x < targetPosition.x)
             {
-                ghoul.AddForce(new Vector3(-300, knockbackPower, 0));
+                ghoul.AddForce(new Vector3(-dist, knockbackPower, 0));
             }
             else if (transform.position.x > targetPosition.x)
             {
-                ghoul.AddForce(new Vector3(300, knockbackPower, 0));
+                ghoul.AddForce(new Vector3(dist, knockbackPower, 0));
             }
         }
         yield return 0;
