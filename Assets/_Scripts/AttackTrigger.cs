@@ -41,14 +41,14 @@ public class AttackTrigger : MonoBehaviour
                     enemyKnight.takeDamage(1,1);
                     Debug.Log("1 dmg");
                     //enemyKnight.hitAnim();
-                    StartCoroutine(enemyKnight.Knockback(0.02f, 7000, enemyKnight.transform.position, transform.position));
+                    StartCoroutine(enemyKnight.Knockback(0.02f, 5000, enemyKnight.transform.position, transform.position));
                 }
                 else
                 {
                     enemyKnight.takeDamage(2,2);
                     Debug.Log("2dmg");
                     //enemyKnight.hitAnim();
-                    StartCoroutine(enemyKnight.Knockback(0.02f, 7000, enemyKnight.transform.position, transform.position));
+                    StartCoroutine(enemyKnight.Knockback(0.02f, 5000, enemyKnight.transform.position, transform.position));
                 }
             }
         }
@@ -59,7 +59,7 @@ public class AttackTrigger : MonoBehaviour
                 enemyGhoul = hittarget.GetComponent<GhoulController>();
                 Debug.Log("Two Damage");
                 enemyGhoul.takeDamage(1);
-                StartCoroutine(enemyGhoul.Knockback(0.02f, 1750, enemyKnight.transform.position, transform.position));
+                StartCoroutine(enemyGhoul.Knockback(0.02f, 1750, enemyGhoul.transform.position, transform.position));
             }
             if (hittarget.gameObject.tag == "Knight")
             {
