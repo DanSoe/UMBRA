@@ -75,8 +75,8 @@ public class GhoulController : MonoBehaviour
 
     void Awake()
     {
-        /*Physics.IgnoreLayerCollision(12, 11, true);
-        Physics.IgnoreLayerCollision(12, 12, true);*/
+        //Physics.IgnoreLayerCollision(12, 11, true);
+        Physics.IgnoreLayerCollision(12, 12, true);
     }
 	
 
