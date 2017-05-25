@@ -280,11 +280,11 @@ public class knightController : MonoBehaviour
             timer += Time.deltaTime;
             if (transform.position.x < targetPosition.x)
             {
-                body.AddForce(new Vector3(-10000, knockbackPower, 0));
+                body.AddForce(new Vector3(-15000, knockbackPower, 0));
             }
             else if (transform.position.x > targetPosition.x)
             {
-                body.AddForce(new Vector3(10000, knockbackPower, 0));
+                body.AddForce(new Vector3(15000, knockbackPower, 0));
             }
         }
         yield return 0;
